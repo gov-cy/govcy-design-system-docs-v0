@@ -14,16 +14,9 @@ module.exports = function (eleventyConfig) {
         const content_404 = fs.readFileSync('docs/404.html');
 
         bs.addMiddleware('*', (req, res) => {
-          if (req.url === '/') {
-            res.writeHead(302, {
-              location: '/en/'
-            });
-            res.end();
-          } else {
             // Provides the 404 content without redirect.
             res.write(content_404);
             res.end();
-          }
         });
       }
     } 
