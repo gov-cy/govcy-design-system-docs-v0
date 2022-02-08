@@ -1,0 +1,17 @@
+{
+  "name": "dsf-design-system-docs-static",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "author": "DMRID - DSF Team",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "dir": "ltr",
+    "lang": "el",
+    "locale": "el",
+    "layout" : "base_el.njk",
+    "tags" : "el"
+  }
