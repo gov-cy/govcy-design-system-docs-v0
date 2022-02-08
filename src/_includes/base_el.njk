@@ -43,7 +43,7 @@
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
-                     <a href="{{ '/' | url}}" class="govcy-logo"> <img></a>
+                     <a href="{{ '/el/' | url}}" class="govcy-logo"> <img></a>
                      <form class="govcy-text-white govcy-bg-primary">     
                          <select id="govcy-lang-menu" name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
                              <option value="en">English</option>
@@ -57,7 +57,12 @@
                      <span class="govcy-service-name">Design System - GOV.CY</span>
                      <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary">
                         {%- for category in collections.categoriesSortByOrderAscEl -%}
-                        <li><a href="{{ category.url }}">{{ category.data.title }}</a></li>
+                        <li><a href="{{ category.url }}"
+                            {% if page.url == category.url %}
+                                class="active"
+                            {% endif %}
+                            >
+                            {{ category.data.title }}</a></li>
                         {%- endfor -%}
                      </ul>
                  </header>

@@ -43,11 +43,11 @@
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
-                     <a href="/en/" class="govcy-logo"> <img></a>
+                     <a href="/el/" class="govcy-logo"> <img></a>
                      <form class="govcy-text-white govcy-bg-primary">     
                          <select id="govcy-lang-menu" name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
-                             <option value="en" selected>English</option>
-                             <option value="el">Ελληνικά</option>
+                             <option value="en">English</option>
+                             <option value="el" selected>Ελληνικά</option>
                          </select>
                      </form>
                      <input class="govcy-menu-btn govcy-d-none" type="checkbox" id="menu-btn">
@@ -55,12 +55,12 @@
                          <span class="material-icons govcy-my-3">arrow_drop_down</span>
                      </label>
                      <span class="govcy-service-name">Design System - GOV.CY</span>
-                     <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary"><li><a href="/en/getting_started/"
+                     <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary"><li><a href="/el/getting_started/"
                             
                                 class="active"
                             
                             >
-                            Getting Started</a></li><li><a href="/en/styles/"
+                            Getting Started</a></li><li><a href="/el/styles/"
                             
                             >
                             Styles</a></li></ul>
@@ -129,7 +129,6 @@
 <p><strong>icons-512.png</strong>
 <img src="../../img/icons-512.png" alt="icons-512.png"></p>
  
-    
     </main>
     <!-- Footer -->
     <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">
@@ -152,9 +151,7 @@
         <script>
         document.getElementById("govcy-lang-menu").onchange = function() {
             var selectedOption = this.value;
-            //alert('');
-            //alert(('' != ''?'Empty':''  ))
-            window.location.href =  "/"+selectedOption;
+            window.location.href =  "/"+selectedOption;;
         }
         </script>
     </body>

@@ -43,7 +43,7 @@
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
-                     <a href="/" class="govcy-logo"> <img></a>
+                     <a href="/en/" class="govcy-logo"> <img></a>
                      <form class="govcy-text-white govcy-bg-primary">     
                          <select id="govcy-lang-menu" name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
                              <option value="en" selected>English</option>
@@ -55,7 +55,15 @@
                          <span class="material-icons govcy-my-3">arrow_drop_down</span>
                      </label>
                      <span class="govcy-service-name">Design System - GOV.CY</span>
-                     <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary"><li><a href="/en/styles/">Styles</a></li><li><a href="/en/styles2/">Styles 2</a></li></ul>
+                     <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary"><li><a href="/en/getting_started/"
+                            
+                            >
+                            Getting Started</a></li><li><a href="/en/styles/"
+                            
+                                class="active"
+                            
+                            >
+                            Styles</a></li></ul>
                  </header>
              </div>
          </div>
@@ -91,6 +99,8 @@
         <script>
         document.getElementById("govcy-lang-menu").onchange = function() {
             var selectedOption = this.value;
+            //alert('');
+            //alert(('' != ''?'Empty':''  ))
             window.location.href =  "/"+selectedOption;
         }
         </script>

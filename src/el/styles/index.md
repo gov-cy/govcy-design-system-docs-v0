@@ -1,7 +1,6 @@
 ---
-title: "Styles 3"
-author: "Constantinos"
-order: 3
+title: "Styles"
+order: 1
 tags : ['category']
 ---
 Make your service look and feel like GOV.CY.
