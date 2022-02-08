@@ -1,5 +1,8 @@
 ---
 title: "Getting Started"
+author: "Constantinos"
+order: 0
+tags : ['category', 'en']
 ---
 
 Get started with GOV.CY design System.
@@ -158,37 +161,37 @@ The code above implies the existence of a `manifest.json` file. Use the followin
 Images mentioned are listed below and can be found below.
 
 **og:image, twitter:image**
-![og:image, twitter:image](img/icons-512.png)
+![og:image, twitter:image](../../img/icons-512.png)
 
 **favicon.ico-48x48**
-![favicon-48x48](img/favicon-48x48.png)
+![favicon-48x48](../../img/favicon-48x48.png)
 **favicon.ico-32x32**
-![favicon-32x32](img/favicon-32x32.png)
+![favicon-32x32](../../img/favicon-32x32.png)
 **favicon.ico-16x16**
-![favicon-16x16](img/favicon-16x16.png)
+![favicon-16x16](../../img/favicon-16x16.png)
 
 
 **apple-touch-icon-144x144-precomposed.png**
-![apple-touch-icon-144x144-precomposed.png](img/apple-touch-icon-144x144-precomposed.png)
+![apple-touch-icon-144x144-precomposed.png](../../img/apple-touch-icon-144x144-precomposed.png)
 
 **apple-touch-icon-120x120-precomposed.png**
-![apple-touch-icon-120x120-precomposed.png](img/apple-touch-icon-120x120-precomposed.png)
+![apple-touch-icon-120x120-precomposed.png](../../img/apple-touch-icon-120x120-precomposed.png)
 
 **apple-touch-icon-114x114-precomposed.png**
-![apple-touch-icon-114x114-precomposed.png](img/apple-touch-icon-114x114-precomposed.png)
+![apple-touch-icon-114x114-precomposed.png](../../img/apple-touch-icon-114x114-precomposed.png)
 
 **apple-touch-icon-72x72-precomposed.png**
-![apple-touch-icon-72x72-precomposed.png](img/apple-touch-icon-72x72-precomposed.png)
+![apple-touch-icon-72x72-precomposed.png](../../img/apple-touch-icon-72x72-precomposed.png)
 
 **apple-touch-icon-57x57-precomposed.png**
-![apple-touch-icon-57x57-precomposed.png](img/apple-touch-icon-57x57-precomposed.png)
+![apple-touch-icon-57x57-precomposed.png](../../img/apple-touch-icon-57x57-precomposed.png)
 
 **icons-128.png**
-![icons-128.png](img/icons-128.png)
+![icons-128.png](../../img/icons-128.png)
 
 **icons-192.png**
-![icons-192.png](img/icons-192.png)
+![icons-192.png](../../img/icons-192.png)
 
 **icons-512.png**
-![icons-512.png](img/icons-512.png)
+![icons-512.png](../../img/icons-512.png)
 

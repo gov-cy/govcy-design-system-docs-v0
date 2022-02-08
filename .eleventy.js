@@ -19,10 +19,11 @@ module.exports = function (eleventyConfig) {
               location: '/en/'
             });
             res.end();
+          } else {
+            // Provides the 404 content without redirect.
+            res.write(content_404);
+            res.end();
           }
-          // Provides the 404 content without redirect.
-          res.write(content_404);
-          res.end();
         });
       }
     } 

@@ -46,8 +46,8 @@
                      <a href="{{ '/' | url}}" class="govcy-logo"> <img></a>
                      <form class="govcy-text-white govcy-bg-primary">     
                          <select id="govcy-lang-menu" name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
-                             <option value="/en/">English</option>
-                             <option value="/el/" selected>Ελληνικά</option>
+                             <option value="en">English</option>
+                             <option value="el" selected>Ελληνικά</option>
                          </select>
                      </form>
                      <input class="govcy-menu-btn govcy-d-none" type="checkbox" id="menu-btn">
@@ -92,7 +92,7 @@
         <script>
         document.getElementById("govcy-lang-menu").onchange = function() {
             var selectedOption = this.value;
-            window.location.href =  selectedOption;
+            window.location.href =  "/"+selectedOption;;
         }
         </script>
     </body>

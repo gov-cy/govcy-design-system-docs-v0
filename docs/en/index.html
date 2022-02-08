@@ -46,8 +46,8 @@
                      <a href="/" class="govcy-logo"> <img></a>
                      <form class="govcy-text-white govcy-bg-primary">     
                          <select id="govcy-lang-menu" name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
-                             <option value="/en/" selected>English</option>
-                             <option value="/el/">Ελληνικά</option>
+                             <option value="en" selected>English</option>
+                             <option value="el">Ελληνικά</option>
                          </select>
                      </form>
                      <input class="govcy-menu-btn govcy-d-none" type="checkbox" id="menu-btn">
@@ -55,7 +55,7 @@
                          <span class="material-icons govcy-my-3">arrow_drop_down</span>
                      </label>
                      <span class="govcy-service-name">Design System - GOV.CY</span>
-                     <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary"><li><a href="/en/styles/">Styles</a></li><li><a href="/en/styles2/">Styles 2</a></li></ul>
+                     <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary"><li><a href="/en/getting_started/">Getting Started</a></li><li><a href="/en/styles1/">Styles</a></li><li><a href="/en/styles2/">Styles 2</a></li></ul>
                  </header>
              </div>
          </div>
@@ -88,6 +88,7 @@
 </div>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>some class<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>asdas asdsada<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
  
+    
     </main>
     <!-- Footer -->
     <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">
@@ -110,7 +111,9 @@
         <script>
         document.getElementById("govcy-lang-menu").onchange = function() {
             var selectedOption = this.value;
-            window.location.href =  selectedOption;
+            //alert('/el/index.html');
+            //alert(('' != ''?'Empty':''  ))
+            window.location.href =  "/"+selectedOption;
         }
         </script>
     </body>

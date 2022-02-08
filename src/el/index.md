@@ -1,5 +1,7 @@
 ---
 title: "Design System"
+localization: 
+    en: "/en/index.html"
 ---
 GREEK
 Design your services using GOV.CY styles, components and patterns.

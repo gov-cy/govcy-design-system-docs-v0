@@ -1,5 +1,7 @@
 ---
 title: "Design System"
+localization: 
+    el: "/el/index.html"
 ---
 Design your services using GOV.CY styles, components and patterns.
 

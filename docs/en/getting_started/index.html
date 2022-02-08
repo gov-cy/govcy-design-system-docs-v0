@@ -46,8 +46,8 @@
                      <a href="/" class="govcy-logo"> <img></a>
                      <form class="govcy-text-white govcy-bg-primary">     
                          <select id="govcy-lang-menu" name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
-                             <option value="/en/" selected>English</option>
-                             <option value="/el/">Ελληνικά</option>
+                             <option value="en" selected>English</option>
+                             <option value="el">Ελληνικά</option>
                          </select>
                      </form>
                      <input class="govcy-menu-btn govcy-d-none" type="checkbox" id="menu-btn">
@@ -55,7 +55,7 @@
                          <span class="material-icons govcy-my-3">arrow_drop_down</span>
                      </label>
                      <span class="govcy-service-name">Design System - GOV.CY</span>
-                     <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary"><li><a href="/en/styles/">Styles</a></li><li><a href="/en/styles2/">Styles 2</a></li></ul>
+                     <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary"><li><a href="/en/getting_started/">Getting Started</a></li><li><a href="/en/styles1/">Styles</a></li><li><a href="/en/styles2/">Styles 2</a></li></ul>
                  </header>
              </div>
          </div>
@@ -97,30 +97,31 @@
 <h2><a id="image">Images</a></h2>
 <p>Images mentioned are listed below and can be found below.</p>
 <p><strong>og:image, twitter:image</strong>
-<img src="img/icons-512.png" alt="og:image, twitter:image"></p>
+<img src="../../img/icons-512.png" alt="og:image, twitter:image"></p>
 <p><strong>favicon.ico-48x48</strong>
-<img src="img/favicon-48x48.png" alt="favicon-48x48">
+<img src="../../img/favicon-48x48.png" alt="favicon-48x48">
 <strong>favicon.ico-32x32</strong>
-<img src="img/favicon-32x32.png" alt="favicon-32x32">
+<img src="../../img/favicon-32x32.png" alt="favicon-32x32">
 <strong>favicon.ico-16x16</strong>
-<img src="img/favicon-16x16.png" alt="favicon-16x16"></p>
+<img src="../../img/favicon-16x16.png" alt="favicon-16x16"></p>
 <p><strong>apple-touch-icon-144x144-precomposed.png</strong>
-<img src="img/apple-touch-icon-144x144-precomposed.png" alt="apple-touch-icon-144x144-precomposed.png"></p>
+<img src="../../img/apple-touch-icon-144x144-precomposed.png" alt="apple-touch-icon-144x144-precomposed.png"></p>
 <p><strong>apple-touch-icon-120x120-precomposed.png</strong>
-<img src="img/apple-touch-icon-120x120-precomposed.png" alt="apple-touch-icon-120x120-precomposed.png"></p>
+<img src="../../img/apple-touch-icon-120x120-precomposed.png" alt="apple-touch-icon-120x120-precomposed.png"></p>
 <p><strong>apple-touch-icon-114x114-precomposed.png</strong>
-<img src="img/apple-touch-icon-114x114-precomposed.png" alt="apple-touch-icon-114x114-precomposed.png"></p>
+<img src="../../img/apple-touch-icon-114x114-precomposed.png" alt="apple-touch-icon-114x114-precomposed.png"></p>
 <p><strong>apple-touch-icon-72x72-precomposed.png</strong>
-<img src="img/apple-touch-icon-72x72-precomposed.png" alt="apple-touch-icon-72x72-precomposed.png"></p>
+<img src="../../img/apple-touch-icon-72x72-precomposed.png" alt="apple-touch-icon-72x72-precomposed.png"></p>
 <p><strong>apple-touch-icon-57x57-precomposed.png</strong>
-<img src="img/apple-touch-icon-57x57-precomposed.png" alt="apple-touch-icon-57x57-precomposed.png"></p>
+<img src="../../img/apple-touch-icon-57x57-precomposed.png" alt="apple-touch-icon-57x57-precomposed.png"></p>
 <p><strong>icons-128.png</strong>
-<img src="img/icons-128.png" alt="icons-128.png"></p>
+<img src="../../img/icons-128.png" alt="icons-128.png"></p>
 <p><strong>icons-192.png</strong>
-<img src="img/icons-192.png" alt="icons-192.png"></p>
+<img src="../../img/icons-192.png" alt="icons-192.png"></p>
 <p><strong>icons-512.png</strong>
-<img src="img/icons-512.png" alt="icons-512.png"></p>
+<img src="../../img/icons-512.png" alt="icons-512.png"></p>
  
+    
     </main>
     <!-- Footer -->
     <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">
@@ -143,7 +144,9 @@
         <script>
         document.getElementById("govcy-lang-menu").onchange = function() {
             var selectedOption = this.value;
-            window.location.href =  selectedOption;
+            //alert('');
+            //alert(('' != ''?'Empty':''  ))
+            window.location.href =  "/"+selectedOption;
         }
         </script>
     </body>

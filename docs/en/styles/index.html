@@ -46,8 +46,8 @@
                      <a href="/" class="govcy-logo"> <img></a>
                      <form class="govcy-text-white govcy-bg-primary">     
                          <select id="govcy-lang-menu" name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
-                             <option value="/en/" selected>English</option>
-                             <option value="/el/">Ελληνικά</option>
+                             <option value="en" selected>English</option>
+                             <option value="el">Ελληνικά</option>
                          </select>
                      </form>
                      <input class="govcy-menu-btn govcy-d-none" type="checkbox" id="menu-btn">
@@ -68,6 +68,7 @@
     <p>Make your service look and feel like GOV.CY.</p>
 <p>Use the links on this page to navigated to the desired style element.</p>
  
+    
     </main>
     <!-- Footer -->
     <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">
@@ -90,7 +91,7 @@
         <script>
         document.getElementById("govcy-lang-menu").onchange = function() {
             var selectedOption = this.value;
-            window.location.href =  selectedOption;
+            window.location.href =  "/"+selectedOption;
         }
         </script>
     </body>
