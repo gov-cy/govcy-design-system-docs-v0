@@ -1,11 +1,6 @@
 module.exports = {
-  title: "Webstoemp",
-  description:
-    "Webstoemp is the portfolio and blog of Jérôme Coupé, a designer and front-end developer from Brussels, Belgium.",
-  url: "https://www.webstoemp.com",
-  baseUrl: "/",
-  authorTwitter: "@jeromecoupe",
   buildTime: new Date(),
+  isMultiLanguage : true,
   languages: [
     {
       label: "English",
@@ -16,4 +11,28 @@ module.exports = {
       code: "el",
     },
   ],
+  localization: {
+    "el" : {
+      "title" : "GOV.CY",
+      "subtitle" : "Οδηγός Σχεδίασης",
+      "description" : "Design your services using GOV.CY styles, components and patterns.",
+      "menu" : "Μενού",
+      "url" : "",
+      "privacy_label":"Όροι Χρήσης",
+      "cookie_label":"Προστασία Προσωπικών Δεδομένων",
+      "accessibility_label":"Προσβασιμότητα",
+      "copyright_label":"© Κυπριακή Δημοκρατία, 2021",
+    },
+    "en" : {
+      "title" : "GOV.CY",
+      "subtitle" : "Design System",
+      "description" : "Design your services using GOV.CY styles, components and patterns.",
+      "menu" : "Menu",
+      "url" : "",
+      "privacy_label":"Privacy statement",
+      "cookie_label":"Cookie policy",
+      "accessibility_label":"Accessibility statement",
+      "copyright_label":"© Republic of Cyprus, 2021",
+    }
+  }
 };

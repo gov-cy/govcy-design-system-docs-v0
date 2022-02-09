@@ -1,4 +1,5 @@
 {
-  "layout" : "base_en.njk",
-  "tags" : "en"
+  "layout" : "base.njk",
+  "tags" : "en",
+  "locale" : "en"
 }

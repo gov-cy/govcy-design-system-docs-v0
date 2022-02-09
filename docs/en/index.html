@@ -5,8 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Social -->
-        <meta property="og:description" content="Prototyping using GOV.CY styles, components and patterns.">
-        <meta property="og:title" content="Design System - GOV.CY">
+        <meta property="og:description" content="Design your services using GOV.CY styles, components and patterns.">
+        <meta property="og:title" content="Design System - Design System GOV.CY">
         <meta property="og:url" content="https://gov-cy.github.io/dsf-prototype/">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://gov-cy.github.io/dsf-prototype/img/icons-512.png">
@@ -14,8 +14,8 @@
     
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://gov-cy.github.io/dsf-prototype/">
-        <meta property="twitter:title" content="Design System - GOV.CY">
-        <meta property="twitter:description" content="Prototyping using GOV.CY styles, components and patterns.">
+        <meta property="twitter:title" content="Design System - Design System GOV.CY">
+        <meta property="twitter:description" content="Design your services using GOV.CY styles, components and patterns.">
         <meta property="twitter:image" content="https://gov-cy.github.io/dsf-prototype/img/icons-512.png">
         <!-- Theme --> 
         <link rel="manifest" href="/manifest.json">
@@ -35,7 +35,7 @@
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
         
         <title>Design System - GOV.CY</title>
-        <meta name="description" content="Prototyping using GOV.CY styles, components and patterns.">
+        <meta name="description" content="Design your services using GOV.CY styles, components and patterns.">
     </head>
     <body>
     <!--Header-->
@@ -44,24 +44,34 @@
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
                      <a href="/en/" class="govcy-logo"> <img></a>
-                     <form class="govcy-text-white govcy-bg-primary">     
+                     
+                     <form class="govcy-text-white govcy-bg-primary">
                          <select id="govcy-lang-menu" name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
-                             <option value="en" selected>English</option>
-                             <option value="el">Ελληνικά</option>
-                         </select>
+                         
+                         
+                            <option value="en" selected>English</option>
+                         
+                            <option value="el">Ελληνικά</option>
+                         
                      </form>
+                     
                      <input class="govcy-menu-btn govcy-d-none" type="checkbox" id="menu-btn">
                      <label class="govcy-menu-icon govcy-d-md-none" for="menu-btn">Menu
                          <span class="material-icons govcy-my-3">arrow_drop_down</span>
                      </label>
                      <span class="govcy-service-name">Design System - GOV.CY</span>
-                     <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary"><li><a href="/en/getting_started/"
-                            
-                            >
-                            Getting Started</a></li><li><a href="/en/styles/"
-                            
-                            >
-                            Styles</a></li></ul>
+                     <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary">
+                     
+                    <li>
+                            <a href="/en/getting_started/" >
+                                Getting Started
+                            </a>
+                            </li><li>
+                            <a href="/en/styles/" >
+                                Styles
+                            </a>
+                            </li>
+                     </ul>
                  </header>
              </div>
          </div>
@@ -70,7 +80,8 @@
     <div class="govcy-container-fluid" id="topMenuContainer"><div class="container-md"><nav class="nav" id="topMenu"></nav></div></div>
     <!--Main-->
     <main class="govcy-container govcy-my-2" id="mainContainer">
-    <h1>Design System</h1>
+    <h1>Design System</h1> 
+    
     <div class="govcy-container govcy-py-3 govcy-bg-light">
     <div class="row">
         <div class="govcy-col-5 order-md-last govcy-text-center">
@@ -104,8 +115,7 @@
         <p><a href="#">Browse patterns</a></p>
     </div>
     </div>
-</div> 
-    
+</div>
     </main>
     <!-- Footer -->
     <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">
@@ -128,8 +138,6 @@
         <script>
         document.getElementById("govcy-lang-menu").onchange = function() {
             var selectedOption = this.value;
-            //alert('/el/index.html');
-            //alert(('' != ''?'Empty':''  ))
             window.location.href =  "/"+selectedOption;
         }
         </script>

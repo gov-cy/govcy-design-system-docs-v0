@@ -1,21 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{locale}}">
     <head>
     <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Social -->
-        <meta property="og:description" content="Prototyping using GOV.CY styles, components and patterns.">
-        <meta property="og:title" content="{{ title }} - GOV.CY">
+        <meta property="og:description" content="{{ site.localization[locale].description }}">
+        <meta property="og:title" content="{{ title }} - {{ site.localization[locale].subtitle }} {{ site.localization[locale].title }}">
         <meta property="og:url" content="https://gov-cy.github.io/dsf-prototype/">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://gov-cy.github.io/dsf-prototype/img/icons-512.png">
-        <meta property="og:site_name" content="GOV.CY">
+        <meta property="og:site_name" content="{{ site.localization[locale].title }}">
     
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://gov-cy.github.io/dsf-prototype/">
-        <meta property="twitter:title" content="{{ title }} - GOV.CY">
-        <meta property="twitter:description" content="Prototyping using GOV.CY styles, components and patterns.">
+        <meta property="twitter:title" content="{{ title }} - {{ site.localization[locale].subtitle }} {{ site.localization[locale].title }}">
+        <meta property="twitter:description" content="{{ site.localization[locale].description }}">
         <meta property="twitter:image" content="https://gov-cy.github.io/dsf-prototype/img/icons-512.png">
         <!-- Theme --> 
         <link rel="manifest" href="{{'/manifest.json' | url }}">
@@ -34,8 +34,8 @@
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
         
-        <title>{{ title }} - GOV.CY</title>
-        <meta name="description" content="Prototyping using GOV.CY styles, components and patterns.">
+        <title>{{ title }} - {{ site.localization[locale].title }}</title>
+        <meta name="description" content="{{ site.localization[locale].description }}">
     </head>
     <body>
     <!--Header-->
@@ -43,27 +43,40 @@
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
-                     <a href="{{ '/en/' | url}}" class="govcy-logo"> <img></a>
-                     <form class="govcy-text-white govcy-bg-primary">     
+                     <a href="/{{locale}}/" class="govcy-logo"> <img></a>
+                     {% if site.isMultiLanguage %}
+                     <form class="govcy-text-white govcy-bg-primary">
                          <select id="govcy-lang-menu" name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
-                             <option value="en" selected>English</option>
-                             <option value="el">Ελληνικά</option>
-                         </select>
+                         {# loop through languages #}
+                         {% for language in site.languages %}
+                            <option value="{{ language.code }}"{% if locale == language.code %} selected{% endif %}>{{ language.label }}</option>
+                         {% endfor %}
                      </form>
+                     {% endif %}
                      <input class="govcy-menu-btn govcy-d-none" type="checkbox" id="menu-btn">
-                     <label class="govcy-menu-icon govcy-d-md-none" for="menu-btn">Menu
+                     <label class="govcy-menu-icon govcy-d-md-none" for="menu-btn">{{ site.localization[locale].menu }}
                          <span class="material-icons govcy-my-3">arrow_drop_down</span>
                      </label>
-                     <span class="govcy-service-name">Design System - GOV.CY</span>
+                     <span class="govcy-service-name">{{ site.localization[locale].subtitle }} - {{ site.localization[locale].title }}</span>
                      <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary">
+                     {# Depending on locale loop through categories #}
+                    {% if locale == 'en' %}
                         {%- for category in collections.categoriesSortByOrderAscEn -%}
-                        <li><a href="{{ category.url }}"
-                            {% if page.url == category.url %}
-                                class="active"
-                            {% endif %}
-                            >
-                            {{ category.data.title }}</a></li>
+                            <li>
+                            <a href="{{ category.url }}" {% if page.url == category.url %} class="active"{% endif %}>
+                                {{ category.data.title }}
+                            </a>
+                            </li>
                         {%- endfor -%}
+                    {% elif locale == 'el' %}
+                        {%- for category in collections.categoriesSortByOrderAscEl -%}
+                            <li>
+                            <a href="{{ category.url }}" {% if page.url == category.url %} class="active"{% endif %}>
+                                {{ category.data.title }}
+                            </a>
+                            </li>
+                        {%- endfor -%}
+                    {% endif %}
                      </ul>
                  </header>
              </div>
@@ -73,9 +86,15 @@
     <div class="govcy-container-fluid" id="topMenuContainer"><div class="container-md"><nav class="nav" id="topMenu"></nav></div></div>
     <!--Main-->
     <main class="govcy-container govcy-my-2" id="mainContainer">
-    <h1>{{ title }}</h1>
-    {{ content | safe }} 
-    {{ localization["en"] }}
+    <h1>{{ title }}</h1> 
+    {#
+    {% if 'category' in tags %}
+        is category
+    {% else %}
+        NOT CATEF
+    {% endif %} 
+    #}
+    {{ content | safe }}
     </main>
     <!-- Footer -->
     <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">
@@ -84,10 +103,10 @@
                     <footer class="govcy-footer">
                         <span class="govcy-d-inline-block govcy-valign-top govcy-pb-2"><img alt="govcy-logo"></span>
                                 <ul class="govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium">
-                                <li><a href="#">Privacy statement</a></li>
-                                <li><a href="#">Cookie policy</a></li>
-                                <li><a href="#">Accessibility statement</a></li>
-                                <li class="govcy-d-block govcy-text-dark">© Republic of Cyprus, 2021</li>
+                                <li><a href="#">{{ site.localization[locale].privacy_label }}</a></li>
+                                <li><a href="#">{{ site.localization[locale].cookie_label }}</a></li>
+                                <li><a href="#">{{ site.localization[locale].accessibility_label }}</a></li>
+                                <li class="govcy-d-block govcy-text-dark">{{ site.localization[locale].copyright_label }}</li>
                             </ul>
                     </footer>
                 </div>
@@ -98,8 +117,6 @@
         <script>
         document.getElementById("govcy-lang-menu").onchange = function() {
             var selectedOption = this.value;
-            //alert('{{ localization["el"] }}');
-            //alert(('{{ localization["'+selectedOption+'"] }}' != ''?'Empty':'{{ localization["'+selectedOption+'"] }}'  ))
             window.location.href =  "/"+selectedOption;
         }
         </script>
