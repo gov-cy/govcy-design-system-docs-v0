@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Social -->
         <meta property="og:description" content="Design your services using GOV.CY styles, components and patterns.">
-        <meta property="og:title" content="Styles - Design System GOV.CY">
+        <meta property="og:title" content=" - Design System GOV.CY">
         <meta property="og:url" content="https://gov-cy.github.io/dsf-prototype/">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://gov-cy.github.io/dsf-prototype/img/icons-512.png">
@@ -14,7 +14,7 @@
     
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://gov-cy.github.io/dsf-prototype/">
-        <meta property="twitter:title" content="Styles - Design System GOV.CY">
+        <meta property="twitter:title" content=" - Design System GOV.CY">
         <meta property="twitter:description" content="Design your services using GOV.CY styles, components and patterns.">
         <meta property="twitter:image" content="https://gov-cy.github.io/dsf-prototype/img/icons-512.png">
         <!-- Theme --> 
@@ -34,13 +34,12 @@
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
         
-        <title>Styles - GOV.CY</title>
+        <title> - GOV.CY</title>
         <meta name="description" content="Design your services using GOV.CY styles, components and patterns.">
     </head>
     <body>
     <!--Header-->
 <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
-
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
@@ -68,7 +67,7 @@
                                 Getting Started
                             </a>
                             </li><li>
-                            <a href="/en/styles/"  class="active">
+                            <a href="/en/styles/" >
                                 Styles
                             </a>
                             </li>
@@ -85,12 +84,37 @@
     
         <div class="row">
             <div class="govcy-col-10 govcy-order-last">
-                <h1>Styles</h1>
-                <p>Make your service look and feel like <a href="http://GOV.CY">GOV.CY</a>.</p>
-<p>Use the links on this page to navigated to the desired style element.</p>
+                <h1></h1>
+                <h1>Layout</h1>
+<p>Layouts section concerns content that resides inside the <code>&lt;main&gt;</code> element.</p>
+<h2>Max-width layout</h2>
+<p>This layout uses one column and takes up the full size of the <code>&lt;main&gt;</code>. To be used when there is no need for a side menu.</p>
+<p>Sample HTML Code</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container-md<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>                        <br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-md-12<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<div class="example-box">
+  <div class="container-md">
+      <div class="row">                        
+          <article class="col-md-12 example-box-inner">	&lt;article&gt;</article>
+      </div>
+</div>
+</div>
+<h2>One-third + Two-thirds layout</h2>
+<p>Use this page layout for services that need a side menu.</p>
+<p>The <code>&lt;aside&gt;</code> container must appear on the left of the <code>&lt;article&gt;</code> container on Desktop screens and first on mobile screens. It’s width must take ⅓ of the <code>service</code> section.</p>
+<p>The <code>&lt;article&gt;</code> container must appear on the right of the <code>&lt;aside&gt;</code> container on Desktop screens and second on mobile screens.It’s width must take ⅔ of the <code>service</code> section.</p>
+<p>Sample HTML Code</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container-md<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-md-9 order-md-last<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-md-3 order-md-first<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>aside</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<div class="example-box">
+  <div class="container-md">
+    <div class="row">
+        <article class="col-md-9 order-md-last"><div class="example-box-inner">&lt;article&gt;</div></article>
+        <aside class="col-md-3 order-md-first"><div class="example-box-inner">&lt;aside&gt;</div></aside>
+    </div>
+  </div>
+</div>
 
             </div>
-            <aside class="govcy-col-2 govcy-order-first">
+            <div class="govcy-col-2 govcy-order-first">
                 <ul class="nav flex-column">
                 
                         
@@ -98,23 +122,8 @@
                         Colours
                     </a>
                     
-                    
-                        
-                    <a href="/en/styles/grid/" class="nav-link">
-                        Grid system
-                    </a>
-                    
-                        
-                    <a href="/en/styles/layout/" class="nav-link">
-                        Layout
-                    </a>
-                    
-                        
-                    <a href="/en/styles/page_templates/" class="nav-link">
-                        Page Templates
-                    </a>
                     </ul>
-            </aside>
+            </div>
         </div>
     
 

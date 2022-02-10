@@ -2,6 +2,7 @@
 title: "Getting Started"
 order: 0
 tags : ['category']
+category: "getting started"
 ---
 
 Get started with GOV.CY design System.

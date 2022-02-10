@@ -1,9 +1,38 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const locale = require("./src/_data/i18n/locale");
 const fs = require("fs"); 
+
+const mdOptions = {
+  html: true,
+  breaks: true,
+  linkify: true,
+  typographer: true
+}
+const mdAnchorOpts = {
+  permalink: true,
+  permalinkClass: 'anchor-link',
+  permalinkSymbol: ' ',
+  level: [1, 2, 3, 4]
+}
+
+
+
 module.exports = function (eleventyConfig) {
+  let markdownIt = require('markdown-it')
+  let markdownItAnchor = require('markdown-it-anchor')
+  let pluginTOC = require('eleventy-plugin-toc')
+  // Markdown
+  eleventyConfig.setLibrary('md',markdownIt(mdOptions).use(markdownItAnchor, mdAnchorOpts))
+  
+  // add plugin pluginTOC
+  eleventyConfig.addPlugin(pluginTOC)
   // add plugin syntaxHighlighth
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ['h2', 'h1', 'h3'],
+    wrapper: 'div'
+  })
 
   // Browsersync
   // Redirect from root to default language root during --serve
@@ -46,15 +75,6 @@ module.exports = function (eleventyConfig) {
  */
 
   //Add custom sorting collection
-  eleventyConfig.addCollection("categoriesSortByOrderDescEn", function(collectionApi) {
-    // get unsorted items
-    return collectionApi.getFilteredByTags("category", "en").sort(function(a, b) {
-      return b.data.order - a.data.order; // sort by order - descending
-    });
-
-  });
-
-  //Add custom sorting collection
   eleventyConfig.addCollection("categoriesSortByOrderAscEn", function(collectionApi) {
     // get unsorted items
     return collectionApi.getFilteredByTags("category", "en").sort(function(a, b) {
@@ -63,18 +83,25 @@ module.exports = function (eleventyConfig) {
   });
 
   //Add custom sorting collection
-  eleventyConfig.addCollection("categoriesSortByOrderDescEl", function(collectionApi) {
-    // get unsorted items
-    return collectionApi.getFilteredByTags("category", "el").sort(function(a, b) {
-      return b.data.order - a.data.order; // sort by order - descending
-    });
-
-  });
-
-  //Add custom sorting collection
   eleventyConfig.addCollection("categoriesSortByOrderAscEl", function(collectionApi) {
     // get unsorted items
     return collectionApi.getFilteredByTags("category", "el").sort(function(a, b) {
+      return a.data.order - b.data.order; // sort by order - ascending
+    });
+  });
+
+  //Add custom sorting collection
+  eleventyConfig.addCollection("stylesSortByOrderAscEn", function(collectionApi) {
+    // get unsorted items
+    return collectionApi.getFilteredByTags("styles", "en").sort(function(a, b) {
+      return a.data.order - b.data.order; // sort by order - ascending
+    });
+  });
+
+  //Add custom sorting collection
+  eleventyConfig.addCollection("stylesSortByOrderAscEl", function(collectionApi) {
+    // get unsorted items
+    return collectionApi.getFilteredByTags("styles", "el").sort(function(a, b) {
       return a.data.order - b.data.order; // sort by order - ascending
     });
   });

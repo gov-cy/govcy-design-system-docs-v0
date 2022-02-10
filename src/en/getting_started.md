@@ -2,9 +2,10 @@
 title: "Getting Started"
 order: 0
 tags : ['category']
+category: "getting started"
 ---
 
-Get started with GOV.CY design System.
+Get started with GOV.CY design System. dsf,msndf,mdsn
 
 ## Starter Template
 Use the following HTML template for your GOV.CY pages.

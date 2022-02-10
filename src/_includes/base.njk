@@ -30,8 +30,8 @@
         <link rel="apple-touch-icon-precomposed" href="{{ '/img/apple-touch-icon-57x57-precomposed.png' | url }}">
         <!-- Bootstrap CSS -->
         <link href="{{ '/css/main.css' | url }}" rel="stylesheet" >
-        <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+        <!--<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
         
         <title>{{ title }} - {{ site.localization[locale].title }}</title>
@@ -40,6 +40,9 @@
     <body>
     <!--Header-->
 <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
+{# <aside>
+  {{ content | toc | safe }}
+</aside> #}
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
@@ -61,18 +64,18 @@
                      <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary">
                      {# Depending on locale loop through categories #}
                     {% if locale == 'en' %}
-                        {%- for category in collections.categoriesSortByOrderAscEn -%}
+                        {%- for cat in collections.categoriesSortByOrderAscEn -%}
                             <li>
-                            <a href="{{ category.url }}" {% if page.url == category.url %} class="active"{% endif %}>
-                                {{ category.data.title }}
+                            <a href="{{ cat.url }}" {% if category == cat.data.category %} class="active"{% endif %}>
+                                {{ cat.data.title }}
                             </a>
                             </li>
                         {%- endfor -%}
                     {% elif locale == 'el' %}
-                        {%- for category in collections.categoriesSortByOrderAscEl -%}
+                        {%- for cat in collections.categoriesSortByOrderAscEl -%}
                             <li>
-                            <a href="{{ category.url }}" {% if page.url == category.url %} class="active"{% endif %}>
-                                {{ category.data.title }}
+                            <a href="{{ cat.url }}" {% if category == cat.data.category %} class="active"{% endif %}>
+                                {{ cat.data.title }}
                             </a>
                             </li>
                         {%- endfor -%}
@@ -86,15 +89,35 @@
     <div class="govcy-container-fluid" id="topMenuContainer"><div class="container-md"><nav class="nav" id="topMenu"></nav></div></div>
     <!--Main-->
     <main class="govcy-container govcy-my-2" id="mainContainer">
-    <h1>{{ title }}</h1> 
-    {#
-    {% if 'category' in tags %}
-        is category
+    {# Check if showCategoryMenu is true, to change the layout to have 2 columns and add menu
+        This should be default in styles, components and patterns  #}
+    {% if showCategoryMenu %}
+        <div class="row">
+            <div class="govcy-col-10 govcy-order-last">
+                <h1>{{ title }}</h1>
+                {{ content | safe }}
+            </div>
+            <aside class="govcy-col-2 govcy-order-first">
+                <ul class="nav flex-column">
+                {# for all pages with tag = to `category`
+                    'category' should be set by default in styles, components and patterns
+                    corresponding tags should be set for every page in those folders except index.md#}
+                {%- for pag in collections[category] -%}
+                    {# Checks for same locale #}
+                    {% if locale  == pag.data.locale %}    
+                    <a href="{{ pag.url }}" class="nav-link{% if page.url == pag.url %} active{% endif %}">
+                        {{ pag.data.title }}
+                    </a>
+                    {% endif %}
+                {%- endfor -%}
+                </ul>
+            </aside>
+        </div>
     {% else %}
-        NOT CATEF
-    {% endif %} 
-    #}
-    {{ content | safe }}
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+    {% endif %}
+
     </main>
     <!-- Footer -->
     <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">
