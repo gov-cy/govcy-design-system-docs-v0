@@ -1,7 +1,7 @@
 ---
 title: "Styles"
 order: 1
-tags : ['category']
+tags : ['top_menu']
 ---
 Make your service look and feel like GOV.CY.
 

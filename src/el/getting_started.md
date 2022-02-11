@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 order: 0
-tags : ['category']
+tags : ['top_menu']
 category: "getting started"
 ---
 

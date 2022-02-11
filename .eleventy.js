@@ -1,5 +1,4 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const locale = require("./src/_data/i18n/locale");
 const fs = require("fs"); 
 
 const mdOptions = {
@@ -77,7 +76,7 @@ module.exports = function (eleventyConfig) {
   //Add custom sorting collection
   eleventyConfig.addCollection("categoriesSortByOrderAscEn", function(collectionApi) {
     // get unsorted items
-    return collectionApi.getFilteredByTags("category", "en").sort(function(a, b) {
+    return collectionApi.getFilteredByTags("top_menu", "en").sort(function(a, b) {
       return a.data.order - b.data.order; // sort by order - ascending
     });
   });
@@ -85,7 +84,7 @@ module.exports = function (eleventyConfig) {
   //Add custom sorting collection
   eleventyConfig.addCollection("categoriesSortByOrderAscEl", function(collectionApi) {
     // get unsorted items
-    return collectionApi.getFilteredByTags("category", "el").sort(function(a, b) {
+    return collectionApi.getFilteredByTags("top_menu", "el").sort(function(a, b) {
       return a.data.order - b.data.order; // sort by order - ascending
     });
   });
