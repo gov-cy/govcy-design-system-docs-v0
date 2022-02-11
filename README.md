@@ -8,9 +8,17 @@ Demo: https://gov-cy.github.io/dsf-design-system-docs-static/
 
 The manual uses the [Eleventy](https://www.11ty.dev/), a simpler static site generator to compile pages into a static site. 
 
-## How to add a documentation page
+### Site configuration
+
+### How to add a documentation page
+
+### Other Assets
 
 ## Other
+
+### Custom 404 page
+
+###
 
 ### Add multiple languages
 
@@ -26,7 +34,9 @@ The manual uses the [Eleventy](https://www.11ty.dev/), a simpler static site gen
 - Set the appropriate values in `src/_data/site.js`. for example 
 ```js
 module.exports = {
-  buildTime: new Date(),
+  ...
+  ...
+  ...
   isMultiLanguage : true,
   languages: [
     {
@@ -62,6 +72,13 @@ module.exports = {
       "copyright_label":"© Republic of Cyprus, 2021",
     }
   }
+  ...
+  ...
+  ...
 };
 ```
 - You can have a default language by adding the following code in the `index.html` : `<meta http-equiv="refresh" content="0; URL=en/" />`. This will redirect users to the `en` locale content.
+
+## Todo
+- sidemap.xml + robot.txt
+- 
