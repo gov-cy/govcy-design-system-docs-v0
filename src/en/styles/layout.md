@@ -1,6 +1,5 @@
 ---
 title: "Layout"
-tags : ['styles']
 ---
 
 Layouts section concerns content that resides inside the `<main>` element. 

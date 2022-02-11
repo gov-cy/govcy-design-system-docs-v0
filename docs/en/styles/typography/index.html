@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Social -->
         <meta property="og:description" content="Design your services using GOV.CY styles, components and patterns.">
-        <meta property="og:title" content=" - Design System GOV.CY">
+        <meta property="og:title" content="Typography - Design System GOV.CY">
         <meta property="og:url" content="https://gov-cy.github.io/dsf-prototype/">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://gov-cy.github.io/dsf-prototype/img/icons-512.png">
@@ -14,7 +14,7 @@
     
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://gov-cy.github.io/dsf-prototype/">
-        <meta property="twitter:title" content=" - Design System GOV.CY">
+        <meta property="twitter:title" content="Typography - Design System GOV.CY">
         <meta property="twitter:description" content="Design your services using GOV.CY styles, components and patterns.">
         <meta property="twitter:image" content="https://gov-cy.github.io/dsf-prototype/img/icons-512.png">
         <!-- Theme --> 
@@ -33,14 +33,16 @@
         <!--<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">-->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
-        
-        <title> - GOV.CY</title>
+        <style>
+            .toc {background-color: rgb(235,241,243);border: 1px solid #ddd;font-size: .975rem;}
+            .toc ol {margin-top: 1rem; margin-bottom: 1rem;list-style-type:none ;}
+        </style>
+        <title>Typography - GOV.CY</title>
         <meta name="description" content="Design your services using GOV.CY styles, components and patterns.">
     </head>
     <body>
     <!--Header-->
 <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
-
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
@@ -85,9 +87,10 @@
     
         <div class="row">
             <div class="govcy-col-10 govcy-order-last">
-                <h1></h1>
-                <h2 id="typography" tabindex="-1">Typography <a class="anchor-link" href="#typography"> </a></h2>
-<h2 id="base-fonts" tabindex="-1">Base fonts <a class="anchor-link" href="#base-fonts"> </a></h2>
+                <h1>Typography</h1>
+                
+                
+                <h2 id="base-fonts" tabindex="-1">Base fonts <a class="anchor-link" href="#base-fonts"> </a></h2>
 <p>Unless otherwise stated, use the following font properties for the default body fonts.</p>
 <table>
 <thead>
@@ -254,26 +257,51 @@
             <aside class="govcy-col-2 govcy-order-first">
                 <ul class="nav flex-column">
                 
-                        
-                    <a href="/en/styles/colour/" class="nav-link">
-                        Colours
-                    </a>
                     
                     
                         
-                    <a href="/en/styles/grid/" class="nav-link">
-                        Grid system
-                    </a>
+                        
+                    
                     
                         
-                    <a href="/en/styles/layout/" class="nav-link">
-                        Layout
-                    </a>
+                        
+                            <a href="/en/styles/colour/" class="nav-link">
+                                Colours
+                            </a>
+                        
+                    
+                    
                     
                         
-                    <a href="/en/styles/page_templates/" class="nav-link">
-                        Page Templates
-                    </a>
+                        
+                            <a href="/en/styles/typography/" class="nav-link active">
+                                Typography
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/en/styles/grid/" class="nav-link">
+                                Grid system
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/en/styles/layout/" class="nav-link">
+                                Layout
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/en/styles/page_templates/" class="nav-link">
+                                Page Templates
+                            </a>
+                        
                     </ul>
             </aside>
         </div>
@@ -298,11 +326,13 @@
         </div>
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
         <script>
         document.getElementById("govcy-lang-menu").onchange = function() {
             var selectedOption = this.value;
             window.location.href =  "/"+selectedOption;
         }
         </script>
+        
     </body>
 </html>

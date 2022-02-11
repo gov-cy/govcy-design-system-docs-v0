@@ -1,6 +1,5 @@
 ---
 title: "Page Templates"
-tags : ['styles']
 --- 
 
 ## Max-width 

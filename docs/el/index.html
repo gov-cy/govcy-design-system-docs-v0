@@ -33,14 +33,16 @@
         <!--<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">-->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
-        
+        <style>
+            .toc {background-color: rgb(235,241,243);border: 1px solid #ddd;font-size: .975rem;}
+            .toc ol {margin-top: 1rem; margin-bottom: 1rem;list-style-type:none ;}
+        </style>
         <title>Design System - GOV.CY</title>
         <meta name="description" content="Design your services using GOV.CY styles, components and patterns.">
     </head>
     <body>
     <!--Header-->
 <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
-
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
@@ -84,7 +86,9 @@
     
     
         <h1>Design System</h1>
-        <p>GREEK<br>
+                
+                
+                <p>GREEK<br>
 Design your services using <a href="http://GOV.CY">GOV.CY</a> styles, components and patterns.</p>
 <p>Use this design system to make your service consistent with <a href="http://GOV.CY">GOV.CY</a>. Avoid repeating work that’s already been done.</p>
 <p><button type="button" class="govcy-btn-primary" onclick="window.location='getting_started/'">Get Started</button></p>
@@ -130,11 +134,13 @@ Design your services using <a href="http://GOV.CY">GOV.CY</a> styles, components
         </div>
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
         <script>
         document.getElementById("govcy-lang-menu").onchange = function() {
             var selectedOption = this.value;
             window.location.href =  "/"+selectedOption;
         }
         </script>
+        
     </body>
 </html>

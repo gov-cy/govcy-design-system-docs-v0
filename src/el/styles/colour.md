@@ -1,6 +1,5 @@
 ---
 title: "Colours"
-tags : ['styles']
 ---
 
 Always use the GOV.CY color palette. 

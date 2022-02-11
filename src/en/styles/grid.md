@@ -1,6 +1,5 @@
 ---
 title: "Grid system"
-tags : ['styles']
 --- 
 
 Use the grid system to lay out the content on your service’s pages.

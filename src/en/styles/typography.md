@@ -1,4 +1,6 @@
-## Typography 
+---
+title: "Typography"
+--- 
 
 ## Base fonts 
 Unless otherwise stated, use the following font properties for the default body fonts.
