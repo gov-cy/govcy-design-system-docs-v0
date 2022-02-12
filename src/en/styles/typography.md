@@ -9,7 +9,9 @@ Unless otherwise stated, use the following font properties for the default body 
 |------------|------------|
 |font-family | Roboto     |
 |font-size   | normal     |
-|color       | [body](#p/styles.colour)|
+|color       | [body](../colour/)|
+
+{.govcy-table}
 
 ## Responsive text
 Use the [Responsive Font Size (RFS)](https://github.com/twbs/rfs/) engine to resize font sizes. The engine generates CSS that automatically calculates the appropriate values for your font sizes based on the dimensions of the browser viewport. Use the generated CSS for `paragraphs` and `headings` CSS.
@@ -32,6 +34,8 @@ To be used for headings h1, h2, h3, h4, h5 and h6. Use the default fonts describ
 |h5      | $font-size-base * 1.25; |
 |h6      | $font-size-base         |
 
+{.govcy-table}
+
 Sample HTML Code
 
 ```html
@@ -47,6 +51,7 @@ Sample HTML Code
 To be used for unordered vertical lists (i.e. bullet points). 
 
 Use the following properties on `<ul>` html tag.
+
 |Propery         |Value |
 |----------------|------|
 |list-style-type |disk  |
@@ -54,10 +59,15 @@ Use the following properties on `<ul>` html tag.
 |margin-bottom   |1rem  |
 |padding-left    |2rem  |
 
+{.govcy-table}
+
 Use the following properties on `<li>` html tag.
+
 |Propery         |Value      |
 |----------------|-----------|
 |display         |list-item  |
+
+{.govcy-table}
 
 Sample HTML Code
 ```html
@@ -71,6 +81,7 @@ Sample HTML Code
 To be used for ordered vertical lists. 
 
 Use the following properties on `<ol>` html tag.
+
 |Propery         |Value   |
 |----------------|--------|
 |list-style-type |decimal |
@@ -78,10 +89,15 @@ Use the following properties on `<ol>` html tag.
 |margin-bottom   |1rem    |
 |padding-left    |2rem    |
 
+{.govcy-table}
+
 Use the following properties on `<li>` html tag.
+
 |Propery         |Value      |
 |----------------|-----------|
 |display         |list-item  |
+
+{.govcy-table}
 
 Sample HTML Code
 ```html

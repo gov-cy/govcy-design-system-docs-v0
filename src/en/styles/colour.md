@@ -16,6 +16,8 @@ Use theme colours for buttons, alerts, list groups, borders, text and background
 |<code style="background-color:#d4351c">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>|danger   | `#d4351c` |To be used to mark danger or errors in messages and alerts.|
 |<code style="background-color:#52879D">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>|info     | `#52879D` |To be used in informational messages and alerts.|
 
+{.govcy-table}
+
 ## Typography colours
 Colours used for text based content. 
 
@@ -24,6 +26,8 @@ Colours used for text based content.
 |<code style="background-color:#272525">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>|headings | `#272525` |To be used for heading text colour.|
 |<code style="background-color:#272525">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>|body     | `#272525` |To be used for body text colour.|
 |<code style="background-color:#6D6E70">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>|hint     | `#6D6E70` |To be used for hint text colour.|
+
+{.govcy-table}
 
 ## Link colours
 Colours related to links.
@@ -36,6 +40,8 @@ Colours related to links.
 |<code style="background-color:#272525">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>|link active       | `#272525` |
 |<code style="background-color:#942514">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>|link danger hover | `#942514` |
 
+{.govcy-table}
+
 ## Border Colours
 Colours related to borders.
 
@@ -44,7 +50,11 @@ Colours related to borders.
 |<code style="background-color:#BBBCBF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>|border standard     | `#BBBCBF` |
 |<code style="background-color:#272525">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>|border input        | `#272525` |
 
+{.govcy-table}
+
 ## Brand colours
 |Colour                                      |Colour name        | hex     | Where to use |
 |--------------------------------------------|-------------------|---------|--------------|
 |<code style="background-color:#31576F">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>|brand-primary        | `#31576F` |To be used for branding purposes, such as page headers. |
+
+{.govcy-table}

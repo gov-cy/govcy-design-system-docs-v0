@@ -8,13 +8,16 @@ In this repository we use [Eleventy (or 11ty)](https://www.11ty.dev/), a simple 
 
 --------------
 
-## How to Install 
+## How to Install it
 
 You need to have [Node.js](https://nodejs.org/en/) installed.
 
 ### 1. Download the tool
 
-[Download](https://github.com/gov-cy/dsf-design-system-docs-static/archive/refs/heads/main.zip)
+Download the tool or fork it. 
+
+- [Git repository](https://github.com/gov-cy/dsf-design-system-docs-static)
+- [Download](https://github.com/gov-cy/dsf-design-system-docs-static/archive/refs/heads/main.zip)
 
 ### 2. Unzip  
 
@@ -44,11 +47,53 @@ Copy either of these URLs on you browser to view the site.
 
 -------
 
-## How to set it up
+## How to build it 
+
+Run the command `npm run build` to build the site. The resulting site is located under `\docs\` folder. You can change the location of build folder in the `/.eleventy.js` file as follows:
+
+```js
+...
+...
+
+module.exports = function (eleventyConfig) {
+  ...
+  ...
+  ...
+  return {
+    dir: {
+      input: "src",
+      output: "docs", // the output folder
+    },
+  };
+};
+```
+
+### Build to be published under domain's subfolder 
+
+To build the site to be published under a domain's subfolder (such as GitHub's Public Pages) run the command `npm run build-github-pages`. This command builds the site and adds the subfolder's name in the site's URLs prefix. You can change the subfolder's name in the `package.json` file by changing the `--pathprefix` attribute of the `build-github-pages` script (see sample below).
+
+```json
+{
+  "name": "dsf-design-system-docs-static",
+  ...
+  ...
+  "scripts": {
+    "build-github-pages": "npx @11ty/eleventy --pathprefix=dsf-design-system-docs-static",
+    ...
+    ...
+  },
+  ...
+  ...
+}
+```
+
+-------
+
+## How to set up a Site
 
 ### Site configuration
 
-You can change the site's configuration in the file `src/_data/sites.js`. See the comments on the sample below for more detais.
+You can change the site's configuration in the file `src/_data/sites.js`. See the comments on the sample below for more details.
 
 ```js
 module.exports = {
@@ -141,9 +186,9 @@ Use the links on this page to navigated to the desired style element.
 ```
 4. Add more pages (see [How to add a documentation page](#how-to-add-a-documentation-page))
 
-### How to add a page on the top menu
+### How to add a link on the top menu
 
-To add a page on the top menu, add the tag `top_menu` and set on which position the link should appear by setting the a value under `order` on the page's file metadata. for example: 
+To add a page's link on the top menu, add the tag `top_menu` and set on which position the link should appear by setting the a value under `order` on the page's file metadata. for example: 
 
 ```yml
 ---
@@ -153,6 +198,10 @@ tags : "top_menu"
 ---
 
 ```
+
+### How to change the layout (or template)
+
+Layouts are located under the `\_includes` folder. The site is setup to use the `base.njk` layout for every page. This make's it easier to implement changes in the UI that will persist on all pages. Unless you know what you are doing do not change this file. 
 
 -------
 

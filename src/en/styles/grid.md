@@ -35,3 +35,5 @@ Gutters are the gaps between column content, created by horizontal padding. The 
 |--------------|------|
 |padding-right | 12px |
 |padding-left  | 12px |
+
+{.govcy-table}

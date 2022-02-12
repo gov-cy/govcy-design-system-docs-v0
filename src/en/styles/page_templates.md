@@ -21,6 +21,8 @@ All pages must use the following structure inside the `<body>` tag. The page wid
 |*Footer*|`<footer></footer>`|To be used as the page footer (LINK). Width must be fluid, same as the viewport|
 |*Body end*|`<section id="body-end"></section>`|To be used to render the content after the `<footer>` (i.e. cookie consent). Width must be fluid, same as the viewport.|
 
+{.govcy-table}
+
 Sample HTML Code:
 
 ```html

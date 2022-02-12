@@ -4,7 +4,7 @@ const fs = require("fs");
 const mdOptions = {
   html: true,
   breaks: true,
-  linkify: true,
+  linkify: false,
   typographer: true
 }
 const mdAnchorOpts = {
@@ -18,10 +18,13 @@ const mdAnchorOpts = {
 
 module.exports = function (eleventyConfig) {
   let markdownIt = require('markdown-it')
+  let markdownItAttrs = require('markdown-it-attrs')
   let markdownItAnchor = require('markdown-it-anchor')
   let pluginTOC = require('eleventy-plugin-toc')
   // Markdown
-  eleventyConfig.setLibrary('md',markdownIt(mdOptions).use(markdownItAnchor, mdAnchorOpts))
+  eleventyConfig.setLibrary('md',markdownIt(mdOptions)
+    .use(markdownItAnchor, mdAnchorOpts)
+    .use(markdownItAttrs))
   
   // add plugin pluginTOC
   eleventyConfig.addPlugin(pluginTOC)
