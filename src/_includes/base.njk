@@ -30,8 +30,8 @@
         <link rel="apple-touch-icon-precomposed" href="{{ '/img/apple-touch-icon-57x57-precomposed.png' | url }}">
         <!-- Bootstrap CSS -->
         <link href="{{ '/css/main.css' | url }}" rel="stylesheet" >
-        <!--<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">-->
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
         <style>
             .toc {background-color: rgb(235,241,243);border: 1px solid #ddd;font-size: .975rem;}
@@ -46,7 +46,7 @@
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
-                      <a href="/{% if site.isMultiLanguage %}{{locale}}{% endif %}/" class="govcy-logo"> <img></a>
+                      <a href="/{% if site.isMultiLanguage %}{{locale}}/{% endif %}" class="govcy-logo"> <img></a>
                      {% if site.isMultiLanguage %}
                      <form class="govcy-text-white govcy-bg-primary">
                          <select id="govcy-lang-menu" name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
@@ -60,7 +60,7 @@
                      <label class="govcy-menu-icon govcy-d-md-none" for="menu-btn">{{ site.localization[locale].menu }}
                          <span class="material-icons govcy-my-3">arrow_drop_down</span>
                      </label>
-                     <span class="govcy-service-name">{{ site.localization[locale].subtitle }} - {{ site.localization[locale].title }}</span>
+                     <span class="govcy-service-name">{{ site.localization[locale].subtitle }}</span>
                      <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary">
                      {# Depending on locale loop through categories #}
                     {% if locale == 'en' %}

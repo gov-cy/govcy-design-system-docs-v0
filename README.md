@@ -208,6 +208,7 @@ Layouts are located under the `\_includes` folder. The site is setup to use the 
 ## Add multiple languages
 
 - Keep content in different folders based on language locale. i.e. english in `src/en` folder.
+- Remove all the language related data for **tags** and **locale** on the root folder's default metadata in the file `/src/src.json`. 
 - Add the language code (which must match the folder name) in the **tags** and **locale** of the default metadata in the folder's JSON file. i.e. in english in the `src/en/en.json` 
 ```json
 {

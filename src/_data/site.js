@@ -1,6 +1,6 @@
 module.exports = {
   buildTime: new Date(),
-  isMultiLanguage : true,
+  isMultiLanguage : false,
   showTOC: false,
   languages: [
     {
