@@ -43,7 +43,7 @@
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
-                      <a href="/{% if site.isMultiLanguage %}{{locale}}/{% endif %}" class="govcy-logo"> <img></a>
+                      <a href="{% if site.isMultiLanguage %}{{locale}}{{ '/' | url }}{%else%}{{ '/' | url }}{% endif %}" class="govcy-logo"> <img></a>
                      {% if site.isMultiLanguage %}
                      <form class="govcy-text-white govcy-bg-primary">
                          <select id="govcy-lang-menu" name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
