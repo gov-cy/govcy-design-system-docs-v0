@@ -112,7 +112,7 @@ Unless otherwise stated, use the following properties for the links style.
 |color                  |[link visited](../colour/#link-colours)|
 |text-decoration        |underline|
 |**Active state**      |                          |
-|color                  |[link visited](../colour/#active-colours)|
+|color                  |[link active](../colour/#link-colours)|
 |text-decoration        |underline|
 
 {.govcy-table-borderless}
