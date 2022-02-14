@@ -30,19 +30,16 @@
         <link rel="apple-touch-icon-precomposed" href="{{ '/img/apple-touch-icon-57x57-precomposed.png' | url }}">
         <!-- Bootstrap CSS -->
         <link href="{{ '/css/main.css' | url }}" rel="stylesheet" >
+        <link href="{{ '/css/docs.css' | url }}" rel="stylesheet" >
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
-        <style>
-            .toc {background-color: rgb(235,241,243);border: 1px solid #ddd;font-size: .975rem;}
-            .toc ol {margin-top: 1rem; margin-bottom: 1rem;list-style-type:none ;}
-        </style>
         <title>{{ title }} - {{ site.localization[locale].title }}</title>
         <meta name="description" content="{{ site.localization[locale].description }}">
     </head>
     <body>
     <!--Header-->
-<div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
+    <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
@@ -60,7 +57,7 @@
                      <label class="govcy-menu-icon govcy-d-md-none" for="menu-btn">{{ site.localization[locale].menu }}
                          <span class="material-icons govcy-my-3">arrow_drop_down</span>
                      </label>
-                     <span class="govcy-service-name">{{ site.localization[locale].subtitle }}</span>
+                     <span class="govcy-service-name">{{ site.localization[locale].subtitle }} </span>
                      <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary">
                      {# Depending on locale loop through categories #}
                     {% if locale == 'en' %}
@@ -84,16 +81,16 @@
                  </header>
              </div>
          </div>
-     </div>
-    <!--Top Menu-->
-    <div class="govcy-container-fluid" id="topMenuContainer"><div class="container-md"><nav class="nav" id="topMenu"></nav></div></div>
+    </div>
+    <!--beforeMain-->
+    <section class="govcy-container govcy-my-2" id="beforeMainContainer">
+        <span class="govcy-br-2 govcy-text-white govcy-br-danger govcy-rounded-1 govcy-bg-danger govcy-efs-small">&nbsp;DRAFT&nbsp;</span>
+        <span class="govcy-br-2 govcy-text-white govcy-br-info govcy-rounded-1 govcy-bg-info govcy-efs-small">&nbsp;Ver. {{ site.version }}&nbsp;</span>
+    </section>
     <!--Main-->
     <main class="govcy-container govcy-my-2" id="mainContainer">
-    {# Check if showCategoryMenu is true, to change the layout to have 2 columns and add menu
-        This should be default in styles, components and patterns  #}
-    {% if showCategoryMenu %}
         <div class="row">
-            <div class="govcy-col-10 govcy-order-last">
+            <div class="govcy-col-{% if showCategoryMenu %}10{% else %}12{% endif %} govcy-order-last">
                 <h1>{{ title }}</h1>
                 {# Check if we want to show table of contents#}
                 {% if site.showTOC %}
@@ -103,6 +100,9 @@
                 {% endif %}
                 {{ content | safe }}
             </div>
+    {# Check if showCategoryMenu is true, to change the layout to have 2 columns and add menu
+    This should be default in styles, components and patterns  #}
+    {% if showCategoryMenu %}
             <aside class="govcy-col-2 govcy-order-first">
                 <ul class="nav flex-column">
                 {# for all pages with tag = to `category`
@@ -121,18 +121,8 @@
                 {%- endfor -%}
                 </ul>
             </aside>
-        </div>
-    {% else %}
-        <h1>{{ title }}</h1>
-                {# Check if we want to show table of contents#}
-                {% if site.showTOC %}
-                    <aside>
-                        {{ content | toc | safe }}
-                    </aside>
-                {% endif %}
-                {{ content | safe }}
     {% endif %}
-
+        </div>
     </main>
     <!-- Footer -->
     <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">

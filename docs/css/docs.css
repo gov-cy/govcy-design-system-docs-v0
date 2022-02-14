@@ -1,0 +1,28 @@
+.example-box {
+    background-color: #F8F9FA;
+    border: 1px solid #dee2e6;
+    margin-top:10px; margin-bottom:10px ;
+}
+.example-box-inner {
+    border: 1px solid black;
+    margin-top:10px; margin-bottom:10px ;
+    padding-top:10px; padding-bottom:10px ;
+    background-color: #cfe2ff;
+}
+.example-box-outter {
+    border: 1px solid black;
+    margin-top:10px; margin-bottom:10px ;
+    padding-top:10px; padding-bottom:10px ;
+    background-color: #e2e8e1;
+}
+
+.w-100-px{width: 100px !important;}
+
+.toc {background-color: rgb(235,241,243);border: 1px solid #ddd;font-size: 1rem;}
+.toc ol {margin-top: 1rem; margin-bottom: 1rem;list-style-type:none ;}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+  

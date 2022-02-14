@@ -1,5 +1,6 @@
 ---
 title: "Page Templates"
+date: 2022-02-01 00:00:02Z
 --- 
 
 ## Max-width 
@@ -9,17 +10,17 @@ The default maximum width is `1280px`.
 Breakpoint is the width that determines how your responsive layout behaves across devices. The default breakpoint is `≥768px`.
 
 ## Page templates
-All pages must use the following structure inside the `<body>` tag. The page width is on the `max-width` limit.
+All pages must use the following structure inside the `<body>` tag. The page width is on the [max-width](#max-width) limit. Note the `id` tag is for reference and can be 
 
 
 |Section Name |HTML Tag   | Description    |
 |---|---|---|
-|*Body start*|`<section id="body-start"></section>`|To be used to render the content before the `<header>` (i.e. cookie consent). Width must be fluid, same as the viewport.|
-|*Header*|`<header></header>`|To be used as the page header (LINK). Width must be fluid, same as the viewport.|
-|*Service*|`<section id="before-main"> </section>`|To be used to render the content before the `<main>` (i.e. back link (LINK)) . Must comply with the `max-width` reference above and be placed i the center of the viewport. |
-|*Main*|`<main></main>`|To be used to render the service content (i.e. question page (LINK)). Must comply with the `max-width` reference above and be placed in the center of the viewport.|
-|*Footer*|`<footer></footer>`|To be used as the page footer (LINK). Width must be fluid, same as the viewport|
-|*Body end*|`<section id="body-end"></section>`|To be used to render the content after the `<footer>` (i.e. cookie consent). Width must be fluid, same as the viewport.|
+|*Body start*|`<section  class="govcy-container-fluid" id="bodyStartContainer"> </section>`|To be used to render the content before the `<header>` (i.e. cookie consent). Width must be fluid, same as the viewport.|
+|*Header*|`<header class="govcy-container-fluid" id="headerContainer"> </header>`|To be used as the page header (LINK). Width must be fluid, same as the viewport.|
+|*Before Main*|`<section class="govcy-container" id="beforeMainContainer"> </section>`|To be used to render the content before the `<main>` (i.e. back link (LINK)) . Must comply with the [max-width](#max-width) reference above and be placed in the center of the viewport. |
+|*Main*|`<main class="govcy-container" id="mainContainer"> </main>`|To be used to render the service content (i.e. question page (LINK)). Must comply with the [max-width](#max-width) reference above and be placed in the center of the viewport. This section can have one of the layouts described in the [layout section](../layout).|
+|*Footer*|`<footer class="govcy-container-fluid" id="footerContainer"> </footer>`|To be used as the page footer (LINK). Width must be fluid, same as the viewport|
+|*Body end*|`<section  class="govcy-container-fluid" id="bodyEndContainer"> </section>`|To be used to render the content after the `<footer>` (i.e. cookie consent). Width must be fluid, same as the viewport.|
 
 {.govcy-table}
 
@@ -27,48 +28,27 @@ Sample HTML Code:
 
 ```html
 <body>
-  <!-- body-start -->
-  <section id="body-start"></section>
-  <!-- header -->
-  <header></header>
-  <!-- before-main -->
-  <div class="container-md">
-      <div class="row">
-          <section id="before-main" class="col-md-12"></section>
-      </div>
-  </div>
-  <!-- main -->
-  <div class="container-md">
-      <div class="row">
-          <main class="col-md-12"></main>
-      </div>
-  </div>
-  <!-- footer -->
-  <footer></footer>
-  <!-- body-end -->
-  <section id="body-end"></section>
+    <!--bodyStart-->
+    <section  class="govcy-container-fluid" id="bodyStartContainer"> </section>
+    <!--Header-->
+    <section class="govcy-container-fluid"> 
+    <div class="govcy-container" id="headerContainer"></div>
+    </section>
+    <!--beforeMain-->
+    <section class="govcy-container" id="beforeMainContainer"> </section>
+    <!--main-->
+    <main class="govcy-container" id="mainContainer"> </main>
+    <!-- Footer -->
+    <section class="govcy-container-fluid">
+        <div class="govcy-container" id="footerContainer"></div>
+    </section>
+    <!--bodyEnd-->
+    <section  class="govcy-container-fluid" id="bodyEndContainer"> </section>
 </body>
 ```
 
-<div class="example-box">
-  <!-- body-start -->
-  <section id="body-start" class="example-box-inner">Body-start</section>
-  <!-- header -->
-  <header class="example-box-inner">Header</header>
-  <!-- before-main -->
-  <div class="container-md">
-      <div class="row">
-          <section id="before-main" class="col-md-12 example-box-inner">Before-Main</section>
-      </div>
-  </div>
-  <!-- main -->
-  <div class="container-md">
-      <div class="row">
-          <main class="col-md-12 example-box-inner">Main</main>
-      </div>
-  </div>
-  <!-- footer -->
-  <footer class="example-box-inner">Footer</footer>
-  <!-- body-end -->
-  <section id="body-end" class="example-box-inner">Body-End</section>
-</div>
+![Sample template](../../img/template_sample.png)
+
+Take a look at this <a target='_blank' rel="noreferrer noopener" href='../../samples/page_templates_demo/'>template page</a> with different sections highlighted with different colours. 
+
+Also take a look at a <a target='_blank' rel="noreferrer noopener" href='../../samples/sample/'>simple sample page</a> with components of the Design System incorporated in it's content.

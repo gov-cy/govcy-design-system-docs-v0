@@ -30,19 +30,16 @@
         <link rel="apple-touch-icon-precomposed" href="/dsf-design-system-docs-static/img/apple-touch-icon-57x57-precomposed.png">
         <!-- Bootstrap CSS -->
         <link href="/dsf-design-system-docs-static/css/main.css" rel="stylesheet" >
+        <link href="/dsf-design-system-docs-static/css/docs.css" rel="stylesheet" >
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
-        <style>
-            .toc {background-color: rgb(235,241,243);border: 1px solid #ddd;font-size: .975rem;}
-            .toc ol {margin-top: 1rem; margin-bottom: 1rem;list-style-type:none ;}
-        </style>
         <title>Design System - GOV.CY</title>
         <meta name="description" content="Design your services using GOV.CY styles, components and patterns.">
     </head>
     <body>
     <!--Header-->
-<div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
+    <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
@@ -52,7 +49,7 @@
                      <label class="govcy-menu-icon govcy-d-md-none" for="menu-btn">Menu
                          <span class="material-icons govcy-my-3">arrow_drop_down</span>
                      </label>
-                     <span class="govcy-service-name">Design System</span>
+                     <span class="govcy-service-name">Design System </span>
                      <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary">
                      
                     <li>
@@ -68,15 +65,22 @@
                  </header>
              </div>
          </div>
-     </div>
-    <!--Top Menu-->
-    <div class="govcy-container-fluid" id="topMenuContainer"><div class="container-md"><nav class="nav" id="topMenu"></nav></div></div>
+    </div>
+    <!--beforeMain-->
+    <section class="govcy-container govcy-my-2" id="beforeMainContainer">
+        <span class="govcy-br-2 govcy-text-white govcy-br-danger govcy-rounded-1 govcy-bg-danger govcy-efs-small">&nbsp;DRAFT&nbsp;</span>
+        <span class="govcy-br-2 govcy-text-white govcy-br-info govcy-rounded-1 govcy-bg-info govcy-efs-small">&nbsp;Ver. 0.1.0&nbsp;</span>
+    </section>
     <!--Main-->
     <main class="govcy-container govcy-my-2" id="mainContainer">
-    
-    
-        <h1>Design System</h1>
+        <div class="row">
+            <div class="govcy-col-12 govcy-order-last">
+                <h1>Design System</h1>
                 
+                
+                    <aside>
+                        
+                    </aside>
                 
                 <div class="govcy-container govcy-py-3 govcy-bg-light">
     <div class="row">
@@ -85,7 +89,7 @@
         </div>
         <div class="govcy-col-7 order-md-first">
             <p>Design your services using GOV.CY styles, components and patterns.</p>
-            <p>Use this design system to make your service consistent with GOV.CY. Avoid repeating work that’s already been done.</p>
+            <p>Use the design system to make your service consistent with GOV.CY and avoid repeating work that’s already been done. The Design System makes it easy for digital teams to build accessible, consistent, and performant services and products to meet Cyprus' needs.</p>
             <p><button type="button" class="govcy-btn-primary" onclick="window.location='getting_started/'">Get Started</button> </p>
         </div>
     </div>
@@ -102,18 +106,18 @@
         <p><img src="img/components.png" alt="Components"> </p>
         <h2>Components</h2>
             <p>Reusable elements of the user interface such as components for forms, navigation, panels, tables and more.</p>
-    <p><a href="#">Browse components</a></p>
     </div>
     <div class="govcy-col-4">
         <p><img src="img/patterns.png" alt="Patterns"> </p>
         <h2>Patterns</h2>
         <p>Best practice design solutions for specific user-focused tasks and page types, such as addresses, bank details and so on.</p>
-        <p><a href="#">Browse patterns</a></p>
     </div>
     </div>
 </div>
+            </div>
     
-
+    
+        </div>
     </main>
     <!-- Footer -->
     <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">

@@ -11,7 +11,7 @@ localization:
         </div>
         <div class="govcy-col-7 order-md-first">
             <p>Design your services using GOV.CY styles, components and patterns.</p>
-            <p>Use this design system to make your service consistent with GOV.CY. Avoid repeating work that’s already been done.</p>
+            <p>Use the design system to make your service consistent with GOV.CY and avoid repeating work that’s already been done. The Design System makes it easy for digital teams to build accessible, consistent, and performant services and products to meet Cyprus' needs.</p>
             <p><button type="button" class="govcy-btn-primary" onclick="window.location='getting_started/'">Get Started</button> </p>
         </div>
     </div>
@@ -29,13 +29,11 @@ localization:
         <p><img src="img/components.png" alt="Components"> </p>
         <h2>Components</h2>
             <p>Reusable elements of the user interface such as components for forms, navigation, panels, tables and more.</p>
-    <p><a href="#">Browse components</a></p>
     </div>
     <div class="govcy-col-4">
         <p><img src="img/patterns.png" alt="Patterns"> </p>
         <h2>Patterns</h2>
         <p>Best practice design solutions for specific user-focused tasks and page types, such as addresses, bank details and so on.</p>
-        <p><a href="#">Browse patterns</a></p>
     </div>
     </div>
 </div>

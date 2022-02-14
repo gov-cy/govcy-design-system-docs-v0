@@ -30,19 +30,16 @@
         <link rel="apple-touch-icon-precomposed" href="/dsf-design-system-docs-static/img/apple-touch-icon-57x57-precomposed.png">
         <!-- Bootstrap CSS -->
         <link href="/dsf-design-system-docs-static/css/main.css" rel="stylesheet" >
+        <link href="/dsf-design-system-docs-static/css/docs.css" rel="stylesheet" >
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
-        <style>
-            .toc {background-color: rgb(235,241,243);border: 1px solid #ddd;font-size: .975rem;}
-            .toc ol {margin-top: 1rem; margin-bottom: 1rem;list-style-type:none ;}
-        </style>
         <title>Layout - GOV.CY</title>
         <meta name="description" content="Design your services using GOV.CY styles, components and patterns.">
     </head>
     <body>
     <!--Header-->
-<div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
+    <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
          <div class="govcy-container">
              <div class="row">
                  <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
@@ -52,7 +49,7 @@
                      <label class="govcy-menu-icon govcy-d-md-none" for="menu-btn">Menu
                          <span class="material-icons govcy-my-3">arrow_drop_down</span>
                      </label>
-                     <span class="govcy-service-name">Design System</span>
+                     <span class="govcy-service-name">Design System </span>
                      <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary">
                      
                     <li>
@@ -68,53 +65,49 @@
                  </header>
              </div>
          </div>
-     </div>
-    <!--Top Menu-->
-    <div class="govcy-container-fluid" id="topMenuContainer"><div class="container-md"><nav class="nav" id="topMenu"></nav></div></div>
+    </div>
+    <!--beforeMain-->
+    <section class="govcy-container govcy-my-2" id="beforeMainContainer">
+        <span class="govcy-br-2 govcy-text-white govcy-br-danger govcy-rounded-1 govcy-bg-danger govcy-efs-small">&nbsp;DRAFT&nbsp;</span>
+        <span class="govcy-br-2 govcy-text-white govcy-br-info govcy-rounded-1 govcy-bg-info govcy-efs-small">&nbsp;Ver. 0.1.0&nbsp;</span>
+    </section>
     <!--Main-->
     <main class="govcy-container govcy-my-2" id="mainContainer">
-    
-    
         <div class="row">
             <div class="govcy-col-10 govcy-order-last">
                 <h1>Layout</h1>
                 
                 
-                <p>Layouts section concerns content that resides inside the <code>&lt;main&gt;</code> element.</p>
-<h2 id="max-width-layout" tabindex="-1">Max-width layout <a class="anchor-link" href="#max-width-layout"> </a></h2>
-<p>This layout uses one column and takes up the full size of the <code>&lt;main&gt;</code>. To be used when there is no need for a side menu.</p>
-<p>Sample HTML Code</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container-md<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>                        <br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-md-12<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
-<div class="example-box">
-  <div class="container-md">
-      <div class="row">                        
-          <article class="col-md-12 example-box-inner">	&lt;article&gt;</article>
+                    <aside>
+                        <div class="toc" >
+        <ol><li><a href="#two-thirds-layout">Two-thirds layout  </a></li><li><a href="#max-width-layout">Max-width layout  </a></li><li><a href="#one-third-%2B-two-thirds-layout">One-third + Two-thirds layout  </a></li></ol>
       </div>
-</div>
-</div>
+                    </aside>
+                
+                <p>Layouts section concerns content that resides inside the <code>&lt;main&gt;</code> element of the <a href="../page_templates">page template</a>.</p>
+<h2 id="two-thirds-layout" tabindex="-1">Two-thirds layout <a class="anchor-link" href="#two-thirds-layout"> </a></h2>
+<p>This layout uses one column and takes up the two thirds of the <code>&lt;main&gt;</code>.</p>
+<p>To be used when there is no need for a side menu and when components do not require the use of the full width of the page.</p>
+<p>For most types of page, we recommend using this layout as it stops lines of text getting so long that the page becomes difficult to read on desktop devices. This would usually mean no more than 60 characters per line.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="max-width-layout" tabindex="-1">Max-width layout <a class="anchor-link" href="#max-width-layout"> </a></h2>
+<p>This layout uses one column and takes up the full size of the <code>&lt;main&gt;</code>. To be used when there is no need for a side menu and when components require the use of the full width of the page.</p>
+<p>Sample HTML Code</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>                        <br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-12<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
 <h2 id="one-third-%2B-two-thirds-layout" tabindex="-1">One-third + Two-thirds layout <a class="anchor-link" href="#one-third-%2B-two-thirds-layout"> </a></h2>
 <p>Use this page layout for services that need a side menu.</p>
-<p>The <code>&lt;aside&gt;</code> container must appear on the left of the <code>&lt;article&gt;</code> container on Desktop screens and first on mobile screens. It’s width must take ⅓ of the <code>service</code> section.</p>
-<p>The <code>&lt;article&gt;</code> container must appear on the right of the <code>&lt;aside&gt;</code> container on Desktop screens and second on mobile screens.It’s width must take ⅔ of the <code>service</code> section.</p>
+<p>The <code>&lt;aside&gt;</code> container must appear on the left of the <code>&lt;article&gt;</code> container on Desktop screens and last on mobile screens. It’s width must take ⅓ of the <code>service</code> section.</p>
+<p>The <code>&lt;article&gt;</code> container must appear on the right of the <code>&lt;aside&gt;</code> container on Desktop screens and first on mobile screens.It’s width must take ⅔ of the <code>service</code> section.</p>
 <p>Sample HTML Code</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container-md<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-md-9 order-md-last<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-md-3 order-md-first<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>aside</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
-<div class="example-box">
-  <div class="container-md">
-    <div class="row">
-        <article class="col-md-9 order-md-last"><div class="example-box-inner">&lt;article&gt;</div></article>
-        <aside class="col-md-3 order-md-first"><div class="example-box-inner">&lt;aside&gt;</div></aside>
-    </div>
-  </div>
-</div>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-8 govcy-order-last<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-4 govcy-order-first<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>aside</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<p>Take a look at this <a target='_blank' rel="noreferrer noopener" href='../../samples/layouts/'>demo page with layouts</a> with different sections highlighted with different colours.</p>
 
             </div>
+    
+    
             <aside class="govcy-col-2 govcy-order-first">
                 <ul class="nav flex-column">
                 
-                    
-                        
-                        
-                    
                     
                         
                         
@@ -126,8 +119,8 @@
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/styles/typography/" class="nav-link">
-                                Typography
+                            <a href="/dsf-design-system-docs-static/styles/page_templates/" class="nav-link">
+                                Page Templates
                             </a>
                         
                     
@@ -150,15 +143,18 @@
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/styles/page_templates/" class="nav-link">
-                                Page Templates
+                            <a href="/dsf-design-system-docs-static/styles/typography/" class="nav-link">
+                                Typography
                             </a>
+                        
+                    
+                    
+                        
                         
                     </ul>
             </aside>
-        </div>
     
-
+        </div>
     </main>
     <!-- Footer -->
     <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">

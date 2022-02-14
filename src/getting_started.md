@@ -5,7 +5,25 @@ tags : ['top_menu']
 category: "getting started"
 ---
 
-Get started with GOV.CY design System. dsf,msndf,mdsn
+Get started with GOV.CY design System.
+
+## CSS and Javascript
+
+The easiest way to add the GOV.CY styles is to use the pre-built `main.css` css file. Just download the file from the address below and include the following code in your `<head>`. 
+
+```html
+<!-- CSS -->
+<link href="css/main.css" rel="stylesheet" >
+```
+
+All HTML code examples in this documentation utilizes the classes and styling defined in this css file. 
+
+Many of our components require the use of JavaScript to function. Place the following `<script>` near the end of your pages, right before the closing `</body>` tag, to enable them.
+
+```html
+<!-- Javascripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+```
 
 ## Starter Template
 Use the following HTML template for your GOV.CY pages.
@@ -37,6 +55,7 @@ Use the following HTML template for your GOV.CY pages.
     <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48x48.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+ 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/apple-touch-icon-120x120-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
@@ -44,6 +63,8 @@ Use the following HTML template for your GOV.CY pages.
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57x57-precomposed.png">
  
     <!-- CSS -->
+    <link href="css/main.css" rel="stylesheet" >
+    
     <title>Service Name - GOV.CY</title>
     <meta name="description" content="Description of what the service does">
  
@@ -56,7 +77,7 @@ Use the following HTML template for your GOV.CY pages.
 </html>
 ```
 
-For more information on `<body>` content see the [page template](#p/styles.page_templates) section.  
+For more information on `<body>` content see the [page template](../styles/page_templates) section.  
 
 ## Important Globals
 The starter template employs the following important global styles and settings that you’ll need to be aware of when using it.
@@ -161,37 +182,38 @@ The code above implies the existence of a `manifest.json` file. Use the followin
 Images mentioned are listed below and can be found below.
 
 **og:image, twitter:image**
-![og:image, twitter:image](../img/icons-512.png)
+<img src="../img/icons-512.png" class="img-fluid" alt="og:image, twitter:image">
 
 **favicon.ico-48x48**
-![favicon-48x48](../img/favicon-48x48.png)
-**favicon.ico-32x32**
-![favicon-32x32](../img/favicon-32x32.png)
-**favicon.ico-16x16**
-![favicon-16x16](../img/favicon-16x16.png)
+<img src="../img/favicon-48x48.png" class="img-fluid" alt="favicon-48x48">
 
+**favicon.ico-32x32**
+<img src="../img/favicon-32x32.png" class="img-fluid" alt="favicon-32x32">
+
+**favicon.ico-16x16**
+<img src="../img/favicon-16x16.png" class="img-fluid" alt="favicon-16x16">
 
 **apple-touch-icon-144x144-precomposed.png**
-![apple-touch-icon-144x144-precomposed.png](../img/apple-touch-icon-144x144-precomposed.png)
+<img src="../img/apple-touch-icon-144x144-precomposed.png" class="img-fluid" alt="apple-touch-icon-144x144-precomposed.png">
 
 **apple-touch-icon-120x120-precomposed.png**
-![apple-touch-icon-120x120-precomposed.png](../img/apple-touch-icon-120x120-precomposed.png)
+<img src="../img/apple-touch-icon-120x120-precomposed.png" class="img-fluid" alt="apple-touch-icon-120x120-precomposed.png">
 
 **apple-touch-icon-114x114-precomposed.png**
-![apple-touch-icon-114x114-precomposed.png](../img/apple-touch-icon-114x114-precomposed.png)
+<img src="../img/apple-touch-icon-114x114-precomposed.png" class="img-fluid" alt="apple-touch-icon-114x114-precomposed.png">
 
 **apple-touch-icon-72x72-precomposed.png**
-![apple-touch-icon-72x72-precomposed.png](../img/apple-touch-icon-72x72-precomposed.png)
+<img src="../img/apple-touch-icon-72x72-precomposed.png" class="img-fluid" alt="apple-touch-icon-72x72-precomposed.png">
 
 **apple-touch-icon-57x57-precomposed.png**
-![apple-touch-icon-57x57-precomposed.png](../img/apple-touch-icon-57x57-precomposed.png)
+<img src="../img/apple-touch-icon-57x57-precomposed.png" class="img-fluid" alt="apple-touch-icon-57x57-precomposed.png">
 
 **icons-128.png**
-![icons-128.png](../img/icons-128.png)
+<img src="../img/icons-128.png" class="img-fluid" alt="icons-128.png">
 
 **icons-192.png**
-![icons-192.png](../img/icons-192.png)
+<img src="../img/icons-192.png" class="img-fluid" alt="icons-192.png">
 
 **icons-512.png**
-![icons-512.png](../img/icons-512.png)
+<img src="../img/icons-512.png" class="img-fluid" alt="icons-512.png">
 

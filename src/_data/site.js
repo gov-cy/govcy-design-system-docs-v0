@@ -1,7 +1,8 @@
 module.exports = {
   buildTime: new Date(),
   isMultiLanguage : false,
-  showTOC: false,
+  showTOC: true,
+  version:"0.1.0", 
   languages: [
     {
       label: "English",

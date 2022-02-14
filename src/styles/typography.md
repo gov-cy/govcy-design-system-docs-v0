@@ -1,20 +1,22 @@
 ---
 title: "Typography"
+date: 2022-02-01 00:00:05Z
 --- 
 
 ## Base fonts 
-Unless otherwise stated, use the following font properties for the default body fonts.
+Unless otherwise stated, use the following font properties for the default body fonts. 
 
 |Propery     |Value       |
 |------------|------------|
 |font-family | Roboto     |
-|font-size   | normal     |
+|font-size   | 19px       |
+|font-weight | normal     |
 |color       | [body](../colour/)|
 
 {.govcy-table}
 
 ## Responsive text
-Use the [Responsive Font Size (RFS)](https://github.com/twbs/rfs/) engine to resize font sizes. The engine generates CSS that automatically calculates the appropriate values for your font sizes based on the dimensions of the browser viewport. Use the generated CSS for `paragraphs` and `headings` CSS.
+The Design System uses the  [Responsive Font Size (RFS)](https://github.com/twbs/rfs/) engine to resize font sizes. The engine generates CSS that automatically calculates the appropriate values for your font sizes based on the dimensions of the browser viewport. Use the Design System’s CSS for [paragraphs](#paragraph) and [headings](#headings) CSS.
 
 ## Paragraph
 To be used for paragraph text. Use the default fonts described above.
@@ -22,8 +24,8 @@ To be used for paragraph text. Use the default fonts described above.
 ## Headings
 To be used for headings h1, h2, h3, h4, h5 and h6. Use the default fonts described above with the following differences. 
 
-- Font-Weight: 500;
-- Font-Size: The size is calculated in relation to the base font size as described in the table below. 
+- Font-Weight: **500**;
+- Font-Size: The size is calculated in relation to the [base font](#base-fonts) size as described in the table below. 
 
 |Heading |Size                     |
 |--------|-------------------------|
@@ -36,8 +38,17 @@ To be used for headings h1, h2, h3, h4, h5 and h6. Use the default fonts describ
 
 {.govcy-table}
 
-Sample HTML Code
+*Example*
+<div class="govcy-bg-light">
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>  
+<h6>Heading 6</h6>
+</div>
 
+*Sample HTML Code*
 ```html
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
@@ -50,26 +61,15 @@ Sample HTML Code
 ## Unordered list <ul>
 To be used for unordered vertical lists (i.e. bullet points). 
 
-Use the following properties on `<ul>` html tag.
+*Example*
+<div class="govcy-bg-light">
+<ul>
+    <li>one</li>
+    <li>two</li>
+</ul>
+</div>
 
-|Propery         |Value |
-|----------------|------|
-|list-style-type |disk  |
-|margin-top      |0     |
-|margin-bottom   |1rem  |
-|padding-left    |2rem  |
-
-{.govcy-table}
-
-Use the following properties on `<li>` html tag.
-
-|Propery         |Value      |
-|----------------|-----------|
-|display         |list-item  |
-
-{.govcy-table}
-
-Sample HTML Code
+*Sample HTML Code*
 ```html
 <ul>
     <li>one</li>
@@ -80,29 +80,55 @@ Sample HTML Code
 ## Ordered list <ol>
 To be used for ordered vertical lists. 
 
-Use the following properties on `<ol>` html tag.
+*Example*
+<div class="govcy-bg-light">
+<ol>
+    <li>one</li>
+    <li>two</li>
+</ol>
+</div>
 
-|Propery         |Value   |
-|----------------|--------|
-|list-style-type |decimal |
-|margin-top      |0       |
-|margin-bottom   |1rem    |
-|padding-left    |2rem    |
-
-{.govcy-table}
-
-Use the following properties on `<li>` html tag.
-
-|Propery         |Value      |
-|----------------|-----------|
-|display         |list-item  |
-
-{.govcy-table}
-
-Sample HTML Code
+*Sample HTML Code*
 ```html
 <ol>
     <li>one</li>
     <li>two</li>
 </ol>
 ```
+
+## Links
+
+Unless otherwise stated, use the following properties for the links style. 
+
+|Property               |Value                     |
+|-----------------------|--------------------------|
+|**Default state**      |                          |
+|color                  |[link standard](../colour/#link-colours)|
+|text-decoration        |underline|
+|**Hover state**      |                          |
+|color                  |[link hover](../colour/#link-colours)|
+|text-decoration        |underline|
+|**Visited state**      |                          |
+|color                  |[link visited](../colour/#link-colours)|
+|text-decoration        |underline|
+|**Active state**      |                          |
+|color                  |[link visited](../colour/#active-colours)|
+|text-decoration        |underline|
+
+{.govcy-table-borderless}
+
+## Opening links in a new tab
+Avoid opening links in a new tab or window. It can be disorienting - and can cause accessibility problems for people who cannot visually perceive that the new tab has opened.
+
+If you need a link to open in a new tab, then include the words ‘opens in new tab’ as part of the link. 
+
+Include `rel="noreferrer noopener"` along with `target="_blank"` to reduce the risk of [reverse tabnabbing](https://owasp.org/www-community/attacks/Reverse_Tabnabbing) as shown in the following example.
+
+```html
+<a href="#" rel="noreferrer noopener" target="_blank">some link (opens in new tab)</a>
+```
+
+Use the following best practices:
+- If your link is at the end of a sentence or paragraph, make sure that the linked text does not include the full stop.
+- If it’s an external link to a non-government website, make that clear in the link text. For example, read advice on writing link text from [name of organisation]’. 
+- Avoid opening links in a new tab or window. It can be disorienting - and can cause accessibility problems for people who cannot visually perceive that the new tab has opened.
