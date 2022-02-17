@@ -1,14 +1,39 @@
 # dsf-design-system documentation
-Gov.cy DSF design system documentation
+This is the readme for the dsf-design-system-docs-static repository, which is used to publish the GOV.CY design system documentation. 
 
-This is the readme for the dsf-design-system-docs-static repository. 
+It can be used though as a template for building and publish other static sites, based on markdown content and the GOV.CY design system. 
 
-## What is this?
-In this repository we use [Eleventy (or 11ty)](https://www.11ty.dev/), a simple static site generator to compile [markdown files](#what-are-markdown-files) into a static site, using the GOVCY Design System. 
+## How does it work?
+We use [Eleventy (or 11ty)](https://www.11ty.dev/), a simple static site generator to compile [markdown files](#what-are-markdown-files) into a static site, using the GOVCY Design System. 
 
 --------------
 
-## How to Install it
+## How to contribute to the documentation
+
+The site uses a Github repository and Github Pages to publish to content and npm to build the site.  In order to contribute to the documentation you need:
+
+### 1. Clone the repository
+
+Run  `git clone https://github.com/gov-cy/dsf-design-system-docs-static.git` from the command line
+
+### 2. Make changes
+
+See the [How to set up a Site](#how-to-set-up-a-site) section
+
+### 3. Test your changes 
+
+See the [How to Run](#how-to-run) section
+
+### 4. Build  
+
+- Delete the `/docs/` folder. 
+- Run `npm run build-github-pages`. See the [Build to be published under domain's subfolder](#build-to-be-published-under-domains-subfolder) section.
+
+### 5. Publish 
+
+- Commit and push to main.
+
+## How to make a new site? 
 
 You need to have [Node.js](https://nodejs.org/en/) installed.
 
@@ -27,11 +52,15 @@ Unzip the file in a new folder on a local drive. Do not install the kit on a clo
 
 Navigate to the unziped `dsf-design-system-docs-static-master` folder though the command line and Run the following command `npm install`
 
+### 4. Connect it to a Github repository
+
+### 5. Publish with Github Pages
+
 -------
 
 ## How to Run
 
-To run the tool Navigate to the unziped `dsf-design-system-docs-static-master` folder though the command line and Run the following command `npm start`.
+To run the tool Navigate to the installed folder though the command line and Run the following command `npm start`.
 
 After the tool has started, you should see a message telling you that the tool is running:
 
@@ -99,7 +128,10 @@ You can change the site's configuration in the file `src/_data/sites.js`. See th
 module.exports = {
   buildTime: new Date(), //the site's build time
   isMultiLanguage : true, //if true a dropdown will appear to change the language
+  url : "https://gov-cy.github.io/dsf-design-system-docs-static", //url of site. It is used in generating things like the sidemap.xml
   showTOC: false, // if yes will show table of contents for pages based on headers (h2,h3,h4)
+  showDraft: true, //if yes show draft badge
+  showVersion: true, // if yes show the version badge
   languages: [ // list of languages the site supports
     {
       label: "English", 
@@ -116,24 +148,30 @@ module.exports = {
       "subtitle" : "Οδηγός Σχεδίασης",
       "description" : "Design your services using GOV.CY styles, components and patterns.",
       "menu" : "Μενού",
+      "draft" : "DRAFT",
+      "version" : "Ver.",
       "url" : "",
       "TOC_title" : "Περιεχόμενα",
       "privacy_label":"Όροι Χρήσης",
       "cookie_label":"Προστασία Προσωπικών Δεδομένων",
       "accessibility_label":"Προσβασιμότητα",
       "copyright_label":"© Κυπριακή Δημοκρατία, 2021",
+      "search_placeholder":"Έρευνα στο Design System"
     },
     "en" : {
       "title" : "GOV.CY",
       "subtitle" : "Design System",
       "description" : "Design your services using GOV.CY styles, components and patterns.",
       "menu" : "Menu",
+      "draft" : "DRAFT",
+      "version" : "Ver.",
       "url" : "",
       "TOC_title" : "On this page",
       "privacy_label":"Privacy statement",
       "cookie_label":"Cookie policy",
       "accessibility_label":"Accessibility statement",
       "copyright_label":"© Republic of Cyprus, 2021",
+      "search_placeholder":"Search Design System"
     }
   }
 };
@@ -150,6 +188,11 @@ For example create a file named `/src/test.md` with the following content :
 ```yml
 ---
 title: "Test"
+date: 2022-02-01 00:00:05Z #by defining the date for each page you can contol the order they appear in the side menus
+searchKeys: "fonts text Paragraph Headings Unordered Ordered list Links" #keyword that are included when using the the search function
+eleventyExcludeFromCollections: false #if true exclude from all searches and lists. Default is false
+hideSideMap: false #if true hide from sidemap.xml. Default is false
+hideSearch: false #if true hide from search results. Default is false
 ---
 
 This is a test page.
@@ -164,7 +207,7 @@ Markdown is an easy markup language that you can use to add formatting elements 
 A category consists of a root page, for example `/styles` and a list of pages that are associated with that category, for example `/styles/colours`.
 
 1. Create a folder with the name of the category, for example `/src/en/styles/`
-2. Create a file under that folder named with the `category name.json` for the categories metadata and options. Note that the **folder name** and the **category** and **tags** metadata MUST have the same value. For example:
+2. Create a file under that folder named with the `folder_name.json` for the categories metadata and options. Note that the **folder name** and the **category** and **tags** metadata MUST have the same value. For example under `/src/styles/styles.json`:
 ```js
 {
     "layout" : "base.njk", //the template used in this category to serve the pages. 
@@ -266,5 +309,5 @@ module.exports = {
 - You can have a default language by adding the following code in the `index.html` : `<meta http-equiv="refresh" content="0; URL=en/" />`. This will redirect users to the `en` locale content.
 
 ## Todo
-- sidemap.xml + robot.txt
-- 
+- ~~sidemap.xml + robot.txt~~
+- ~~search~~

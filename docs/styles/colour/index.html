@@ -68,13 +68,21 @@
     </div>
     <!--beforeMain-->
     <section class="govcy-container govcy-my-2" id="beforeMainContainer">
+        <div class="row">
+            <div class="govcy-col-3">
+                <span id="autocomplete" class="govcy-w-50"></span>
+            </div>  
+            <div class="govcy-col-3">
         <span class="govcy-br-2 govcy-text-white govcy-br-danger govcy-rounded-1 govcy-bg-danger govcy-efs-small">&nbsp;DRAFT&nbsp;</span>
         <span class="govcy-br-2 govcy-text-white govcy-br-info govcy-rounded-1 govcy-bg-info govcy-efs-small">&nbsp;Ver. 0.1.0&nbsp;</span>
+            </div>
+            
+        </div>
     </section>
     <!--Main-->
     <main class="govcy-container govcy-my-2" id="mainContainer">
         <div class="row">
-            <div class="govcy-col-10 govcy-order-last">
+            <div class="govcy-col-9 govcy-order-last">
                 <h1>Colours</h1>
                 
                 
@@ -290,7 +298,7 @@
             </div>
     
     
-            <aside class="govcy-col-2 govcy-order-first">
+            <aside class="govcy-col-3 govcy-order-first">
                 <ul class="nav govcy-flex-column">
                 
                     
@@ -360,5 +368,89 @@
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
         
+        
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
+        <script>
+            const { autocomplete } = window['@algolia/autocomplete-js'];
+        </script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+
+
+        <style>
+            :root {
+                    --aa-search-input-height: 30px;
+                    --aa-primary-color-rgb: 38, 38, 39;
+            }
+
+            .aa-Autocomplete { 
+                width: 100%;
+            }
+
+            .aa-Form, .aa-DetachedSearchButton{
+                border: 2px solid #272525;
+                outline: none;
+                border-radius: 0px;
+            }
+
+            .aa-Form:focus-within {
+                border: 2px solid #272525;
+                box-shadow: 0 0 0 4pt #ffdd00;
+                outline: medium none currentColor;
+                border-radius: 0px;
+            }
+
+            @media (min-width: 768px){
+                .aa-Autocomplete { 
+                    width: 100%;
+                }
+            }
+        </style>
+
+        <script>
+        autocomplete({
+        container: '#autocomplete',
+        placeholder: 'Search Design System',
+        getSources() {
+            return [
+            {
+                sourceId: 'links',
+                getItems({ query }) {
+                return [
+{ label: "Colours", url: '/dsf-design-system-docs-static/styles/colour/', keys: "" },{ label: "Page Templates", url: '/dsf-design-system-docs-static/styles/page_templates/', keys: "" },{ label: "Grid system", url: '/dsf-design-system-docs-static/styles/grid/', keys: "" },{ label: "Layout", url: '/dsf-design-system-docs-static/styles/layout/', keys: "" },{ label: "Typography", url: '/dsf-design-system-docs-static/styles/typography/', keys: "fonts text Paragraph Headings Unordered Ordered list Links" },{ label: "Design System", url: '/dsf-design-system-docs-static/', keys: "" },{ label: "Getting Started", url: '/dsf-design-system-docs-static/getting_started/', keys: "" },{ label: "Styles", url: '/dsf-design-system-docs-static/styles/', keys: "" },
+                ].filter(({ label ,keys }) =>
+                    label.toLowerCase().includes(query.toLowerCase()) 
+                    || keys.toLowerCase().includes(query.toLowerCase())
+                );
+                },
+                getItemUrl({ item }) {
+                    return item.url;
+                },
+                 templates: {
+                    item({ item, createElement }) {
+                        return createElement('div', {
+                        dangerouslySetInnerHTML: {
+                            __html: `<div>
+                            <a
+                                href="${item.url}">
+                                ${item.label}
+                            <a/> 
+                            </div>`,
+                        },
+                        });
+                    },
+                    noResults() {
+                        return 'No results.';
+                    }
+                }
+                // ...
+            },
+            ];
+        }
+    });
+
+        </script>
     </body>
 </html>

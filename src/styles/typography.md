@@ -1,6 +1,7 @@
 ---
 title: "Typography"
 date: 2022-02-01 00:00:05Z
+searchKeys: "fonts text Paragraph Headings Unordered Ordered list Links"
 --- 
 
 ## Base fonts 
