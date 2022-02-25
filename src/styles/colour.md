@@ -7,6 +7,7 @@ Always use the GOV.CY color palette.
 
 ## Theme colours
 Use theme colours for buttons, alerts, list groups, borders, text and backgrounds
+<div class="table-responsive">
 
 |Colour                                      |Colour name        | hex     | Where to use | 
 |--------------------------------------------|-------------------|---------|--------------|
@@ -19,8 +20,12 @@ Use theme colours for buttons, alerts, list groups, borders, text and background
 
 {.govcy-table}
 
+</div>
+
 ## Typography colours
 Colours used for text based content. 
+
+<div class="table-responsive">
 
 |Colour                                      |Colour name        | hex     | Where to use | 
 |--------------------------------------------|-------------------|---------|--------------|
@@ -30,8 +35,12 @@ Colours used for text based content.
 
 {.govcy-table}
 
+</div>
+
 ## Link colours
 Colours related to links.
+
+<div class="table-responsive">
 
 |Colour                                      |Colour name        | hex     | 
 |--------------------------------------------|-------------------|---------|
@@ -43,8 +52,12 @@ Colours related to links.
 
 {.govcy-table}
 
+</div>
+
 ## Border Colours
 Colours related to borders.
+
+<div class="table-responsive">
 
 |Colour                                      |Colour name        | hex     | 
 |--------------------------------------------|-------------------|---------|
@@ -53,8 +66,12 @@ Colours related to borders.
 
 {.govcy-table}
 
+</div>
+
 ## Button / Input colours
 Colours related to buttons
+
+<div class="table-responsive">
 
 |Colour                                      |Colour name        | hex     |
 |--------------------------------------------|-------------------|---------|
@@ -69,3 +86,5 @@ Colours related to buttons
 |<div class="govcy-rounded-2" style="width:70px; background-color:#ffdd00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|button active / input focus | `#ffdd00` |
 
 {.govcy-table}
+
+</div>

@@ -34,7 +34,7 @@
         <!--<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">-->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
-        <title>Page Templates - GOV.CY</title>
+        <title>Error Message - GOV.CY</title>
         <meta name="description" content="Design your services using GOV.CY styles, components and patterns.">
     </head>
     <body>
@@ -57,11 +57,11 @@
                                 Getting Started
                             </a>
                             </li><li>
-                            <a href="/dsf-design-system-docs-static/styles/"  class="active">
+                            <a href="/dsf-design-system-docs-static/styles/" >
                                 Styles
                             </a>
                             </li><li>
-                            <a href="/dsf-design-system-docs-static/components/" >
+                            <a href="/dsf-design-system-docs-static/components/"  class="active">
                                 Components
                             </a>
                             </li>
@@ -87,70 +87,139 @@
     <main class="govcy-container govcy-my-2" id="mainContainer">
         <div class="row">
             <div class="govcy-col-9 govcy-order-last">
-                <h1>Page Templates</h1>
+                <h1>Error Message</h1>
                 
                 
                     <aside class="toc-outter">
                         <strong>On this page</strong>
                         <div class="toc" >
-        <ol><li><a href="#max-width">Max-width  </a></li><li><a href="#responsive-breakpoint">Responsive breakpoint  </a></li><li><a href="#page-templates">Page templates  </a></li></ol>
+        <ol><li><a href="#when-to-use-this-component">When to use this component  </a></li><li><a href="#when-not-to-use-this-component">When not to use this component  </a></li><li><a href="#how-it-works">How it works  </a></li><li><a href="#be-clear%2C-specific-and-consistent">Be clear, specific and consistent  </a></li><li><a href="#use-instructions-and-descriptions">Use instructions and descriptions  </a></li></ol>
       </div>
                     </aside>
                 
-                <h2 id="max-width" tabindex="-1">Max-width <a class="anchor-link" href="#max-width"> </a></h2>
-<p>The default maximum width is <code>1280px</code>.</p>
-<h2 id="responsive-breakpoint" tabindex="-1">Responsive breakpoint <a class="anchor-link" href="#responsive-breakpoint"> </a></h2>
-<p>Breakpoint is the width that determines how your responsive layout behaves across devices. The default breakpoint is <code>≥768px</code>.</p>
-<h2 id="page-templates" tabindex="-1">Page templates <a class="anchor-link" href="#page-templates"> </a></h2>
-<p>All pages must use the following structure inside the <code>&lt;body&gt;</code> tag. The page width is on the <a href="#max-width">max-width</a> limit. Note the <code>id</code> tag is for reference and can be</p>
-<div class="table-responsive">
-<table class="govcy-table">
-<thead>
-<tr>
-<th>Section Name</th>
-<th>HTML Tag</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>Body start</em></td>
-<td><code>&lt;section  class=&quot;govcy-container-fluid&quot; id=&quot;bodyStartContainer&quot;&gt; &lt;/section&gt;</code></td>
-<td>To be used to render the content before the <code>&lt;header&gt;</code> (i.e. cookie consent). Width must be fluid, same as the viewport.</td>
-</tr>
-<tr>
-<td><em>Header</em></td>
-<td><code>&lt;header class=&quot;govcy-container-fluid&quot; id=&quot;headerContainer&quot;&gt; &lt;/header&gt;</code></td>
-<td>To be used as the page header (LINK). Width must be fluid, same as the viewport.</td>
-</tr>
-<tr>
-<td><em>Before Main</em></td>
-<td><code>&lt;section class=&quot;govcy-container&quot; id=&quot;beforeMainContainer&quot;&gt; &lt;/section&gt;</code></td>
-<td>To be used to render the content before the <code>&lt;main&gt;</code> (i.e. back link (LINK)) . Must comply with the <a href="#max-width">max-width</a> reference above and be placed in the center of the viewport.</td>
-</tr>
-<tr>
-<td><em>Main</em></td>
-<td><code>&lt;main class=&quot;govcy-container&quot; id=&quot;mainContainer&quot;&gt; &lt;/main&gt;</code></td>
-<td>To be used to render the service content (i.e. question page (LINK)). Must comply with the <a href="#max-width">max-width</a> reference above and be placed in the center of the viewport. This section can have one of the layouts described in the <a href="../layout">layout section</a>.</td>
-</tr>
-<tr>
-<td><em>Footer</em></td>
-<td><code>&lt;footer class=&quot;govcy-container-fluid&quot; id=&quot;footerContainer&quot;&gt; &lt;/footer&gt;</code></td>
-<td>To be used as the page footer (LINK). Width must be fluid, same as the viewport</td>
-</tr>
-<tr>
-<td><em>Body end</em></td>
-<td><code>&lt;section  class=&quot;govcy-container-fluid&quot; id=&quot;bodyEndContainer&quot;&gt; &lt;/section&gt;</code></td>
-<td>To be used to render the content after the <code>&lt;footer&gt;</code> (i.e. cookie consent). Width must be fluid, same as the viewport.</td>
-</tr>
-</tbody>
-</table>
+                <p>Show an error message when there is a validation error. In the error message explain what went wrong and how to fix it.</p>
+<h2 id="when-to-use-this-component" tabindex="-1">When to use this component <a class="anchor-link" href="#when-to-use-this-component"> </a></h2>
+<p>Show an error message next to the field and in the <a href="../error_summary">error summary</a> when there is a validation error.</p>
+<h2 id="when-not-to-use-this-component" tabindex="-1">When not to use this component <a class="anchor-link" href="#when-not-to-use-this-component"> </a></h2>
+<p>Do not use error messages to tell a user that they are not eligible or do not have permission to do something. Or to tell them about a lack of capacity or other problem the user cannot fix - because the problem is with the service rather than with the information the user has provided.</p>
+<p>Instead, take the user to a page that explains the problem (for example, telling them why they’re not eligible) and provides useful information about what to do next.</p>
+<p>There are separate patterns for:</p>
+<ul>
+<li>problem with the service(LINK) pages</li>
+<li>page not found(LINK) pages</li>
+</ul>
+<h2 id="how-it-works" tabindex="-1">How it works <a class="anchor-link" href="#how-it-works"> </a></h2>
+<p>For each error:</p>
+<ul>
+<li>put the message in red after the question text and hint text</li>
+<li>use a red border to visually connect the message and the question it belongs to</li>
+<li>if the error relates to a specific field within the question, give it a red border and refer to that field in the error message - for example: “you must enter a year”</li>
+</ul>
+<p>To help screen reader users, the error message component includes a hidden ‘Error:’ before the error message. These users will hear, for example, <code>&lt;span class=&quot;DSF-visually-hidden&quot;&gt; Error:&lt;/span&gt; The date your passport was issued must be in the past</code>.</p>
+<p>Summarize all errors at the top of the page the user is on using an <a href="../error_summary">error summary</a>.</p>
+<p><em>Examples</em></p>
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-light govcy-mb-4">
+<form action="" class="govcy-form">
+    <div class="govcy-form-control govcy-form-control-error">
+        <label class="govcy-label" for="input">Label</label>
+        <span class="govcy-input-error-msg">There is an error</span>
+        <input type="text" class="govcy-text-input govcy-text-input-error" placeholder="input">
+    </div>
+    <fieldset class="govcy-fieldset">
+        <div class="govcy-form-control govcy-form-control-error">
+            <label class="govcy-label govcy-mb-1" for="">Date of birth</label>
+            <span class="govcy-input-error-msg govcy-mb-3">There is an error</span>
+            <div class="govcy-d-flex">
+                <div class="govcy-d-block">
+                    <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Day</label>
+                    <input type="text" class="govcy-text-input govcy-text-input-error govcy-text-input-char_3 govcy-p-2" placeholder="" maxlength="2">
+                </div>
+                <div class="govcy-d-block govcy-ml-2">
+                    <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Month</label>
+                    <input type="text" class="govcy-text-input govcy-text-input-error govcy-text-input-char_3 govcy-p-2" placeholder="" maxlength="2">
+                </div>
+                <div class="govcy-d-block govcy-ml-2">
+                    <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Year</label>
+                    <input type="text" class="govcy-text-input govcy-text-input-error govcy-text-input-char_6 govcy-p-3" placeholder="" maxlength="4">
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="govcy-fieldset">
+        <legend class="govcy-legend">Legend</legend>
+        <div class="govcy-form-control govcy-form-control-error">
+            <span class="govcy-input-error-msg">There is an error</span>
+            <label class="govcy-checkbox">Option 1
+                <input class="govcy-checkbox-input" type="checkbox">
+                <span class="govcy-tickbox" tabindex="1"></span>
+            </label>
+            <label class="govcy-checkbox">Option 2
+                <input class="govcy-checkbox-input" type="checkbox">
+                <span class="govcy-tickbox" tabindex="2"></span>
+            </label>
+        </div>
+    </fieldset>
+    <fieldset class="govcy-fieldset">
+        <legend class="govcy-legend">Legend</legend>
+        <div class="govcy-form-control govcy-form-control-error">
+            <span class="govcy-input-error-msg">Mandatory field</span>
+            <label class="govcy-radio-btn">Option 1
+                <input class="govcy-radio-input" type="radio" name="radio">
+                <span class="govcy-radio" tabindex="1"></span>
+            </label>
+            <label class="govcy-radio-btn">Option 2
+                <input class="govcy-radio-input" type="radio" name="radio">
+                <span class="govcy-radio" tabindex="2"></span>
+            </label>
+            <label class="govcy-radio-btn">Option 3
+                <input class="govcy-radio-input" type="radio" name="radio">
+                <span class="govcy-radio" tabindex="3"></span>
+            </label>
+        </div>
+    </fieldset>
+    <div class="govcy-form-control govcy-form-control-error govcy-pb-1">
+        <label class="govcy-label govcy-mb-1" for="">Upload a file</label>
+        <span class="govcy-input-error-msg govcy-mb-3">There is an error</span>
+        <input class="govcy-file-upload" type="file" id="" name="">
+    </div>
+</form>
 </div>
-<p>Sample HTML Code:</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!--bodyStart--></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container-fluid<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bodyStartContainer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!--Header--></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container-fluid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>headerContainer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!--beforeMain--></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>beforeMainContainer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!--main--></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mainContainer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!-- Footer --></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container-fluid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>footerContainer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!--bodyEnd--></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container-fluid<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bodyEndContainer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></code></pre>
-<p><img src="../../img/template_sample.png" alt="Sample template" class="img-fluid"></p>
-<p>Take a look at this <a target='_blank' rel="noreferrer noopener" href='../../samples/page_templates_demo/'>template page</a> with different sections highlighted with different colours.</p>
-<p>Also take a look at a <a target='_blank' rel="noreferrer noopener" href='../../samples/sample/'>simple sample page</a> with components of the Design System incorporated in it’s content.</p>
+<h2 id="be-clear%2C-specific-and-consistent" tabindex="-1">Be clear, specific and consistent <a class="anchor-link" href="#be-clear%2C-specific-and-consistent"> </a></h2>
+<p>Describe what has happened and tell them how to fix it. The message must be in plain language, use positive language and get to the point.</p>
+<p>Do not use:</p>
+<ul>
+<li>technical jargon like ‘form post error’, ‘unspecified error’ and ‘error 0x0000000643’</li>
+<li>words like ‘forbidden’, ‘illegal’, ‘you forgot’ and ‘prohibited’</li>
+<li>‘please’ because it implies a choice</li>
+<li>‘sorry’ because it does not help fix the problem</li>
+<li>‘valid’ and ‘invalid’ because they do not add anything to the message</li>
+<li>humourous, informal language like ‘oops’</li>
+</ul>
+<p>Error messages should make sense. Avoid general messages like:</p>
+<ul>
+<li>‘An error occurred’</li>
+<li>‘Answer the question’</li>
+<li>‘Select an option’</li>
+<li>‘Fill in the field’</li>
+<li>‘This field is required’</li>
+</ul>
+<p>Describe what went wrong in your message and help the user understand what has happened and how to fix it. For example, text fields may be:</p>
+<ul>
+<li>empty</li>
+<li>too long</li>
+<li>too short</li>
+<li>using characters that are not allowed</li>
+<li>in the wrong format</li>
+</ul>
+<p>Be consistent in your messages and use the question or form label in the error to provide context. For example, ‘Enter how many hours you work a week’ for ‘How many hours do you work a week?’. Use the same message next to the field and in the <a href="../error_summary">error summary</a>.</p>
+<h2 id="use-instructions-and-descriptions" tabindex="-1">Use instructions and descriptions <a class="anchor-link" href="#use-instructions-and-descriptions"> </a></h2>
+<p>Some errors work better as instructions and some work better as descriptions. For example:</p>
+<ul>
+<li>‘Enter your first name’ is clearer, more direct and natural than ‘First name must have an entry’</li>
+<li>‘Enter a first name that is 35 characters or fewer’ is wordier, less direct and natural than ‘First name must be 35 characters or fewer’</li>
+<li>‘Enter a date after 31 August 2017 for when you started the course’ is wordier, less direct and natural than ‘Date you started the course must be after 31 August 2017’</li>
+</ul>
+<p>Use both instructions and descriptions, but use them consistently. For example, use an instruction for empty fields like ‘Enter your name’, but a description like ‘Name must be 35 characters or fewer’ for entries that are too long</p>
 
             </div>
     
@@ -161,40 +230,56 @@
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/styles/colour/" class="nav-link">
-                                Colours
+                            <a href="/dsf-design-system-docs-static/components/back_link/" class="nav-link">
+                                Back Link
                             </a>
                         
                     
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/styles/page_templates/" class="nav-link active">
-                                Page Templates
+                            <a href="/dsf-design-system-docs-static/components/button/" class="nav-link">
+                                Button
                             </a>
                         
                     
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/styles/grid/" class="nav-link">
-                                Grid system
+                            <a href="/dsf-design-system-docs-static/components/date_input/" class="nav-link">
+                                Date input
                             </a>
                         
                     
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/styles/layout/" class="nav-link">
-                                Layout
+                            <a href="/dsf-design-system-docs-static/components/error_message/" class="nav-link active">
+                                Error Message
                             </a>
                         
                     
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/styles/typography/" class="nav-link">
-                                Typography
+                            <a href="/dsf-design-system-docs-static/components/error_summary/" class="nav-link">
+                                Error Summary
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/header/" class="nav-link">
+                                Header
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/user_name_and_sign_out/" class="nav-link">
+                                User’s name and sign out
                             </a>
                         
                     

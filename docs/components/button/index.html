@@ -34,7 +34,7 @@
         <!--<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">-->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
-        <title>Page Templates - GOV.CY</title>
+        <title>Button - GOV.CY</title>
         <meta name="description" content="Design your services using GOV.CY styles, components and patterns.">
     </head>
     <body>
@@ -57,11 +57,11 @@
                                 Getting Started
                             </a>
                             </li><li>
-                            <a href="/dsf-design-system-docs-static/styles/"  class="active">
+                            <a href="/dsf-design-system-docs-static/styles/" >
                                 Styles
                             </a>
                             </li><li>
-                            <a href="/dsf-design-system-docs-static/components/" >
+                            <a href="/dsf-design-system-docs-static/components/"  class="active">
                                 Components
                             </a>
                             </li>
@@ -87,70 +87,53 @@
     <main class="govcy-container govcy-my-2" id="mainContainer">
         <div class="row">
             <div class="govcy-col-9 govcy-order-last">
-                <h1>Page Templates</h1>
+                <h1>Button</h1>
                 
                 
                     <aside class="toc-outter">
                         <strong>On this page</strong>
                         <div class="toc" >
-        <ol><li><a href="#max-width">Max-width  </a></li><li><a href="#responsive-breakpoint">Responsive breakpoint  </a></li><li><a href="#page-templates">Page templates  </a></li></ol>
+        <ol><li><a href="#when-to-use-this-component">When to use this component  </a></li><li><a href="#how-it-works">How it works  </a></li><li><a href="#primary-buttons">Primary buttons  </a></li><li><a href="#secondary-buttons">Secondary buttons  </a></li></ol>
       </div>
                     </aside>
                 
-                <h2 id="max-width" tabindex="-1">Max-width <a class="anchor-link" href="#max-width"> </a></h2>
-<p>The default maximum width is <code>1280px</code>.</p>
-<h2 id="responsive-breakpoint" tabindex="-1">Responsive breakpoint <a class="anchor-link" href="#responsive-breakpoint"> </a></h2>
-<p>Breakpoint is the width that determines how your responsive layout behaves across devices. The default breakpoint is <code>≥768px</code>.</p>
-<h2 id="page-templates" tabindex="-1">Page templates <a class="anchor-link" href="#page-templates"> </a></h2>
-<p>All pages must use the following structure inside the <code>&lt;body&gt;</code> tag. The page width is on the <a href="#max-width">max-width</a> limit. Note the <code>id</code> tag is for reference and can be</p>
-<div class="table-responsive">
-<table class="govcy-table">
-<thead>
-<tr>
-<th>Section Name</th>
-<th>HTML Tag</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>Body start</em></td>
-<td><code>&lt;section  class=&quot;govcy-container-fluid&quot; id=&quot;bodyStartContainer&quot;&gt; &lt;/section&gt;</code></td>
-<td>To be used to render the content before the <code>&lt;header&gt;</code> (i.e. cookie consent). Width must be fluid, same as the viewport.</td>
-</tr>
-<tr>
-<td><em>Header</em></td>
-<td><code>&lt;header class=&quot;govcy-container-fluid&quot; id=&quot;headerContainer&quot;&gt; &lt;/header&gt;</code></td>
-<td>To be used as the page header (LINK). Width must be fluid, same as the viewport.</td>
-</tr>
-<tr>
-<td><em>Before Main</em></td>
-<td><code>&lt;section class=&quot;govcy-container&quot; id=&quot;beforeMainContainer&quot;&gt; &lt;/section&gt;</code></td>
-<td>To be used to render the content before the <code>&lt;main&gt;</code> (i.e. back link (LINK)) . Must comply with the <a href="#max-width">max-width</a> reference above and be placed in the center of the viewport.</td>
-</tr>
-<tr>
-<td><em>Main</em></td>
-<td><code>&lt;main class=&quot;govcy-container&quot; id=&quot;mainContainer&quot;&gt; &lt;/main&gt;</code></td>
-<td>To be used to render the service content (i.e. question page (LINK)). Must comply with the <a href="#max-width">max-width</a> reference above and be placed in the center of the viewport. This section can have one of the layouts described in the <a href="../layout">layout section</a>.</td>
-</tr>
-<tr>
-<td><em>Footer</em></td>
-<td><code>&lt;footer class=&quot;govcy-container-fluid&quot; id=&quot;footerContainer&quot;&gt; &lt;/footer&gt;</code></td>
-<td>To be used as the page footer (LINK). Width must be fluid, same as the viewport</td>
-</tr>
-<tr>
-<td><em>Body end</em></td>
-<td><code>&lt;section  class=&quot;govcy-container-fluid&quot; id=&quot;bodyEndContainer&quot;&gt; &lt;/section&gt;</code></td>
-<td>To be used to render the content after the <code>&lt;footer&gt;</code> (i.e. cookie consent). Width must be fluid, same as the viewport.</td>
-</tr>
-</tbody>
-</table>
+                <p>Use the button component to help users carry out an action like starting an application or saving their information.</p>
+<h2 id="when-to-use-this-component" tabindex="-1">When to use this component <a class="anchor-link" href="#when-to-use-this-component"> </a></h2>
+<p>Use the button component to help users carry out an action like starting an application or saving their information.</p>
+<h2 id="how-it-works" tabindex="-1">How it works <a class="anchor-link" href="#how-it-works"> </a></h2>
+<p>Write button text in sentence case, describing the action it performs. For example:</p>
+<ul>
+<li>‘Start now’ at the start of the service</li>
+<li>‘Sign in’ to an account a user has already created</li>
+<li>‘Continue’ when the service does not save a user’s information</li>
+<li>‘Save and continue’ when the service does save a user’s information</li>
+<li>‘Save and come back later’ when a user can save their information and come back later</li>
+<li>‘Add another’ to add another item to a list or group</li>
+<li>‘Pay’ to make a payment</li>
+<li>‘Confirm and send’ on a check answers page that does not have any legal content a user must agree to</li>
+<li>‘Accept and send’ on a check answers page that has legal content a user must agree to</li>
+<li>‘Sign out’ when a user is signed in to an account</li>
+<li>You may need to include more or different words to better describe the action. For example, ‘Add another address’ and ‘Accept and claim a tax refund’.</li>
+</ul>
+<p>Align the primary action button to the left edge of your form.</p>
+<h2 id="primary-buttons" tabindex="-1">Primary buttons <a class="anchor-link" href="#primary-buttons"> </a></h2>
+<p>Use a primary button for the main call to action on a page.</p>
+<p>Avoid using multiple primary buttons on a single page. Having more than one main call to action reduces their impact, and makes it harder for users to know what to do next.</p>
+<p><em>Example</em></p>
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-light govcy-mb-4">
+<button type="button" class="govcy-btn-primary">Primary</button>
 </div>
-<p>Sample HTML Code:</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!--bodyStart--></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container-fluid<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bodyStartContainer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!--Header--></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container-fluid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>headerContainer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!--beforeMain--></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>beforeMainContainer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!--main--></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mainContainer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!-- Footer --></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container-fluid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>footerContainer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!--bodyEnd--></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container-fluid<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bodyEndContainer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></code></pre>
-<p><img src="../../img/template_sample.png" alt="Sample template" class="img-fluid"></p>
-<p>Take a look at this <a target='_blank' rel="noreferrer noopener" href='../../samples/page_templates_demo/'>template page</a> with different sections highlighted with different colours.</p>
-<p>Also take a look at a <a target='_blank' rel="noreferrer noopener" href='../../samples/sample/'>simple sample page</a> with components of the Design System incorporated in it’s content.</p>
+<p><em>Sample HTML Code</em></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="secondary-buttons" tabindex="-1">Secondary buttons <a class="anchor-link" href="#secondary-buttons"> </a></h2>
+<p>Use secondary buttons for secondary calls to action on a page.</p>
+<p>Pages with too many calls to action make it hard for users to know what to do next. Before adding lots of secondary buttons, try to simplify the page or break the content down across multiple pages.</p>
+<p><em>Example</em></p>
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-light govcy-mb-4">
+<button type="button" class="govcy-btn-secondary">Secondary</button>
+</div>
+<p><em>Sample HTML Code</em></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-btn-secondary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Secondary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
 
             </div>
     
@@ -161,40 +144,56 @@
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/styles/colour/" class="nav-link">
-                                Colours
+                            <a href="/dsf-design-system-docs-static/components/back_link/" class="nav-link">
+                                Back Link
                             </a>
                         
                     
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/styles/page_templates/" class="nav-link active">
-                                Page Templates
+                            <a href="/dsf-design-system-docs-static/components/button/" class="nav-link active">
+                                Button
                             </a>
                         
                     
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/styles/grid/" class="nav-link">
-                                Grid system
+                            <a href="/dsf-design-system-docs-static/components/date_input/" class="nav-link">
+                                Date input
                             </a>
                         
                     
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/styles/layout/" class="nav-link">
-                                Layout
+                            <a href="/dsf-design-system-docs-static/components/error_message/" class="nav-link">
+                                Error Message
                             </a>
                         
                     
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/styles/typography/" class="nav-link">
-                                Typography
+                            <a href="/dsf-design-system-docs-static/components/error_summary/" class="nav-link">
+                                Error Summary
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/header/" class="nav-link">
+                                Header
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/user_name_and_sign_out/" class="nav-link">
+                                User’s name and sign out
                             </a>
                         
                     

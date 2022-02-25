@@ -12,6 +12,7 @@ Breakpoint is the width that determines how your responsive layout behaves acros
 ## Page templates
 All pages must use the following structure inside the `<body>` tag. The page width is on the [max-width](#max-width) limit. Note the `id` tag is for reference and can be 
 
+<div class="table-responsive">
 
 |Section Name |HTML Tag   | Description    |
 |---|---|---|
@@ -23,6 +24,8 @@ All pages must use the following structure inside the `<body>` tag. The page wid
 |*Body end*|`<section  class="govcy-container-fluid" id="bodyEndContainer"> </section>`|To be used to render the content after the `<footer>` (i.e. cookie consent). Width must be fluid, same as the viewport.|
 
 {.govcy-table}
+
+</div>
 
 Sample HTML Code:
 
@@ -47,7 +50,7 @@ Sample HTML Code:
 </body>
 ```
 
-![Sample template](../../img/template_sample.png)
+![Sample template](../../img/template_sample.png){.img-fluid}
 
 Take a look at this <a target='_blank' rel="noreferrer noopener" href='../../samples/page_templates_demo/'>template page</a> with different sections highlighted with different colours. 
 

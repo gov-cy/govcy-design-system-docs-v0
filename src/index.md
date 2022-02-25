@@ -29,6 +29,7 @@ localization:
         <p><img src="img/components.png" alt="Components"> </p>
         <h2>Components</h2>
             <p>Reusable elements of the user interface such as components for forms, navigation, panels, tables and more.</p>
+            <p><a href="components/">Browse Components</a></p>
     </div>
     <div class="govcy-col-4">
         <p><img src="img/patterns.png" alt="Patterns"> </p>
