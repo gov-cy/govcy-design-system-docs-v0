@@ -92,9 +92,19 @@
                 
                     <aside class="toc-outter">
                         <strong>On this page</strong>
-                        <div class="toc" >
-        <ol><li><a href="#when-to-use-this-component">When to use this component  </a></li><li><a href="#when-not-to-use-this-component">When not to use this component  </a></li><li><a href="#how-it-works">How it works  </a></li><li><a href="#be-clear%2C-specific-and-consistent">Be clear, specific and consistent  </a></li><li><a href="#use-instructions-and-descriptions">Use instructions and descriptions  </a></li></ol>
-      </div>
+                        <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#when-to-use-this-component">When to use this component</a>
+            		</li>
+
+                    <li><a href="#when-not-to-use-this-component">When not to use this component</a>
+            		</li>
+
+                    <li><a href="#how-it-works">How it works</a>
+            		</li>
+                </ol>
+            </nav>
                     </aside>
                 
                 <p>Show an error message when there is a validation error. In the error message explain what went wrong and how to fix it.</p>
@@ -118,8 +128,8 @@
 <p>To help screen reader users, the error message component includes a hidden ‘Error:’ before the error message. These users will hear, for example, <code>&lt;span class=&quot;DSF-visually-hidden&quot;&gt; Error:&lt;/span&gt; The date your passport was issued must be in the past</code>.</p>
 <p>Summarize all errors at the top of the page the user is on using an <a href="../error_summary">error summary</a>.</p>
 <p><em>Examples</em></p>
-<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-light govcy-mb-4">
-<form action="" class="govcy-form">
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
+<form action="" class="govcy-form" novalidate>
     <div class="govcy-form-control govcy-form-control-error">
         <label class="govcy-label" for="input">Label</label>
         <span class="govcy-input-error-msg">There is an error</span>
@@ -184,42 +194,7 @@
     </div>
 </form>
 </div>
-<h2 id="be-clear%2C-specific-and-consistent" tabindex="-1">Be clear, specific and consistent <a class="anchor-link" href="#be-clear%2C-specific-and-consistent"> </a></h2>
-<p>Describe what has happened and tell them how to fix it. The message must be in plain language, use positive language and get to the point.</p>
-<p>Do not use:</p>
-<ul>
-<li>technical jargon like ‘form post error’, ‘unspecified error’ and ‘error 0x0000000643’</li>
-<li>words like ‘forbidden’, ‘illegal’, ‘you forgot’ and ‘prohibited’</li>
-<li>‘please’ because it implies a choice</li>
-<li>‘sorry’ because it does not help fix the problem</li>
-<li>‘valid’ and ‘invalid’ because they do not add anything to the message</li>
-<li>humourous, informal language like ‘oops’</li>
-</ul>
-<p>Error messages should make sense. Avoid general messages like:</p>
-<ul>
-<li>‘An error occurred’</li>
-<li>‘Answer the question’</li>
-<li>‘Select an option’</li>
-<li>‘Fill in the field’</li>
-<li>‘This field is required’</li>
-</ul>
-<p>Describe what went wrong in your message and help the user understand what has happened and how to fix it. For example, text fields may be:</p>
-<ul>
-<li>empty</li>
-<li>too long</li>
-<li>too short</li>
-<li>using characters that are not allowed</li>
-<li>in the wrong format</li>
-</ul>
-<p>Be consistent in your messages and use the question or form label in the error to provide context. For example, ‘Enter how many hours you work a week’ for ‘How many hours do you work a week?’. Use the same message next to the field and in the <a href="../error_summary">error summary</a>.</p>
-<h2 id="use-instructions-and-descriptions" tabindex="-1">Use instructions and descriptions <a class="anchor-link" href="#use-instructions-and-descriptions"> </a></h2>
-<p>Some errors work better as instructions and some work better as descriptions. For example:</p>
-<ul>
-<li>‘Enter your first name’ is clearer, more direct and natural than ‘First name must have an entry’</li>
-<li>‘Enter a first name that is 35 characters or fewer’ is wordier, less direct and natural than ‘First name must be 35 characters or fewer’</li>
-<li>‘Enter a date after 31 August 2017 for when you started the course’ is wordier, less direct and natural than ‘Date you started the course must be after 31 August 2017’</li>
-</ul>
-<p>Use both instructions and descriptions, but use them consistently. For example, use an instruction for empty fields like ‘Enter your name’, but a description like ‘Name must be 35 characters or fewer’ for entries that are too long</p>
+<p>Read more on content for error messages(LINK) and how to help the users correct the errors.</p>
 
             </div>
     
@@ -240,6 +215,14 @@
                         
                             <a href="/dsf-design-system-docs-static/components/button/" class="nav-link">
                                 Button
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/checkbox/" class="nav-link">
+                                Checkbox
                             </a>
                         
                     
@@ -270,8 +253,56 @@
                     
                         
                         
+                            <a href="/dsf-design-system-docs-static/components/fieldset/" class="nav-link">
+                                Fieldset
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/file/" class="nav-link">
+                                File
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/footer/" class="nav-link">
+                                Footer
+                            </a>
+                        
+                    
+                    
+                        
+                        
                             <a href="/dsf-design-system-docs-static/components/header/" class="nav-link">
                                 Header
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/radio/" class="nav-link">
+                                Radio
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/table/" class="nav-link">
+                                Table
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/text_input/" class="nav-link">
+                                Text Input
                             </a>
                         
                     
@@ -361,7 +392,7 @@
                 sourceId: 'links',
                 getItems({ query }) {
                 return [
-{ label: "Colours", url: '/dsf-design-system-docs-static/styles/colour/', keys: "" },{ label: "Page Templates", url: '/dsf-design-system-docs-static/styles/page_templates/', keys: "" },{ label: "Grid system", url: '/dsf-design-system-docs-static/styles/grid/', keys: "" },{ label: "Layout", url: '/dsf-design-system-docs-static/styles/layout/', keys: "" },{ label: "Typography", url: '/dsf-design-system-docs-static/styles/typography/', keys: "fonts text Paragraph Headings Unordered Ordered list Links" },{ label: "Back Link", url: '/dsf-design-system-docs-static/components/back_link/', keys: "" },{ label: "Button", url: '/dsf-design-system-docs-static/components/button/', keys: "" },{ label: "Date input", url: '/dsf-design-system-docs-static/components/date_input/', keys: "" },{ label: "Error Message", url: '/dsf-design-system-docs-static/components/error_message/', keys: "" },{ label: "Error Summary", url: '/dsf-design-system-docs-static/components/error_summary/', keys: "" },{ label: "Header", url: '/dsf-design-system-docs-static/components/header/', keys: "" },{ label: "User’s name and sign out", url: '/dsf-design-system-docs-static/components/user_name_and_sign_out/', keys: "" },{ label: "Design System", url: '/dsf-design-system-docs-static/', keys: "" },{ label: "Getting Started", url: '/dsf-design-system-docs-static/getting_started/', keys: "" },{ label: "Styles", url: '/dsf-design-system-docs-static/styles/', keys: "" },{ label: "Components", url: '/dsf-design-system-docs-static/components/', keys: "" },
+{ label: "Colours", url: '/dsf-design-system-docs-static/styles/colour/', keys: "" },{ label: "Page Templates", url: '/dsf-design-system-docs-static/styles/page_templates/', keys: "" },{ label: "Grid system", url: '/dsf-design-system-docs-static/styles/grid/', keys: "" },{ label: "Layout", url: '/dsf-design-system-docs-static/styles/layout/', keys: "" },{ label: "Typography", url: '/dsf-design-system-docs-static/styles/typography/', keys: "fonts text Paragraph Headings Unordered Ordered list Links" },{ label: "Back Link", url: '/dsf-design-system-docs-static/components/back_link/', keys: "" },{ label: "Button", url: '/dsf-design-system-docs-static/components/button/', keys: "" },{ label: "Checkbox", url: '/dsf-design-system-docs-static/components/checkbox/', keys: "" },{ label: "Date input", url: '/dsf-design-system-docs-static/components/date_input/', keys: "" },{ label: "Error Message", url: '/dsf-design-system-docs-static/components/error_message/', keys: "" },{ label: "Error Summary", url: '/dsf-design-system-docs-static/components/error_summary/', keys: "" },{ label: "Fieldset", url: '/dsf-design-system-docs-static/components/fieldset/', keys: "" },{ label: "File", url: '/dsf-design-system-docs-static/components/file/', keys: "" },{ label: "Footer", url: '/dsf-design-system-docs-static/components/footer/', keys: "" },{ label: "Header", url: '/dsf-design-system-docs-static/components/header/', keys: "" },{ label: "Radio", url: '/dsf-design-system-docs-static/components/radio/', keys: "" },{ label: "Table", url: '/dsf-design-system-docs-static/components/table/', keys: "" },{ label: "Text Input", url: '/dsf-design-system-docs-static/components/text_input/', keys: "" },{ label: "User’s name and sign out", url: '/dsf-design-system-docs-static/components/user_name_and_sign_out/', keys: "" },{ label: "Design System", url: '/dsf-design-system-docs-static/', keys: "" },{ label: "Getting Started", url: '/dsf-design-system-docs-static/getting_started/', keys: "" },{ label: "Styles", url: '/dsf-design-system-docs-static/styles/', keys: "" },{ label: "Components", url: '/dsf-design-system-docs-static/components/', keys: "" },
                 ].filter(({ label ,keys }) =>
                     label.toLowerCase().includes(query.toLowerCase()) 
                     || keys.toLowerCase().includes(query.toLowerCase())

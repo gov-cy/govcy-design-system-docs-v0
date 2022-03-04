@@ -92,9 +92,22 @@
                 
                     <aside class="toc-outter">
                         <strong>On this page</strong>
-                        <div class="toc" >
-        <ol><li><a href="#when-to-use-this-component">When to use this component  </a></li><li><a href="#how-it-works">How it works  </a></li><li><a href="#primary-buttons">Primary buttons  </a></li><li><a href="#secondary-buttons">Secondary buttons  </a></li></ol>
-      </div>
+                        <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#when-to-use-this-component">When to use this component</a>
+            		</li>
+
+                    <li><a href="#how-it-works">How it works</a>
+            		</li>
+
+                    <li><a href="#primary-buttons">Primary buttons</a>
+            		</li>
+
+                    <li><a href="#secondary-buttons">Secondary buttons</a>
+            		</li>
+                </ol>
+            </nav>
                     </aside>
                 
                 <p>Use the button component to help users carry out an action like starting an application or saving their information.</p>
@@ -120,7 +133,7 @@
 <p>Use a primary button for the main call to action on a page.</p>
 <p>Avoid using multiple primary buttons on a single page. Having more than one main call to action reduces their impact, and makes it harder for users to know what to do next.</p>
 <p><em>Example</em></p>
-<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-light govcy-mb-4">
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <button type="button" class="govcy-btn-primary">Primary</button>
 </div>
 <p><em>Sample HTML Code</em></p>
@@ -129,7 +142,7 @@
 <p>Use secondary buttons for secondary calls to action on a page.</p>
 <p>Pages with too many calls to action make it hard for users to know what to do next. Before adding lots of secondary buttons, try to simplify the page or break the content down across multiple pages.</p>
 <p><em>Example</em></p>
-<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-light govcy-mb-4">
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <button type="button" class="govcy-btn-secondary">Secondary</button>
 </div>
 <p><em>Sample HTML Code</em></p>
@@ -160,6 +173,14 @@
                     
                         
                         
+                            <a href="/dsf-design-system-docs-static/components/checkbox/" class="nav-link">
+                                Checkbox
+                            </a>
+                        
+                    
+                    
+                        
+                        
                             <a href="/dsf-design-system-docs-static/components/date_input/" class="nav-link">
                                 Date input
                             </a>
@@ -184,8 +205,56 @@
                     
                         
                         
+                            <a href="/dsf-design-system-docs-static/components/fieldset/" class="nav-link">
+                                Fieldset
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/file/" class="nav-link">
+                                File
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/footer/" class="nav-link">
+                                Footer
+                            </a>
+                        
+                    
+                    
+                        
+                        
                             <a href="/dsf-design-system-docs-static/components/header/" class="nav-link">
                                 Header
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/radio/" class="nav-link">
+                                Radio
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/table/" class="nav-link">
+                                Table
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/text_input/" class="nav-link">
+                                Text Input
                             </a>
                         
                     
@@ -275,7 +344,7 @@
                 sourceId: 'links',
                 getItems({ query }) {
                 return [
-{ label: "Colours", url: '/dsf-design-system-docs-static/styles/colour/', keys: "" },{ label: "Page Templates", url: '/dsf-design-system-docs-static/styles/page_templates/', keys: "" },{ label: "Grid system", url: '/dsf-design-system-docs-static/styles/grid/', keys: "" },{ label: "Layout", url: '/dsf-design-system-docs-static/styles/layout/', keys: "" },{ label: "Typography", url: '/dsf-design-system-docs-static/styles/typography/', keys: "fonts text Paragraph Headings Unordered Ordered list Links" },{ label: "Back Link", url: '/dsf-design-system-docs-static/components/back_link/', keys: "" },{ label: "Button", url: '/dsf-design-system-docs-static/components/button/', keys: "" },{ label: "Date input", url: '/dsf-design-system-docs-static/components/date_input/', keys: "" },{ label: "Error Message", url: '/dsf-design-system-docs-static/components/error_message/', keys: "" },{ label: "Error Summary", url: '/dsf-design-system-docs-static/components/error_summary/', keys: "" },{ label: "Header", url: '/dsf-design-system-docs-static/components/header/', keys: "" },{ label: "User’s name and sign out", url: '/dsf-design-system-docs-static/components/user_name_and_sign_out/', keys: "" },{ label: "Design System", url: '/dsf-design-system-docs-static/', keys: "" },{ label: "Getting Started", url: '/dsf-design-system-docs-static/getting_started/', keys: "" },{ label: "Styles", url: '/dsf-design-system-docs-static/styles/', keys: "" },{ label: "Components", url: '/dsf-design-system-docs-static/components/', keys: "" },
+{ label: "Colours", url: '/dsf-design-system-docs-static/styles/colour/', keys: "" },{ label: "Page Templates", url: '/dsf-design-system-docs-static/styles/page_templates/', keys: "" },{ label: "Grid system", url: '/dsf-design-system-docs-static/styles/grid/', keys: "" },{ label: "Layout", url: '/dsf-design-system-docs-static/styles/layout/', keys: "" },{ label: "Typography", url: '/dsf-design-system-docs-static/styles/typography/', keys: "fonts text Paragraph Headings Unordered Ordered list Links" },{ label: "Back Link", url: '/dsf-design-system-docs-static/components/back_link/', keys: "" },{ label: "Button", url: '/dsf-design-system-docs-static/components/button/', keys: "" },{ label: "Checkbox", url: '/dsf-design-system-docs-static/components/checkbox/', keys: "" },{ label: "Date input", url: '/dsf-design-system-docs-static/components/date_input/', keys: "" },{ label: "Error Message", url: '/dsf-design-system-docs-static/components/error_message/', keys: "" },{ label: "Error Summary", url: '/dsf-design-system-docs-static/components/error_summary/', keys: "" },{ label: "Fieldset", url: '/dsf-design-system-docs-static/components/fieldset/', keys: "" },{ label: "File", url: '/dsf-design-system-docs-static/components/file/', keys: "" },{ label: "Footer", url: '/dsf-design-system-docs-static/components/footer/', keys: "" },{ label: "Header", url: '/dsf-design-system-docs-static/components/header/', keys: "" },{ label: "Radio", url: '/dsf-design-system-docs-static/components/radio/', keys: "" },{ label: "Table", url: '/dsf-design-system-docs-static/components/table/', keys: "" },{ label: "Text Input", url: '/dsf-design-system-docs-static/components/text_input/', keys: "" },{ label: "User’s name and sign out", url: '/dsf-design-system-docs-static/components/user_name_and_sign_out/', keys: "" },{ label: "Design System", url: '/dsf-design-system-docs-static/', keys: "" },{ label: "Getting Started", url: '/dsf-design-system-docs-static/getting_started/', keys: "" },{ label: "Styles", url: '/dsf-design-system-docs-static/styles/', keys: "" },{ label: "Components", url: '/dsf-design-system-docs-static/components/', keys: "" },
                 ].filter(({ label ,keys }) =>
                     label.toLowerCase().includes(query.toLowerCase()) 
                     || keys.toLowerCase().includes(query.toLowerCase())

@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="Design your services using GOV.CY styles, components and patterns.">
+        <meta property="og:title" content="Design System GOV.CY">
+        <meta property="og:url" content="https://gov-cy.github.io/dsf-design-system-docs-static">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://gov-cy.github.io/dsf-design-system-docs-static/img/icons-512.png">
+        <meta property="og:site_name" content="GOV.CY">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://gov-cy.github.io/dsf-design-system-docs-static">
+        <meta property="twitter:title" content="Design System GOV.CY">
+        <meta property="twitter:description" content="Design your services using GOV.CY styles, components and patterns.">
+        <meta property="twitter:image" content="https://gov-cy.github.io/dsf-design-system-docs-static/img/icons-512.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/dsf-design-system-docs-static/manifest.json">
+        <meta name="theme-color" content="#31576F">
+        <link rel="icon" type="image/png" sizes="48x48" href="/dsf-design-system-docs-static/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/dsf-design-system-docs-static/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/dsf-design-system-docs-static/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/dsf-design-system-docs-static/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/dsf-design-system-docs-static/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/dsf-design-system-docs-static/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/dsf-design-system-docs-static/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/dsf-design-system-docs-static/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/dsf-design-system-docs-static/css/main.css" rel="stylesheet" >
+        <link href="/dsf-design-system-docs-static/css/docs.css" rel="stylesheet" >
+        <!--<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+        <title>Table - GOV.CY</title>
+        <meta name="description" content="Design your services using GOV.CY styles, components and patterns.">
+    </head>
+    <body>
+    <!--Header-->
+    <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative govcy-d-print-none">
+         <div class="govcy-container">
+             <div class="row">
+                 <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
+                      <a href="/dsf-design-system-docs-static/" class="govcy-logo"> <img></a>
+                     
+                     <input class="govcy-menu-btn govcy-d-none" type="checkbox" id="menu-btn">
+                     <label class="govcy-menu-icon govcy-d-md-none" for="menu-btn">Menu
+                         <span class="material-icons govcy-my-3">arrow_drop_down</span>
+                     </label>
+                     <span class="govcy-service-name">Design System </span>
+                     <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary">
+                     
+                    <li>
+                            <a href="/dsf-design-system-docs-static/getting_started/" >
+                                Getting Started
+                            </a>
+                            </li><li>
+                            <a href="/dsf-design-system-docs-static/styles/" >
+                                Styles
+                            </a>
+                            </li><li>
+                            <a href="/dsf-design-system-docs-static/components/"  class="active">
+                                Components
+                            </a>
+                            </li>
+                     </ul>
+                 </header>
+             </div>
+         </div>
+    </div>
+    <!--beforeMain-->
+    <section class="govcy-container govcy-my-2" id="beforeMainContainer">
+        <div class="row">
+            <div class="govcy-col-3 govcy-d-print-none">
+                <span id="autocomplete" class="govcy-w-50"></span>
+            </div>  
+            <div class="govcy-col-3 govcy-mt-2">
+        <span class="govcy-br-2 govcy-text-white govcy-br-danger govcy-rounded-1 govcy-bg-danger govcy-efs-small">&nbsp;DRAFT&nbsp;</span>
+        <span class="govcy-br-2 govcy-text-white govcy-br-info govcy-rounded-1 govcy-bg-info govcy-efs-small">&nbsp;Ver. 0.1.0&nbsp;</span>
+            </div>
+            
+        </div>
+    </section>
+    <!--Main-->
+    <main class="govcy-container govcy-my-2" id="mainContainer">
+        <div class="row">
+            <div class="govcy-col-9 govcy-order-last">
+                <h1>Table</h1>
+                
+                
+                    <aside class="toc-outter">
+                        <strong>On this page</strong>
+                        <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#when-to-use-this-component">When to use this component</a>
+            		</li>
+
+                    <li><a href="#when-not-to-use-this-component">When not to use this component</a>
+            		</li>
+
+                    <li><a href="#how-it-works">How it works</a>
+            
+                <ol>
+                    
+                    <li><a href="#table-headers">Table headers</a>
+            		</li>
+
+                    <li><a href="#numbers-in-a-table">Numbers in a table</a>
+            		</li>
+
+                    <li><a href="#table-captions">Table captions</a>
+            		</li>
+
+                    <li><a href="#responsive-tables">Responsive tables</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+                    </aside>
+                
+                <p>Use the table component to make information easier to compare and scan for users.</p>
+<h2 id="when-to-use-this-component" tabindex="-1">When to use this component <a class="anchor-link" href="#when-to-use-this-component"> </a></h2>
+<p>Use the table component to let users compare information in rows and columns.</p>
+<h2 id="when-not-to-use-this-component" tabindex="-1">When not to use this component <a class="anchor-link" href="#when-not-to-use-this-component"> </a></h2>
+<p>Never use the table component to layout content on a page.</p>
+<h2 id="how-it-works" tabindex="-1">How it works <a class="anchor-link" href="#how-it-works"> </a></h2>
+<p>You can use the HTML below to create a table component.</p>
+<p><em>Example</em></p>
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
+<table class="govcy-table">
+    <thead>
+        <tr class="govcy-br-input">
+            <th>Property</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <td>Jane Smith</td>
+        </tr>
+        <tr>
+            <th>Child's date of birth</th>
+            <td>5 Jan 2021</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>Thornton</td>
+        </tr>
+        <tr>
+            <th>Social insurance number</th>
+            <td>7361063</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p><em>Sample HTML Code</em></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-table<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-br-input<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Property<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Value<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Jane Smith<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Child's date of birth<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>5 Jan 2021<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Address<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Thornton<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Social insurance number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>7361063<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="table-headers" tabindex="-1">Table headers <a class="anchor-link" href="#table-headers"> </a></h3>
+<p>Use table headers to tell users what the rows and columns represent. Use the <code>scope</code> attribute to help users of assistive technology distinguish between row and column headers.</p>
+<p><em>Example</em></p>
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
+<table class="govcy-table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p><em>Sample HTML Code</em></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-table<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>#<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>First<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Last<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Handle<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Mark<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Otto<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>@mdo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Jacob<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Thornton<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>@fat<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">colspan</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Larry the Bird<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>@twitter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="numbers-in-a-table" tabindex="-1">Numbers in a table <a class="anchor-link" href="#numbers-in-a-table"> </a></h3>
+<p>When comparing columns of numbers, align the numbers to the right in table cells.</p>
+<p><em>Example</em></p>
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
+<table class="govcy-table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Expence</th>
+            <th scope="col">Notes</th>
+            <th scope="col" class="govcy-text-end">Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Server</td>
+            <td>120 GB RAM, xxx processor</td>
+            <td class="govcy-text-end">5000</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Monitor</td>
+            <td>22 inch</td>
+            <td class="govcy-text-end">100</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Keyboard</td>
+            <td>Greek layout</td>
+            <td class="govcy-text-end">20</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p><em>Sample HTML Code</em></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-table<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>#<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Expence<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Notes<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-text-end<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Amount<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Server<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>120 GB RAM, xxx processor<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-text-end<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>5000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Monitor<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>22 inch<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-text-end<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>100<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Keyboard<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Greek layout<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-text-end<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>20<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="table-captions" tabindex="-1">Table captions <a class="anchor-link" href="#table-captions"> </a></h3>
+<p>Use the <code>&lt;caption&gt;</code> element to describe a table in the same way you would use a heading. A caption helps users find, navigate and understand tables.</p>
+<p>You can also use the font size utility classes <code>govcy-fs-*</code> to change the size of the caption.</p>
+<p><em>Example</em></p>
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
+<table class="govcy-table">
+    <caption>List of data</caption>
+    <thead>
+        <tr class="govcy-br-input">
+            <th>Property</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <td>Jane Smith</td>
+        </tr>
+        <tr>
+            <th>Child's date of birth</th>
+            <td>5 Jan 2021</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>Thornton</td>
+        </tr>
+        <tr>
+            <th>Social insurance number</th>
+            <td>7361063</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p><em>Sample HTML Code</em></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-table<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>caption</span><span class="token punctuation">></span></span>List of data<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>caption</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-br-input<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Property<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Value<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Jane Smith<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Child's date of birth<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>5 Jan 2021<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Address<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Thornton<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>Social insurance number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>7361063<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="responsive-tables" tabindex="-1">Responsive tables <a class="anchor-link" href="#responsive-tables"> </a></h3>
+<p>Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a <code>.govcy-table</code> with <code>.table-responsive</code>.</p>
+<p>Always use responsive tables, unless there is a specific reason not to.</p>
+<p><em>Example</em></p>
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
+<div class="table-responsive">
+    <table class="govcy-table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<p><em>Sample HTML Code</em></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>table-responsive<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-table<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>#<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Cell<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+            </div>
+    
+    
+            <aside class="govcy-col-3 govcy-order-first">
+                <ul class="nav govcy-flex-column">
+                
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/back_link/" class="nav-link">
+                                Back Link
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/button/" class="nav-link">
+                                Button
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/checkbox/" class="nav-link">
+                                Checkbox
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/date_input/" class="nav-link">
+                                Date input
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/error_message/" class="nav-link">
+                                Error Message
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/error_summary/" class="nav-link">
+                                Error Summary
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/fieldset/" class="nav-link">
+                                Fieldset
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/file/" class="nav-link">
+                                File
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/footer/" class="nav-link">
+                                Footer
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/header/" class="nav-link">
+                                Header
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/radio/" class="nav-link">
+                                Radio
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/table/" class="nav-link active">
+                                Table
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/text_input/" class="nav-link">
+                                Text Input
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                            <a href="/dsf-design-system-docs-static/components/user_name_and_sign_out/" class="nav-link">
+                                User’s name and sign out
+                            </a>
+                        
+                    
+                    
+                        
+                        
+                    </ul>
+            </aside>
+    
+        </div>
+    </main>
+    <!-- Footer -->
+    <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light govcy-d-print-none">
+            <div class="govcy-container">
+                <div class="row">   
+                    <footer class="govcy-footer">
+                        <span class="govcy-d-inline-block govcy-valign-top govcy-pb-2"><img alt="govcy-logo"></span>
+                                <ul class="govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium">
+                                <li><a href="#">Privacy statement</a></li>
+                                <li><a href="#">Cookie policy</a></li>
+                                <li><a href="#">Accessibility statement</a></li>
+                                <li class="govcy-d-block govcy-text-dark">© Republic of Cyprus, 2021</li>
+                            </ul>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
+        <script>
+            const { autocomplete } = window['@algolia/autocomplete-js'];
+        </script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+
+
+        <style>
+            :root {
+                    --aa-search-input-height: 44px;
+                    --aa-primary-color-rgb: 38, 38, 39;
+            }
+
+            .aa-Autocomplete { 
+                width: 100%;
+            }
+
+            .aa-Form, .aa-DetachedSearchButton{
+                border: 2px solid #272525;
+                outline: none;
+                border-radius: 0px;
+            }
+
+            .aa-Form:focus-within {
+                border: 2px solid #272525;
+                box-shadow: 0 0 0 4pt #ffdd00;
+                outline: medium none currentColor;
+                border-radius: 0px;
+            }
+
+            @media (min-width: 768px){
+                .aa-Autocomplete { 
+                    width: 100%;
+                }
+            }
+        </style>
+
+        <script>
+        autocomplete({
+        container: '#autocomplete',
+        placeholder: 'Search Design System',
+        getSources() {
+            return [
+            {
+                sourceId: 'links',
+                getItems({ query }) {
+                return [
+{ label: "Colours", url: '/dsf-design-system-docs-static/styles/colour/', keys: "" },{ label: "Page Templates", url: '/dsf-design-system-docs-static/styles/page_templates/', keys: "" },{ label: "Grid system", url: '/dsf-design-system-docs-static/styles/grid/', keys: "" },{ label: "Layout", url: '/dsf-design-system-docs-static/styles/layout/', keys: "" },{ label: "Typography", url: '/dsf-design-system-docs-static/styles/typography/', keys: "fonts text Paragraph Headings Unordered Ordered list Links" },{ label: "Back Link", url: '/dsf-design-system-docs-static/components/back_link/', keys: "" },{ label: "Button", url: '/dsf-design-system-docs-static/components/button/', keys: "" },{ label: "Checkbox", url: '/dsf-design-system-docs-static/components/checkbox/', keys: "" },{ label: "Date input", url: '/dsf-design-system-docs-static/components/date_input/', keys: "" },{ label: "Error Message", url: '/dsf-design-system-docs-static/components/error_message/', keys: "" },{ label: "Error Summary", url: '/dsf-design-system-docs-static/components/error_summary/', keys: "" },{ label: "Fieldset", url: '/dsf-design-system-docs-static/components/fieldset/', keys: "" },{ label: "File", url: '/dsf-design-system-docs-static/components/file/', keys: "" },{ label: "Footer", url: '/dsf-design-system-docs-static/components/footer/', keys: "" },{ label: "Header", url: '/dsf-design-system-docs-static/components/header/', keys: "" },{ label: "Radio", url: '/dsf-design-system-docs-static/components/radio/', keys: "" },{ label: "Table", url: '/dsf-design-system-docs-static/components/table/', keys: "" },{ label: "Text Input", url: '/dsf-design-system-docs-static/components/text_input/', keys: "" },{ label: "User’s name and sign out", url: '/dsf-design-system-docs-static/components/user_name_and_sign_out/', keys: "" },{ label: "Design System", url: '/dsf-design-system-docs-static/', keys: "" },{ label: "Getting Started", url: '/dsf-design-system-docs-static/getting_started/', keys: "" },{ label: "Styles", url: '/dsf-design-system-docs-static/styles/', keys: "" },{ label: "Components", url: '/dsf-design-system-docs-static/components/', keys: "" },
+                ].filter(({ label ,keys }) =>
+                    label.toLowerCase().includes(query.toLowerCase()) 
+                    || keys.toLowerCase().includes(query.toLowerCase())
+                );
+                },
+                getItemUrl({ item }) {
+                    return item.url;
+                },
+                 templates: {
+                    item({ item, createElement }) {
+                        return createElement('div', {
+                        dangerouslySetInnerHTML: {
+                            __html: `<div>
+                            <a
+                                href="${item.url}">
+                                ${item.label}
+                            <a/> 
+                            </div>`,
+                        },
+                        });
+                    },
+                    noResults() {
+                        return 'No results.';
+                    }
+                }
+                // ...
+            },
+            ];
+        }
+    });
+
+        </script>
+    </body>
+</html>

@@ -40,7 +40,7 @@ To be used for headings h1, h2, h3, h4, h5 and h6. Use the default fonts describ
 {.govcy-table}
 
 *Example*
-<div class="govcy-bg-light">
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
@@ -63,7 +63,7 @@ To be used for headings h1, h2, h3, h4, h5 and h6. Use the default fonts describ
 To be used for unordered vertical lists (i.e. bullet points). 
 
 *Example*
-<div class="govcy-bg-light">
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <ul>
     <li>one</li>
     <li>two</li>
@@ -82,7 +82,7 @@ To be used for unordered vertical lists (i.e. bullet points).
 To be used for ordered vertical lists. 
 
 *Example*
-<div class="govcy-bg-light">
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <ol>
     <li>one</li>
     <li>two</li>

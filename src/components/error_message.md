@@ -28,8 +28,8 @@ To help screen reader users, the error message component includes a hidden ‘Er
 Summarize all errors at the top of the page the user is on using an [error summary](../error_summary).
 
 *Examples*
-<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-light govcy-mb-4">
-<form action="" class="govcy-form">
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
+<form action="" class="govcy-form" novalidate>
     <div class="govcy-form-control govcy-form-control-error">
         <label class="govcy-label" for="input">Label</label>
         <span class="govcy-input-error-msg">There is an error</span>
@@ -95,39 +95,4 @@ Summarize all errors at the top of the page the user is on using an [error summa
 </form>
 </div>
 
-## Be clear, specific and consistent  
-Describe what has happened and tell them how to fix it. The message must be in plain language, use positive language and get to the point.
-
-Do not use:
-- technical jargon like ‘form post error’, ‘unspecified error’ and ‘error 0x0000000643’
-- words like ‘forbidden’, ‘illegal’, ‘you forgot’ and ‘prohibited’
-- ‘please’ because it implies a choice
-- ‘sorry’ because it does not help fix the problem
-- ‘valid’ and ‘invalid’ because they do not add anything to the message
-- humourous, informal language like ‘oops’
-
-Error messages should make sense. Avoid general messages like:
-- ‘An error occurred’
-- ‘Answer the question’
-- ‘Select an option’
-- ‘Fill in the field’
-- ‘This field is required’
-
-Describe what went wrong in your message and help the user understand what has happened and how to fix it. For example, text fields may be:
-- empty
-- too long
-- too short
-- using characters that are not allowed
-- in the wrong format
-
-Be consistent in your messages and use the question or form label in the error to provide context. For example, ‘Enter how many hours you work a week’ for ‘How many hours do you work a week?’. Use the same message next to the field and in the [error summary](../error_summary).
-
-## Use instructions and descriptions
-
-Some errors work better as instructions and some work better as descriptions. For example:
-
-- ‘Enter your first name’ is clearer, more direct and natural than ‘First name must have an entry’
-- ‘Enter a first name that is 35 characters or fewer’ is wordier, less direct and natural than ‘First name must be 35 characters or fewer’
-- ‘Enter a date after 31 August 2017 for when you started the course’ is wordier, less direct and natural than ‘Date you started the course must be after 31 August 2017’
-
-Use both instructions and descriptions, but use them consistently. For example, use an instruction for empty fields like ‘Enter your name’, but a description like ‘Name must be 35 characters or fewer’ for entries that are too long
+Read more on content for error messages(LINK) and how to help the users correct the errors.

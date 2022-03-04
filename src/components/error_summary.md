@@ -7,7 +7,7 @@ Use this component at the top of a page to summarise any errors a user has made.
 When a user makes an error, you must show both an error summary and an error message next to each answer that contains an error.
 
 *Example*
-<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-light govcy-mb-4">
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <div class="row govcy-px-2">
     <div class="govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
         <h2>There is a problem</h2>

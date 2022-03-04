@@ -34,7 +34,7 @@
         <!--<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">-->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
-        <title>Error Summary - GOV.CY</title>
+        <title>File - GOV.CY</title>
         <meta name="description" content="Design your services using GOV.CY styles, components and patterns.">
     </head>
     <body>
@@ -87,7 +87,7 @@
     <main class="govcy-container govcy-my-2" id="mainContainer">
         <div class="row">
             <div class="govcy-col-9 govcy-order-last">
-                <h1>Error Summary</h1>
+                <h1>File</h1>
                 
                 
                     <aside class="toc-outter">
@@ -99,51 +99,48 @@
             		</li>
 
                     <li><a href="#how-it-works">How it works</a>
+            
+                <ol>
+                    
+                    <li><a href="#show-errors">Show Errors</a>
             		</li>
-
-                    <li><a href="#linking-from-the-error-summary-to-each-answer">Linking from the error summary to each answer</a>
-            		</li>
-
-                    <li><a href="#where-to-put-the-error-summary">Where to put the error summary</a>
+                </ol>
             		</li>
                 </ol>
             </nav>
                     </aside>
                 
-                <p>Use this component at the top of a page to summarise any errors a user has made.</p>
-<p>When a user makes an error, you must show both an error summary and an error message next to each answer that contains an error.</p>
+                <p>Help users select and upload a file.</p>
+<h2 id="when-to-use-this-component" tabindex="-1">When to use this component <a class="anchor-link" href="#when-to-use-this-component"> </a></h2>
+<p>You should only ask users to upload something if it’s critical to the delivery of your service.</p>
+<h2 id="how-it-works" tabindex="-1">How it works <a class="anchor-link" href="#how-it-works"> </a></h2>
+<p>You can use the HTML below to create a file component.</p>
 <p><em>Example</em></p>
 <div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
-<div class="row govcy-px-2">
-    <div class="govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
-        <h2>There is a problem</h2>
-        <p class="govcy-mb-0">
-            <a href="#">Enter your full name</a>
-            <a href="#">Social insurance number should be 16 digit long</a>
-        </p>
+<form action="" class="govcy-form" novalidate>
+    <div class="govcy-form-control">
+        <label class="govcy-label govcy-mb-1" for="">Upload a file</label>
+        <span class="govcy-hint">The file must be a PDF</span>
+        <input class="govcy-file-upload" type="file" id="" name="">
     </div>
-</div>
+</form>
 </div>
 <p><em>Sample HTML Code</em></p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>There is a problem<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-mb-0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Enter your full name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Social insurance number should be 16 digit long<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
-<h2 id="when-to-use-this-component" tabindex="-1">When to use this component <a class="anchor-link" href="#when-to-use-this-component"> </a></h2>
-<p>Always show an error summary when there is a validation error, even if there’s only one.</p>
-<h2 id="how-it-works" tabindex="-1">How it works <a class="anchor-link" href="#how-it-works"> </a></h2>
-<p>You must:</p>
-<ul>
-<li>move keyboard focus to the error summary</li>
-<li>include the heading ‘There is a problem’ in English and ‘Υπάρχει κάποιο πρόβλημα’ in Greek</li>
-<li>link to each of the answers that have validation errors</li>
-<li>make sure the error messages in the error summary are worded the same as those which appear next to the inputs with errors</li>
-</ul>
-<h2 id="linking-from-the-error-summary-to-each-answer" tabindex="-1">Linking from the error summary to each answer <a class="anchor-link" href="#linking-from-the-error-summary-to-each-answer"> </a></h2>
-<p>You must link the errors in the error summary to the answer they relate to.</p>
-<p>For questions that require a user to answer using a single field, like a file upload, select, textarea, text input or character count, link to the field.</p>
-<p>When a user has to enter their answer into multiple fields, such as the day, month and year fields in the date input component, link to the first field that contains an error.</p>
-<p>If you do not know which field contains an error, link to the first field.</p>
-<p>For questions that require a user to select one or more options from a list using radios or checkboxes, link to the first radio or checkbox.</p>
-<h2 id="where-to-put-the-error-summary" tabindex="-1">Where to put the error summary <a class="anchor-link" href="#where-to-put-the-error-summary"> </a></h2>
-<p>Put the error summary at the top of the <a href="../../styles/page_templates">main</a> (<code>&lt;main&gt;</code>) container. If your page includes breadcrumbs or a back link, place it below these, but above the <code>&lt;h1&gt;</code>.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form<span class="token punctuation">"</span></span> <span class="token attr-name">novalidate</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form-control<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-label govcy-mb-1<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Upload a file<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-hint<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>The file must be a PDF<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-file-upload<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>file<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="show-errors" tabindex="-1">Show Errors <a class="anchor-link" href="#show-errors"> </a></h3>
+<p>Error messages should follow the guidance in error message and have specific error messages for specific error states.</p>
+<p><em>Example</em></p>
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
+<form action="" class="govcy-form" novalidate>
+    <div class="govcy-form-control govcy-form-control-error govcy-pb-1">
+        <label class="govcy-label govcy-mb-1" for="">Upload a file</label>
+        <span class="govcy-input-error-msg govcy-mb-3">There is an error</span>
+        <input class="govcy-file-upload" type="file" id="" name="">
+    </div>
+</form>
+</div>
+<p><em>Sample HTML Code</em></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form<span class="token punctuation">"</span></span> <span class="token attr-name">novalidate</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form-control govcy-form-control-error govcy-pb-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-label govcy-mb-1<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Upload a file<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-input-error-msg govcy-mb-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>There is an error<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-file-upload<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>file<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span></code></pre>
 
             </div>
     
@@ -194,7 +191,7 @@
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/components/error_summary/" class="nav-link active">
+                            <a href="/dsf-design-system-docs-static/components/error_summary/" class="nav-link">
                                 Error Summary
                             </a>
                         
@@ -210,7 +207,7 @@
                     
                         
                         
-                            <a href="/dsf-design-system-docs-static/components/file/" class="nav-link">
+                            <a href="/dsf-design-system-docs-static/components/file/" class="nav-link active">
                                 File
                             </a>
                         

@@ -21,8 +21,9 @@
 /** TOC */
 
 /* .toc {background-color: rgb(235,241,243);border: 1px solid #ddd;font-size: 1rem;}*/
-.toc-outter {border: 1px solid #ddd;font-size: 1rem;}
-.toc ol {margin-top: 1rem; margin-bottom: 1rem;list-style-type:disc ;}
+/* .toc-outter {border: 1px solid #ddd;font-size: 1rem;} */
+.toc-outter {font-size: 1rem;}
+.toc ol {list-style-type:disc ;}
 
 /** Bootsrap img-fluid */
 .img-fluid {

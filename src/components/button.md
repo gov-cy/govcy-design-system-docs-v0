@@ -30,7 +30,7 @@ Use a primary button for the main call to action on a page.
 Avoid using multiple primary buttons on a single page. Having more than one main call to action reduces their impact, and makes it harder for users to know what to do next.
 
 *Example*
-<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-light govcy-mb-4">
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <button type="button" class="govcy-btn-primary">Primary</button>
 </div>
 
@@ -46,7 +46,7 @@ Use secondary buttons for secondary calls to action on a page.
 Pages with too many calls to action make it hard for users to know what to do next. Before adding lots of secondary buttons, try to simplify the page or break the content down across multiple pages.
 
 *Example*
-<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-light govcy-mb-4">
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <button type="button" class="govcy-btn-secondary">Secondary</button>
 </div>
 

@@ -5,7 +5,7 @@ date: 2022-02-01 00:01:01Z
 Use this component to help the user’s identify which account they are signed in withand provide them with a link to sign out of their account.
 
 *Example*
-<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-light govcy-mb-4">
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <div class="govcy-container">
     <div class="govcy-text-end"> User’s Name | 
         <a href="#" class="govcy-sign-out">Sign Out</a>

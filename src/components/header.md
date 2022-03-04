@@ -11,6 +11,9 @@ You must use the GOV.CY header at the top of every page hosted on one the gov.cy
 You must not use the GOV.CY header if your service is not being hosted on the gov.cy domain.
 
 ## How it works
+You can only have one GOV.CY header on each page. Be consistent, have the same header in the pages of your service. 
+
+
 ### Default header
 Use the default header if your service name is included as `<h1>` within the page. Usually this involves services that have 5 pages or fewer.
 
@@ -22,7 +25,7 @@ Use the default header if your service name is included as `<h1>` within the pag
     <div class="row">
         <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
             <a href="#" class="govcy-logo"> <img></a>
-            <form class="govcy-text-white govcy-bg-primary">     
+            <form class="govcy-text-white govcy-bg-primary" novalidate>     
                 <select name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
                     <option value="English">English</option>
                     <option value="Greek">Ελληνικά</option>
@@ -33,7 +36,7 @@ Use the default header if your service name is included as `<h1>` within the pag
 </div>
 ```
 
-## Header with service name
+### Header with service name
 Use the header with a service name if the name is not identified within the pages - this can help users understand which service they are using.
 
 *Example* at this <a target='_blank' rel="noreferrer noopener" href='../../samples/header_with_name'>sample page</a>
@@ -44,7 +47,7 @@ Use the header with a service name if the name is not identified within the page
     <div class="row">
         <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
             <a href="#" class="govcy-logo"> <img></a>
-            <form class="govcy-text-white govcy-bg-primary">     
+            <form class="govcy-text-white govcy-bg-primary" novalidate>     
                 <select name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
                     <option value="English">English</option>
                     <option value="Greek">Ελληνικά</option>
@@ -56,7 +59,7 @@ Use the header with a service name if the name is not identified within the page
 </div>
 ```
 
-## Header with service name and navigation
+### Header with service name and navigation
 Use the header with navigation if you need to include basic navigation, contact or account management links.
 
 *Example* at this <a target='_blank' rel="noreferrer noopener" href='../../samples/header_with_name_and_nav'>sample page</a>
@@ -67,7 +70,7 @@ Use the header with navigation if you need to include basic navigation, contact 
     <div class="row">
         <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
             <a href="#" class="govcy-logo"> <img></a>
-            <form class="govcy-text-white govcy-bg-primary">     
+            <form class="govcy-text-white govcy-bg-primary" novalidate>     
                 <select name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
                     <option value="English">English</option>
                     <option value="Greek">Ελληνικά</option>

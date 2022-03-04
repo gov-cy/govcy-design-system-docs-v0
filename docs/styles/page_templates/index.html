@@ -92,9 +92,19 @@
                 
                     <aside class="toc-outter">
                         <strong>On this page</strong>
-                        <div class="toc" >
-        <ol><li><a href="#max-width">Max-width  </a></li><li><a href="#responsive-breakpoint">Responsive breakpoint  </a></li><li><a href="#page-templates">Page templates  </a></li></ol>
-      </div>
+                        <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#max-width">Max-width</a>
+            		</li>
+
+                    <li><a href="#responsive-breakpoint">Responsive breakpoint</a>
+            		</li>
+
+                    <li><a href="#page-templates">Page templates</a>
+            		</li>
+                </ol>
+            </nav>
                     </aside>
                 
                 <h2 id="max-width" tabindex="-1">Max-width <a class="anchor-link" href="#max-width"> </a></h2>
@@ -276,7 +286,7 @@
                 sourceId: 'links',
                 getItems({ query }) {
                 return [
-{ label: "Colours", url: '/dsf-design-system-docs-static/styles/colour/', keys: "" },{ label: "Page Templates", url: '/dsf-design-system-docs-static/styles/page_templates/', keys: "" },{ label: "Grid system", url: '/dsf-design-system-docs-static/styles/grid/', keys: "" },{ label: "Layout", url: '/dsf-design-system-docs-static/styles/layout/', keys: "" },{ label: "Typography", url: '/dsf-design-system-docs-static/styles/typography/', keys: "fonts text Paragraph Headings Unordered Ordered list Links" },{ label: "Back Link", url: '/dsf-design-system-docs-static/components/back_link/', keys: "" },{ label: "Button", url: '/dsf-design-system-docs-static/components/button/', keys: "" },{ label: "Date input", url: '/dsf-design-system-docs-static/components/date_input/', keys: "" },{ label: "Error Message", url: '/dsf-design-system-docs-static/components/error_message/', keys: "" },{ label: "Error Summary", url: '/dsf-design-system-docs-static/components/error_summary/', keys: "" },{ label: "Header", url: '/dsf-design-system-docs-static/components/header/', keys: "" },{ label: "User’s name and sign out", url: '/dsf-design-system-docs-static/components/user_name_and_sign_out/', keys: "" },{ label: "Design System", url: '/dsf-design-system-docs-static/', keys: "" },{ label: "Getting Started", url: '/dsf-design-system-docs-static/getting_started/', keys: "" },{ label: "Styles", url: '/dsf-design-system-docs-static/styles/', keys: "" },{ label: "Components", url: '/dsf-design-system-docs-static/components/', keys: "" },
+{ label: "Colours", url: '/dsf-design-system-docs-static/styles/colour/', keys: "" },{ label: "Page Templates", url: '/dsf-design-system-docs-static/styles/page_templates/', keys: "" },{ label: "Grid system", url: '/dsf-design-system-docs-static/styles/grid/', keys: "" },{ label: "Layout", url: '/dsf-design-system-docs-static/styles/layout/', keys: "" },{ label: "Typography", url: '/dsf-design-system-docs-static/styles/typography/', keys: "fonts text Paragraph Headings Unordered Ordered list Links" },{ label: "Back Link", url: '/dsf-design-system-docs-static/components/back_link/', keys: "" },{ label: "Button", url: '/dsf-design-system-docs-static/components/button/', keys: "" },{ label: "Checkbox", url: '/dsf-design-system-docs-static/components/checkbox/', keys: "" },{ label: "Date input", url: '/dsf-design-system-docs-static/components/date_input/', keys: "" },{ label: "Error Message", url: '/dsf-design-system-docs-static/components/error_message/', keys: "" },{ label: "Error Summary", url: '/dsf-design-system-docs-static/components/error_summary/', keys: "" },{ label: "Fieldset", url: '/dsf-design-system-docs-static/components/fieldset/', keys: "" },{ label: "File", url: '/dsf-design-system-docs-static/components/file/', keys: "" },{ label: "Footer", url: '/dsf-design-system-docs-static/components/footer/', keys: "" },{ label: "Header", url: '/dsf-design-system-docs-static/components/header/', keys: "" },{ label: "Radio", url: '/dsf-design-system-docs-static/components/radio/', keys: "" },{ label: "Table", url: '/dsf-design-system-docs-static/components/table/', keys: "" },{ label: "Text Input", url: '/dsf-design-system-docs-static/components/text_input/', keys: "" },{ label: "User’s name and sign out", url: '/dsf-design-system-docs-static/components/user_name_and_sign_out/', keys: "" },{ label: "Design System", url: '/dsf-design-system-docs-static/', keys: "" },{ label: "Getting Started", url: '/dsf-design-system-docs-static/getting_started/', keys: "" },{ label: "Styles", url: '/dsf-design-system-docs-static/styles/', keys: "" },{ label: "Components", url: '/dsf-design-system-docs-static/components/', keys: "" },
                 ].filter(({ label ,keys }) =>
                     label.toLowerCase().includes(query.toLowerCase()) 
                     || keys.toLowerCase().includes(query.toLowerCase())

@@ -6,7 +6,7 @@ date: 2022-02-01 00:01:01Z
 Use the back link component to help users go back to the previous page in a multi-page transaction.
 
 *Example*
-<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-light govcy-mb-4">
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <div class="govcy-container">
         <span class="bi bi-chevron-left"></span>
         <a href="#" class="govcy-back-link">Back</a>

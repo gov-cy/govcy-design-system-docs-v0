@@ -7,12 +7,7 @@ const mdOptions = {
   linkify: false,
   typographer: true
 }
-const mdAnchorOpts = {
-  permalink: true,
-  permalinkClass: 'anchor-link',
-  permalinkSymbol: ' ',
-  level: [1, 2, 3, 4]
-}
+
 
 
 
@@ -20,21 +15,33 @@ module.exports = function (eleventyConfig) {
   let markdownIt = require('markdown-it')
   let markdownItAttrs = require('markdown-it-attrs')
   let markdownItAnchor = require('markdown-it-anchor')
-  let pluginTOC = require('eleventy-plugin-toc')
+  //let pluginTOC = require('eleventy-plugin-toc')
+  let pluginNestTOC = require('eleventy-plugin-nesting-toc');
+
+
+  const mdAnchorOpts = {
+    permalink: true,
+    permalinkClass: 'anchor-link',
+    permalinkSymbol: ' ',
+    level: [1, 2, 3, 4]
+  }
+  
   // Markdown
   eleventyConfig.setLibrary('md',markdownIt(mdOptions)
     .use(markdownItAnchor, mdAnchorOpts)
     .use(markdownItAttrs))
   
   // add plugin pluginTOC
-  eleventyConfig.addPlugin(pluginTOC)
+  //eleventyConfig.addPlugin(pluginTOC)
+  // add plugin NestedTOC
+  eleventyConfig.addPlugin(pluginNestTOC);
   // add plugin syntaxHighlighth
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  eleventyConfig.addPlugin(pluginTOC, {
-    tags: ['h2', 'h1', 'h3'],
-    wrapper: 'div'
-  })
+  // eleventyConfig.addPlugin(pluginTOC, {
+  //   tags: ['h2', 'h1', 'h3'],
+  //   wrapper: 'nav'
+  // })
 
   // Browsersync
   // Redirect from root to default language root during --serve
