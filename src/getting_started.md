@@ -1,8 +1,8 @@
 ---
-title: "Getting Started"
+title: "Get Started"
 order: 0
 tags : ['top_menu']
-category: "getting started"
+category: "get started"
 ---
 
 Get started with GOV.CY design System.

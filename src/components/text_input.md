@@ -16,7 +16,7 @@ Do not use the text input component if you need to let users enter longer answer
     <div class="govcy-form-control">
         <label class="govcy-label" for="input">Label</label>
         <span class="govcy-hint">Hint</span>
-        <input type="text" class="govcy-text-input" placeholder="input">
+        <input type="text" class="govcy-text-input">
     </div>
 </form>
 </div>
@@ -28,7 +28,7 @@ Do not use the text input component if you need to let users enter longer answer
     <div class="govcy-form-control">
         <label class="govcy-label" for="input">Label</label>
         <span class="govcy-hint">Hint</span>
-        <input type="text" class="govcy-text-input" placeholder="input">
+        <input type="text" class="govcy-text-input">
     </div>
 </form>
 ```
@@ -52,7 +52,7 @@ Error messages should follow the guidance in [error message](../error_message) a
     <div class="govcy-form-control govcy-form-control-error">
         <label class="govcy-label" for="input">Label</label>
         <span class="govcy-input-error-msg">There is an error</span>
-        <input type="text" class="govcy-text-input govcy-text-input-error" placeholder="input">
+        <input type="text" class="govcy-text-input govcy-text-input-error">
     </div>
 </form>
 </div>
@@ -64,7 +64,7 @@ Error messages should follow the guidance in [error message](../error_message) a
     <div class="govcy-form-control govcy-form-control-error">
         <label class="govcy-label" for="input">Label</label>
         <span class="govcy-input-error-msg">There is an error</span>
-        <input type="text" class="govcy-text-input govcy-text-input-error" placeholder="input">
+        <input type="text" class="govcy-text-input govcy-text-input-error">
     </div>
 </form>
 ```
@@ -148,7 +148,7 @@ Use the textarea component when you need to let users enter an amount of text th
     <div class="govcy-form-control">
         <label class="govcy-label" for="input">Can you provide more detail?</label>
         <span class="govcy-hint">Do not include personal or financial information, like credit card details.</span>
-        <textarea class="govcy-text-area" placeholder="input" rows="5"></textarea>
+        <textarea class="govcy-text-area" rows="5"></textarea>
         <span class="govcy-hint">You may enter up to 300 characters.</span>
     </div>
 </form>
@@ -161,7 +161,7 @@ Use the textarea component when you need to let users enter an amount of text th
     <div class="govcy-form-control">
         <label class="govcy-label" for="input">Can you provide more detail?</label>
         <span class="govcy-hint">Do not include personal or financial information, like credit card details.</span>
-        <textarea class="govcy-text-area" placeholder="input" rows="5"></textarea>
+        <textarea class="govcy-text-area" rows="5"></textarea>
         <span class="govcy-hint">You may enter up to 300 characters.</span>
     </div>
 </form>
@@ -181,7 +181,7 @@ To do this set the `spellcheck` attribute to `false` as shown in this example.
 <form action="" class="govcy-form" novalidate>
     <div class="govcy-form-control">
         <label class="govcy-label" for="input">Social Insurance</label>
-        <input type="text" class="govcy-text-input" placeholder="input" spellcheck="false">
+        <input type="text" class="govcy-text-input" spellcheck="false">
     </div>
 </form>
 </div>
@@ -192,7 +192,7 @@ To do this set the `spellcheck` attribute to `false` as shown in this example.
 <form action="" class="govcy-form" novalidate>
     <div class="govcy-form-control">
         <label class="govcy-label" for="input">Social Insurance</label>
-        <input type="text" class="govcy-text-input" placeholder="input" spellcheck="false">
+        <input type="text" class="govcy-text-input" spellcheck="false">
     </div>
 </form>
 ```
@@ -242,7 +242,9 @@ Do not add `required` to your input fields.
 ### Use the autocomplete attribute
 Use the `autocomplete` attribute on text inputs to help users complete forms more quickly. This lets you specify an input’s purpose so browsers can autofill the information on a user’s behalf if they’ve entered it previously.
 
-For example, to enable autofill on a postcode field, set the autocomplete attribute to `postal-code`. See how to do this in the HTML and Nunjucks tabs in the following example.
+For example, to enable autofill on a postcode field, set the autocomplete attribute to `postal-code`. 
+
+*Example*
 <div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <form action="" class="govcy-form" novalidate>
     <div class="govcy-form-control">

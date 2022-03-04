@@ -35,6 +35,7 @@ localization:
         <p><img src="img/patterns.png" alt="Patterns"> </p>
         <h2>Patterns</h2>
         <p>Best practice design solutions for specific user-focused tasks and page types, such as addresses, bank details and so on.</p>
+            <p><a href="patterns/">Browse Patterns</a></p>
     </div>
     </div>
 </div>

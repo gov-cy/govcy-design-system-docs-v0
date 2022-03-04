@@ -1,0 +1,7 @@
+{
+    "layout" : "base.njk",
+    "category" : "patterns",
+    "tags" : "patterns",
+    "showCategoryMenu" : true,
+    "showIndexInCategoryMenu" : false
+  }

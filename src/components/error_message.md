@@ -73,17 +73,17 @@ Summarize all errors at the top of the page the user is on using an [error summa
         <legend class="govcy-legend">Legend</legend>
         <div class="govcy-form-control govcy-form-control-error">
             <span class="govcy-input-error-msg">Mandatory field</span>
-            <label class="govcy-radio-btn">Option 1
+            <label class="govcy-radio">Option 1
                 <input class="govcy-radio-input" type="radio" name="radio">
-                <span class="govcy-radio" tabindex="1"></span>
+                <span class="govcy-radio-checked" tabindex="1"></span>
             </label>
-            <label class="govcy-radio-btn">Option 2
+            <label class="govcy-radio">Option 2
                 <input class="govcy-radio-input" type="radio" name="radio">
-                <span class="govcy-radio" tabindex="2"></span>
+                <span class="govcy-radio-checked" tabindex="2"></span>
             </label>
-            <label class="govcy-radio-btn">Option 3
+            <label class="govcy-radio">Option 3
                 <input class="govcy-radio-input" type="radio" name="radio">
-                <span class="govcy-radio" tabindex="3"></span>
+                <span class="govcy-radio-checked" tabindex="3"></span>
             </label>
         </div>
     </fieldset>
