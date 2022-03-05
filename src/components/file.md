@@ -33,7 +33,7 @@ You can use the HTML below to create a file component.
 </form>
 ```
 
-### Show Errors
+### Show errors
 Error messages should follow the guidance in error message and have specific error messages for specific error states.
 
 *Example*

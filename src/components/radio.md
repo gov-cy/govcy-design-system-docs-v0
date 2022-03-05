@@ -386,7 +386,7 @@ This might make two related questions easier to answer by grouping them on the s
 
 When using conditional radios, keep it simple. If the related question is complicated or has more than one part, show it on the next page in the process instead. Conditional radios should not be used with inline radios.
 
-### Show Errors
+### Show errors
 Error messages should follow the guidance in error message and have specific error messages for specific error states.
 
 Display an error message if none of the radios are selected.

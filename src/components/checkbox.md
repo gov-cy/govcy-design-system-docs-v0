@@ -223,7 +223,7 @@ You can add hints(LINK) to checkbox items to provide additional information abou
 </form>
 ```
 
-### Show Errors
+### Show errors
 
 Error messages should follow the guidance in [error message](../error_message) and have specific error messages for specific error states.
 

@@ -43,7 +43,7 @@ If you’re asking more than one question on the page, do not set the contents o
 
 Use hint text(LINK) for help that’s relevant to the majority of users, like how their information will be used, or where to find it.
 
-### Show Errors 
+### Show errors 
 Error messages should follow the guidance in [error message](../error_message) and have specific error messages for specific error states.
 
 *Example*

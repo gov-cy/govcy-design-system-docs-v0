@@ -4,6 +4,8 @@ date: 2022-02-01 00:01:02Z
 ---
 Follow this pattern whenever you need to ask for an email address.
 
+## How it works
+
 *Example*
 <div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <form action="" class="govcy-form" novalidate>
@@ -40,10 +42,12 @@ Help users to enter a valid email address by:
 - setting the `spellcheck` attribute to `false` so that browsers do not spellcheck the email address
 - setting the `autocomplete` attribute to `email`. This lets browsers autofill the email address on a user’s behalf if they’ve entered it previously.
 
-Some services ask users to repeat their email address. Only do this if your user research shows it to be effective.
+### When to ask for repeat or loop 
+Only ask users to repeat their email address if your user research shows it to be effective.
 
 If email is an essential part of your service - for example to send a password reset - you can confirm whether the user has access to the email address they give you using an email confirmation loop. However, these are disruptive and should be avoided as far as possible.
 
+### Show errors
 Error messages should follow the guidance in [error message](../../components/error_message) as shown in the example below.
 
 *Example*
