@@ -18,6 +18,8 @@ There are separate patterns for:
 
 ## How it works
 
+Run the validations for each page/question when the users distinctly indicate that their inputs are ready to be submitted, for example when clicking the "continue" button. This gives the user the opportunity to review their answer, or get out of the input's focus and not get flooded with red error messages which can be overwhelming. Do not perform validation checks on focusout of each input.
+
 For each error:
 - put the message in red after the question text and hint text
 - use a red border to visually connect the message and the question it belongs to
