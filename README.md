@@ -229,6 +229,21 @@ Use the links on this page to navigated to the desired style element.
 ```
 4. Add more pages (see [How to add a documentation page](#how-to-add-a-documentation-page))
 
+### How to use subcategories
+Subcategories is an additional level of taxonomy to the categories described above. To use subcategories:
+
+1. add in the categories metadata and options in the`folder_name.json` the following:
+```json
+    "availableSubcategories": ["subCat1","subCat2","subCat3"],
+    "showSubcategoriesInMenu" : true,
+```
+2. add the subcategory as a tag in the page's metadata, for example: 
+```yml
+title: "Test page"
+tags: "subCat1"
+```
+3. make sure you have localization lables in the `_data/site.js` file
+
 ### How to add a link on the top menu
 
 To add a page's link on the top menu, add the tag `top_menu` and set on which position the link should appear by setting the a value under `order` on the page's file metadata. for example: 

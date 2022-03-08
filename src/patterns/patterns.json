@@ -2,6 +2,8 @@
     "layout" : "base.njk",
     "category" : "patterns",
     "tags" : "patterns",
+    "availableSubcategories": ["ask_users_for","help_users","pages","how_to"],
+    "showSubcategoriesInMenu" : true,
     "showCategoryMenu" : true,
     "showIndexInCategoryMenu" : false
   }

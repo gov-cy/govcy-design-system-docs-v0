@@ -113,22 +113,39 @@
     This should be default in styles, components and patterns  #}
     {% if showCategoryMenu %}
             <aside class="govcy-col-3 govcy-order-first">
-                <ul class="nav govcy-flex-column">
-                {# for all pages with tag = to `category`
-                    'category' should be set by default in styles, components and patterns
-                    corresponding tags should be set for every page in those folders except index.md#}
-                {%- for pag in collections[category] -%}
-                    {# Checks for same locale #}
-                    {% if locale  == pag.data.locale %}
-                        {# Checks if we want to show the index page #}
-                        {% if (pag.fileSlug == category and showIndexInCategoryMenu) or pag.fileSlug != category%}
-                            <a href="{{ pag.url | url }}" class="nav-link{% if page.url == pag.url %} active{% endif %}">
-                                {{ pag.data.title }}
-                            </a>
+                <nav class="nav govcy-flex-column">
+                {# if showSubcategoriesInMenu the loop through `availableSubcategories` 
+                    defined in folder.json #}
+                {% if showSubcategoriesInMenu %}
+                    {%- for subCat in availableSubcategories -%}
+                        {# show the subcategory name#}
+                        <p class="govcy-mb-0">{{ site.localization[locale][subCat] }}</p>
+                        {%- for pagSubCat in collections[subCat] -%}
+                            {# Checks if we want to show the index page #}
+                            {% if (pagSubCat.fileSlug == category and showIndexInCategoryMenu) or pagSubCat.fileSlug != category%}
+                                <a href="{{ pagSubCat.url | url }}" class="nav-link{% if page.url == pagSubCat.url %} active{% endif %}">
+                                    {{ pagSubCat.data.title }}
+                                </a>
+                            {% endif %}
+                        {%- endfor -%}
+                    {%- endfor -%}
+                {% else %}
+                    {# for all pages with tag = to `category`
+                        'category' should be set by default in styles, components and patterns
+                        corresponding tags should be set for every page in those folders except index.md#}
+                    {%- for pag in collections[category] -%}
+                        {# Checks for same locale #}
+                        {% if locale  == pag.data.locale %}
+                            {# Checks if we want to show the index page #}
+                            {% if (pag.fileSlug == category and showIndexInCategoryMenu) or pag.fileSlug != category%}
+                                <a href="{{ pag.url | url }}" class="nav-link{% if page.url == pag.url %} active{% endif %}">
+                                    {{ pag.data.title }}
+                                </a>
+                            {% endif %}
                         {% endif %}
-                    {% endif %}
-                {%- endfor -%}
-                </ul>
+                    {%- endfor -%}
+                {% endif %}
+                </nav>
             </aside>
     {% endif %}
         </div>

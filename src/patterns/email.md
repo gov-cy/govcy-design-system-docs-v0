@@ -1,6 +1,7 @@
 ---
 title: "Email"
 date: 2022-02-01 00:01:02Z
+tags: "ask_users_for"
 ---
 Follow this pattern whenever you need to ask for an email address.
 
