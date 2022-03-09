@@ -113,7 +113,7 @@
     This should be default in styles, components and patterns  #}
     {% if showCategoryMenu %}
             <aside class="govcy-col-3 govcy-order-first">
-                <nav class="nav govcy-flex-column">
+                <ul class="nav govcy-flex-column">
                 {# if showSubcategoriesInMenu the loop through `availableSubcategories` 
                     defined in folder.json #}
                 {% if showSubcategoriesInMenu %}
@@ -145,7 +145,7 @@
                         {% endif %}
                     {%- endfor -%}
                 {% endif %}
-                </nav>
+                </ul>
             </aside>
     {% endif %}
         </div>
