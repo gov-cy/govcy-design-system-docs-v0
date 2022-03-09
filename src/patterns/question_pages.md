@@ -7,62 +7,30 @@ This pattern explains when to use question pages and what elements they need to 
 
 *Example*
 <div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
-<div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
-            <div class="govcy-container">
-                <div class="row">
-                    <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
-                        <a href="#" class="govcy-logo"> <img/></a>
-                        <form class="govcy-text-white govcy-bg-primary">     
-                            <select name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
-                                <option value="English">En</option>
-                                <option value="Greek">El</option>
-                            </select>
-                        </form>
-                        <span class="govcy-service-name">Child Birth Grant</span>
-                    </header>
-                </div>
+<!--beforeMain-->
+<section class="govcy-container govcy-mb-4" id="beforeMainContainer">
+    <span class="bi bi-chevron-left"></span>
+    <a href="#" class="govcy-back-link">Back</a>
+</section>
+<!--main-->
+<main class="govcy-container" id="mainContainer">
+    <form action="" class="govcy-form" novalidate>
+        <fieldset class="govcy-fieldset govcy-mb-4">
+            <legend class="govcy-legend"><h1>Where do you live?</h1></legend>
+            <div class="govcy-form-control">
+                <label class="govcy-radio">Cyprus
+                    <input class="govcy-radio-input" type="radio" name="radio">
+                    <span class="govcy-radio-checked" tabindex="1"></span>
+                </label>
+                <label class="govcy-radio">Abroad
+                    <input class="govcy-radio-input" type="radio" name="radio">
+                    <span class="govcy-radio-checked" tabindex="2"></span>
+                </label>
             </div>
-        </div>
-        <!--beforeMain-->
-        <section class="govcy-container govcy-mb-4" id="beforeMainContainer">
-            <span class="bi bi-chevron-left"></span>
-            <a href="#" class="govcy-back-link">Back</a>
-        </section>
-        <!--main-->
-        <main class="govcy-container" id="mainContainer">
-            <form action="" class="govcy-form" novalidate>
-                <fieldset class="govcy-fieldset govcy-mb-4">
-                    <legend class="govcy-legend"><h1>Where do you live?</h1></legend>
-                    <div class="govcy-form-control">
-                        <label class="govcy-radio">Cyprus
-                            <input class="govcy-radio-input" type="radio" name="radio">
-                            <span class="govcy-radio-checked" tabindex="1"></span>
-                        </label>
-                        <label class="govcy-radio">Abroad
-                            <input class="govcy-radio-input" type="radio" name="radio">
-                            <span class="govcy-radio-checked" tabindex="2"></span>
-                        </label>
-                    </div>
-                </fieldset>
-            </form>
-            <button type="button" class="govcy-btn-primary govcy-mb-4">Next</button>
-        </main>
-        <!-- Footer -->
-        <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">
-            <div class="govcy-container">
-                <div class="row">   
-                    <footer class="govcy-footer">
-                        <span class="govcy-d-inline-block govcy-valign-top govcy-pb-2"><img alt="govcy-logo" /></span>
-                                <ul class="govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium">
-                                <li><a href="#">Privacy statement</a></li>
-                                <li><a href="#">Cookie policy</a></li>
-                                <li><a href="#">Accessibility statement</a></li>
-                                <li class="govcy-d-block govcy-text-dark">© Republic of Cyprus, 2021</li>
-                            </ul>
-                    </footer>
-                </div>
-            </div>
-        </div>
+        </fieldset>
+    <button type="button" class="govcy-btn-primary govcy-mb-4">Next</button>
+    </form>
+</main>
 </div>
 
 ## When to use this pattern
@@ -127,84 +95,36 @@ If you’re asking a question that needs a detailed explanation, use:
 
 *Example*
 <div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
-<div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
-            <div class="govcy-container">
-                <div class="row">
-                    <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
-                        <a href="#" class="govcy-logo"> <img/></a>
-                        <form class="govcy-text-white govcy-bg-primary">     
-                            <select name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
-                                <option value="English">En</option>
-                                <option value="Greek">El</option>
-                            </select>
-                        </form>
-                        <span class="govcy-service-name">Child Birth Grant</span>
-                    </header>
-                </div>
+<!--beforeMain-->
+<section class="govcy-container govcy-mb-4" id="beforeMainContainer">
+    <span class="bi bi-chevron-left"></span>
+    <a href="#" class="govcy-back-link">Back</a>
+</section>
+<!--main-->
+<main class="govcy-container" id="mainContainer">
+    <h1>Eligibility through SI contributions from Abroad</h1>
+    <p>You may still ne eligible, if there are social insurance contributions in another country.</p>
+    <form action="" class="govcy-form" novalidate>
+        <fieldset class="govcy-fieldset govcy-mb-4">
+            <legend class="govcy-legend">Are there Social Insurance Contributions in another country?</legend>
+            <div class="govcy-form-control">
+                <label class="govcy-radio">Yes
+                    <input class="govcy-radio-input" type="radio" name="radio">
+                    <span class="govcy-radio-checked" tabindex="1"></span>
+                </label>
+                <label class="govcy-radio">No
+                    <input class="govcy-radio-input" type="radio" name="radio">
+                    <span class="govcy-radio-checked" tabindex="2"></span>
+                </label>
             </div>
-        </div>
-        <!--beforeMain-->
-        <section class="govcy-container govcy-mb-4" id="beforeMainContainer">
-            <span class="bi bi-chevron-left"></span>
-            <a href="#" class="govcy-back-link">Back</a>
-        </section>
-        <!--main-->
-        <main class="govcy-container" id="mainContainer">
-            <h1>Eligibility through SI contributions from Abroad</h1>
-            <p>You may still ne eligible, if there are social insurance contributions in another country.</p>
-            <form action="" class="govcy-form" novalidate>
-                <fieldset class="govcy-fieldset govcy-mb-4">
-                    <legend class="govcy-legend">Are there Social Insurance Contributions in another country?</legend>
-                    <div class="govcy-form-control">
-                        <label class="govcy-radio">Yes
-                            <input class="govcy-radio-input" type="radio" name="radio">
-                            <span class="govcy-radio-checked" tabindex="1"></span>
-                        </label>
-                        <label class="govcy-radio">No
-                            <input class="govcy-radio-input" type="radio" name="radio">
-                            <span class="govcy-radio-checked" tabindex="2"></span>
-                        </label>
-                    </div>
-                </fieldset>
-            </form>
-            <button type="button" class="govcy-btn-primary govcy-mb-4">Next</button>
-        </main>
-        <!-- Footer -->
-        <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">
-            <div class="govcy-container">
-                <div class="row">   
-                    <footer class="govcy-footer">
-                        <span class="govcy-d-inline-block govcy-valign-top govcy-pb-2"><img alt="govcy-logo" /></span>
-                                <ul class="govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium">
-                                <li><a href="#">Privacy statement</a></li>
-                                <li><a href="#">Cookie policy</a></li>
-                                <li><a href="#">Accessibility statement</a></li>
-                                <li class="govcy-d-block govcy-text-dark">© Republic of Cyprus, 2021</li>
-                            </ul>
-                    </footer>
-                </div>
-            </div>
-        </div>
+        </fieldset>
+    <button type="button" class="govcy-btn-primary govcy-mb-4">Next</button>
+    </form>
+</main>
 </div>
 
 *Example*
 <div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
-<div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
-    <div class="govcy-container">
-        <div class="row">
-            <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
-                <a href="#" class="govcy-logo"> <img/></a>
-                <form class="govcy-text-white govcy-bg-primary">     
-                    <select name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
-                        <option value="English">En</option>
-                        <option value="Greek">El</option>
-                    </select>
-                </form>
-                <span class="govcy-service-name">Child Birth Grant</span>
-            </header>
-        </div>
-    </div>
-</div>
 <!--beforeMain-->
 <section class="govcy-container govcy-mb-4" id="beforeMainContainer">
     <span class="bi bi-chevron-left"></span>
@@ -233,24 +153,9 @@ If you’re asking a question that needs a detailed explanation, use:
                 </label>
             </div>
         </fieldset>
+        <button type="button" class="govcy-btn-primary govcy-mb-4">Next</button>
     </form>
 </main>
-<!-- Footer -->
-<div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">
-    <div class="govcy-container">
-        <div class="row">   
-            <footer class="govcy-footer">
-                <span class="govcy-d-inline-block govcy-valign-top govcy-pb-2"><img alt="govcy-logo" /></span>
-                        <ul class="govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium">
-                        <li><a href="#">Privacy statement</a></li>
-                        <li><a href="#">Cookie policy</a></li>
-                        <li><a href="#">Accessibility statement</a></li>
-                        <li class="govcy-d-block govcy-text-dark">© Republic of Cyprus, 2021</li>
-                    </ul>
-            </footer>
-        </div>
-    </div>
-</div>
 </div>
 
 #### Asking multiple questions on a page
@@ -264,22 +169,6 @@ Use bold font weight for `<labels>` or `<legends>` that describe each field.
 
 *Example*
 <div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
-<div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative">
-    <div class="govcy-container">
-        <div class="row">
-            <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
-                <a href="#" class="govcy-logo"> <img/></a>
-                <form class="govcy-text-white govcy-bg-primary">     
-                    <select name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
-                        <option value="English">En</option>
-                        <option value="Greek">El</option>
-                    </select>
-                </form>
-                <span class="govcy-service-name">Child Birth Grant</span>
-            </header>
-        </div>
-    </div>
-</div>
 <!--beforeMain-->
 <section class="govcy-container govcy-mb-4" id="beforeMainContainer">
     <span class="bi bi-chevron-left"></span>
@@ -316,22 +205,6 @@ Use bold font weight for `<labels>` or `<legends>` that describe each field.
     <button type="button" class="govcy-btn-primary govcy-mb-4">Next</button>
     </form>
 </main>
-<!-- Footer -->
-<div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light">
-    <div class="govcy-container">
-        <div class="row">   
-            <footer class="govcy-footer">
-                <span class="govcy-d-inline-block govcy-valign-top govcy-pb-2"><img alt="govcy-logo" /></span>
-                        <ul class="govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium">
-                        <li><a href="#">Privacy statement</a></li>
-                        <li><a href="#">Cookie policy</a></li>
-                        <li><a href="#">Accessibility statement</a></li>
-                        <li class="govcy-d-block govcy-text-dark">© Republic of Cyprus, 2021</li>
-                    </ul>
-            </footer>
-        </div>
-    </div>
-</div>
 </div>
 
 ### Continue button

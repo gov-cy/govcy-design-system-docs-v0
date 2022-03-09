@@ -31,7 +31,7 @@ Use the back link component to help users go back to the previous page in a mult
 Although browsers have a back button, some sites break when you use it - so many users avoid it, instead of losing their progress in a service. Also, not all users are aware of the back button.
 
 ## When to use this component
-Always include the back link component on question pages(LINK).
+Always include the back link component on [question pages](../../patterns/question_pages).
 
 ## When not to use this component
 Never use the back link component together with breadcrumbs. If necessary, you should do research with your users to learn which they find more helpful in your service.

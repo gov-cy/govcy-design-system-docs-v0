@@ -20,7 +20,7 @@ The 3 date fields are grouped together with a `<label>` that describes them, as 
 
 If you’re asking one question per page, you can set the contents of the `<label>` as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.
 
-Make sure that any example dates you use in [hint text](../hint/) are valid for the question being asked.
+Make sure that any example dates you use in [hint text](../../patterns/hint_text) are valid for the question being asked.
 
 Never automatically tab users between the fields of the date input because this can be confusing and may clash with normal keyboard controls.
 

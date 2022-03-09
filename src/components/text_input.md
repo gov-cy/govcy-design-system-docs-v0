@@ -37,11 +37,11 @@ Labels should be aligned above the text input they refer to. They should be shor
 
 If you are asking just one question per page(LINK) as recommended, you can set the contents of the `<label>` as the page heading. 
 
-Read more about why and how to set legends as headings(LINK).
+Read more about why and [how to set legends as headings](../../patterns/labels_and_legend_headings).
 
 If you’re asking more than one question on the page, do not set the contents of the `<legent>` as the page heading. Read more about asking multiple questions on question pages(LINK).
 
-Use hint text(LINK) for help that’s relevant to the majority of users, like how their information will be used, or where to find it.
+Use [hint text](../../patterns/hint_text) for help that’s relevant to the majority of users, like how their information will be used, or where to find it.
 
 ### Show errors 
 Error messages should follow the guidance in [error message](../error_message) and have specific error messages for specific error states.
@@ -224,7 +224,7 @@ For mobile and figner friendly numeric inputs, use the `inputmode` and `pattern`
 
 An other example of using `inputmode` and `pattern` attributes can be found on the [date input](../date_input) component.
 
-This suggestion is not applicable to the telephone number(LINK) pattern.
+This suggestion is not applicable to the [telephone number](../../patterns/telephone) pattern.
 
 ### Turn off HTML5 validation
 Do not use HTML5 validation because the visual style, placement and content of HTML5 error messages cannot be made consistent with the GOV.CY Design System

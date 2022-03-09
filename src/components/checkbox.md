@@ -65,7 +65,7 @@ Always position checkboxes to the left of their labels. This makes them easier t
 
 Unlike with radios, users can select multiple options from a list of checkboxes. Do not assume that users will know how many options they can select based on the visual difference between radios and checkboxes alone.
 
-If needed, add a hint(LINK) explaining this, for example, ‘Select all that apply’.
+If needed, add a [hint](../../patterns/hint_text) explaining this, for example, ‘Select all that apply’.
 
 Prefer not to pre-select checkbox options as this makes it more likely that users will not realise they’ve missed a question or submit the wrong answer. 
 
@@ -74,7 +74,7 @@ Group radios together in a `<fieldset>` with a `<legend>` that describes them, a
 ### Asking one question on the page
 If you are asking just one question per page(LINK) as recommended, you can set the contents of the `<legend>` as the page heading. 
 
-Read more about why and how to set legends as headings(LINK).
+Read more about why and [how to set legends as headings](../../patterns/labels_and_legend_headings).
 
 Example of how checkbox component looks like when asking one question on the page:
 <div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
@@ -171,7 +171,7 @@ Example of how checkbox component looks like when asking more than one question 
 ```
 
 ### Checkbox items with hints
-You can add hints(LINK) to checkbox items to provide additional information about the options. Hints can appear below the `<legend>` or the `<label>`.
+You can add [hints](../../patterns/hint_text) to checkbox items to provide additional information about the options. Hints can appear below the `<legend>` or the `<label>`.
 
 *Example*
 <div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">

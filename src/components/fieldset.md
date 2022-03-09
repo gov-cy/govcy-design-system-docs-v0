@@ -64,7 +64,7 @@ The first element inside a fieldset must be a `<legend>` which describes the gro
 
 If you’re asking just one question(LINK) per page as recommended, you can set the contents of the `<legend>` as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.
 
-Read more about how to set legends as headings(LINK).
+Read more about [how to set legends as headings](../../patterns/labels_and_legend_headings).
 
-On question pages(LINK) containing a group of inputs, including the question as the legend helps users of screen readers to understand that the inputs are all related to that question.
+On [question pages](../../patterns/question_pages) containing a group of inputs, including the question as the legend helps users of screen readers to understand that the inputs are all related to that question.
 
