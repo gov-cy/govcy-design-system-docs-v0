@@ -1,5 +1,5 @@
 {
-  "name": "dsf-design-system-docs-static",
+  "name": "govcy-design-system-docs",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build-github-pages": "npx @11ty/eleventy --pathprefix=dsf-design-system-docs-static",
+    "build-github-pages": "npx @11ty/eleventy --pathprefix=govcy-design-system-docs",
     "build": "npx @11ty/eleventy"
   },
   "keywords": [],
