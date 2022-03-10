@@ -111,39 +111,38 @@
             </div>
     {# Check if showCategoryMenu is true, to change the layout to have 2 columns and add menu
     This should be default in styles, components and patterns  #}
-    {% if showCategoryMenu %}
+    {% if showCategoryMenu -%}
             <aside class="govcy-col-3 govcy-order-first">
                 <ul class="nav govcy-flex-column">
-                {# if showSubcategoriesInMenu the loop through `availableSubcategories` 
-                    defined in folder.json #}
-                {% if showSubcategoriesInMenu %}
+                {#- if showSubcategoriesInMenu the loop through `availableSubcategories` defined in folder.json -#}
+                {%- if showSubcategoriesInMenu %}
                     {%- for subCat in availableSubcategories -%}
-                        {# show the subcategory name#}
+                        {#- show the subcategory name -#}
                         <li class="nav-item">{{ site.localization[locale][subCat] }}</li>
                         {%- for pagSubCat in collections[subCat] -%}
-                            {# Checks if we want to show the index page #}
-                            {% if (pagSubCat.fileSlug == category and showIndexInCategoryMenu) or pagSubCat.fileSlug != category%}
+                            {#- Checks if we want to show the index page -#}
+                            {% if (pagSubCat.fileSlug == category and showIndexInCategoryMenu) or pagSubCat.fileSlug != category -%}
                                 <li class="nav-item"><a href="{{ pagSubCat.url | url }}" class="nav-link{% if page.url == pagSubCat.url %} active{% endif %}">{{ pagSubCat.data.title }}</a></li>
-                            {% endif %}
+                            {%- endif %}
                         {%- endfor -%}
                     {%- endfor -%}
-                {% else %}
-                    {# for all pages with tag = to `category`
+                {% else -%}
+                    {#- for all pages with tag = to `category`
                         'category' should be set by default in styles, components and patterns
-                        corresponding tags should be set for every page in those folders except index.md#}
+                        corresponding tags should be set for every page in those folders except index.md -#}
                     {%- for pag in collections[category] -%}
-                        {# Checks for same locale #}
-                        {% if locale  == pag.data.locale %}
-                            {# Checks if we want to show the index page #}
-                            {% if (pag.fileSlug == category and showIndexInCategoryMenu) or pag.fileSlug != category%}
+                        {#- Checks for same locale -#}
+                        {% if locale  == pag.data.locale -%}
+                            {#- Checks if we want to show the index page -#}
+                            {% if (pag.fileSlug == category and showIndexInCategoryMenu) or pag.fileSlug != category -%}
                                 <li class="nav-item"><a href="{{ pag.url | url }}" class="nav-link{% if page.url == pag.url %} active{% endif %}">{{ pag.data.title }}</a></li>
-                            {% endif %}
-                        {% endif %}
+                            {%- endif %}
+                        {%- endif %}
                     {%- endfor -%}
-                {% endif %}
+                {%- endif %}
                 </ul>
             </aside>
-    {% endif %}
+    {%- endif %}
         </div>
     </main>
     <!-- Footer -->
