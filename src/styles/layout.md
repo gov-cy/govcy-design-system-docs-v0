@@ -12,6 +12,16 @@ To be used when there is no need for a side menu and when components do not requ
 
 For most types of page, we recommend using this layout as it stops lines of text getting so long that the page becomes difficult to read on desktop devices. This would usually mean no more than 60 characters per line.
 
+*Example*
+
+<div class="govcy-container">
+    <div class="row">
+        <article class="govcy-col-8" style="background-color:aqua;">Article <br><br> </article>
+    </div>
+</div>
+
+*Sample HTML Code*
+
 ```html
 <div class="govcy-container">
     <div class="row">
@@ -23,7 +33,16 @@ For most types of page, we recommend using this layout as it stops lines of text
 ## Max-width layout
 This layout uses one column and takes up the full size of the `<main>`. To be used when there is no need for a side menu and when components require the use of the full width of the page. 
 
-Sample HTML Code
+*Example*
+
+<div class="govcy-container">
+    <div class="row">
+        <article class="govcy-col-12" style="background-color:aqua;">Article <br><br> </article>
+    </div>
+</div>
+
+
+*Sample HTML Code*
 
 ```html
 <div class="govcy-container">
@@ -40,7 +59,17 @@ The `<aside>` container must appear on the left of the `<article>` container on 
 
 The `<article>` container must appear on the right of the `<aside>` container on Desktop screens and first on mobile screens.It’s width must take ⅔ of the `service` section. 
 
-Sample HTML Code
+*Example* 
+
+<div class="govcy-container">
+    <div class="row">
+        <article class="govcy-col-8 govcy-order-last" style="background-color:aqua;">Article <br><br></article>
+        <aside class="govcy-col-4 govcy-order-first" style="background-color:yellowgreen;">aside</aside>
+    </div>
+</div>
+
+
+*Sample HTML Code*
 
 ```html
 <div class="govcy-container">
@@ -51,4 +80,4 @@ Sample HTML Code
 </div>
 ```
 
-Take a look at this <a target='_blank' rel="noreferrer noopener" href='../../samples/layouts/'>demo page with layouts</a> with different sections highlighted with different colours.
+Take a look at this <a target='_blank' rel="noreferrer noopener" href='../../samples/layouts/'>demo page with layouts</a> as the would appear inside the `<main>` section.

@@ -123,9 +123,7 @@
                         {%- for pagSubCat in collections[subCat] -%}
                             {# Checks if we want to show the index page #}
                             {% if (pagSubCat.fileSlug == category and showIndexInCategoryMenu) or pagSubCat.fileSlug != category%}
-                                <li class="nav-item"><a href="{{ pagSubCat.url | url }}" class="nav-link{% if page.url == pagSubCat.url %} active{% endif %}">
-                                    {{ pagSubCat.data.title }}
-                                </a></li>
+                                <li class="nav-item"><a href="{{ pagSubCat.url | url }}" class="nav-link{% if page.url == pagSubCat.url %} active{% endif %}">{{ pagSubCat.data.title }}</a></li>
                             {% endif %}
                         {%- endfor -%}
                     {%- endfor -%}
@@ -138,9 +136,7 @@
                         {% if locale  == pag.data.locale %}
                             {# Checks if we want to show the index page #}
                             {% if (pag.fileSlug == category and showIndexInCategoryMenu) or pag.fileSlug != category%}
-                                <li class="nav-item"><a href="{{ pag.url | url }}" class="nav-link{% if page.url == pag.url %} active{% endif %}">
-                                    {{ pag.data.title }}
-                                </a></li>
+                                <li class="nav-item"><a href="{{ pag.url | url }}" class="nav-link{% if page.url == pag.url %} active{% endif %}">{{ pag.data.title }}</a></li>
                             {% endif %}
                         {% endif %}
                     {%- endfor -%}

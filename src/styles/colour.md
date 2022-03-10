@@ -13,7 +13,7 @@ Use theme colours for buttons, alerts, list groups, borders, text and background
 |--------------------------------------------|-------------------|---------|--------------|
 |<div class="govcy-rounded-2" style="width:70px; background-color:#31576F">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|primary  | `#31576F` |To be used as the colour for primary buttons and other classes as primary colour.|
 |<div class="govcy-rounded-2" style="width:70px; background-color:#B09038">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|secondary| `#B09038` |To be used as the colour for secondary buttons and other classes as secondary colour.|
-|<div class="govcy-rounded-2" style="width:70px; background-color:#505E31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|success  | `#505E31` |To be used to mark success in messages and alerts.|
+|<div class="govcy-rounded-2" style="width:70px; background-color:#00703C">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|success  | `#00703C` |To be used to mark success in messages and alerts.|
 |<div class="govcy-rounded-2" style="width:70px; background-color:#d4351c">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|danger   | `#d4351c` |To be used to mark danger or errors in messages and alerts.|
 |<div class="govcy-rounded-2" style="width:70px; background-color:#52879D">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|info     | `#52879D` |To be used in informational messages and alerts.|
 |<div class="govcy-rounded-2" style="width:70px; background-color:#ebf1f3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|light     | `#ebf1f3` |To be used as a light background on specific components such as [Footer](#).|
@@ -81,7 +81,7 @@ Colours related to buttons
 |<div class="govcy-rounded-2" style="width:70px; background-color:#A6A8AA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|button secondary hover      | `#A6A8AA` |
 |<div class="govcy-rounded-2" style="width:70px; background-color:#D4351C">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|button tirtiary             | `#D4351C` |
 |<div class="govcy-rounded-2" style="width:70px; background-color:#AA1D13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|button tirtiary hover       | `#AA1D13` |
-|<div class="govcy-rounded-2" style="width:70px; background-color:#505E31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|button success              | `#505E31` |
+|<div class="govcy-rounded-2" style="width:70px; background-color:#00703C">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|button success              | `#00703C` |
 |<div class="govcy-rounded-2" style="width:70px; background-color:#274e13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|button success hover        | `#274e13` |
 |<div class="govcy-rounded-2" style="width:70px; background-color:#ffdd00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>|button active / input focus | `#ffdd00` |
 
