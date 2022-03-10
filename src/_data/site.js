@@ -1,7 +1,7 @@
 module.exports = {
   buildTime: new Date(),
   isMultiLanguage : false,
-  url : "https://gov-cy.github.io/dsf-design-system-docs-static",
+  url : "https://gov-cy.github.io/govcy-design-system-docs/",
   showTOC: true,
   showDraft: true,
   showVersion: true,

@@ -1,4 +1,4 @@
-Sitemap: https://gov-cy.github.io/dsf-design-system-docs-static/sitemap.xml
+Sitemap: https://gov-cy.github.io/govcy-design-system-docs//sitemap.xml
 
 User-agent: *
 Disallow:
