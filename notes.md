@@ -1,9 +1,36 @@
 # Notes on Design System
 
-- `checkbox` and `radio` `hint` under the `legend` doesn't work 
-- `textarea` remove default height:44px but keep it for `text-input`;
-- `table` make sure `table-responsive` is included in the design system
-- `date` use html5 attributes `<input class="govcy-text-input govcy-text-input-error govcy-text-input-char_6 govcy-p-3" placeholder="" type="text" maxlength="2" pattern="[0-9]*" inputmode="numeric">`
-- `email` use html5 attributes ` <input class="govcy-text-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">`
-- `telephone` use html5 attributes `<input class="govcy-text-input govcy-text-input-char_20" id="tel" name="tel" type="tel" spellcheck="false" aria-describedby="tel-hint" autocomplete="tel">`
-- `form` in every example where there is a form use the `novalidate` attribute, for example `<form action="" class="govcy-form" novalidate>`
+## Cange in for version 1
+- explain govcy-visually-hidden (check your answer, error message)
+- responsive tables
+
+## Links needed
+### date_input.md
+- Section: When not to use this component, line 14 
+```
+Read more about how to ask users for dates(LINK).
+```
+### error_message.md
+- Section: When not to use this component, line 15:  
+```
+There are separate patterns for:
+- problem with the service(LINK) pages
+- page not found(LINK) pages
+```
+- Section: Last line in file
+```
+Read more on content for error messages(LINK) and how to help the users correct the errors.
+```
+### question_pages
+- Section: When to use this pattern, line: 50
+```
+Read more about designing good questions(LINK) in the Design principles section.
+```
+- Section:Start by asking one question per page, line:80
+```
+You can also learn more about how starting with one thing per page(LINK) helps users in the design principles section. 
+```
+
+## Change log
+- Check Answers pattern
+- Updated links

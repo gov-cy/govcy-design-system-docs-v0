@@ -48,8 +48,6 @@ On every question page you should:
 - make sure it’s clear to users why you’re asking each question
 - allow users to answer ‘I do not know’ or ‘I’m not sure’ if they are valid responses
 
-Read more about designing good questions(LINK) in the Design principles section.
-
 ## How it works
 Question pages must include a:
 - back link
@@ -78,8 +76,6 @@ Read more about why and [how to set labels and legends as headings](../labels_an
 Do not use the same page heading across multiple pages.
 
 The page heading should relate specifically to the information being asked for on the current page, not any higher-level section the page is part of.
-
-You can also learn more about how starting with one thing per page(LINK) helps users in the design principles section. 
 
 #### Asking complex questions
 Use [hint text](../hint_text) if you need to give a small explanation. 

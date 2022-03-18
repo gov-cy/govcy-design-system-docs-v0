@@ -17,10 +17,10 @@ All pages must use the following structure inside the `<body>` tag. The page wid
 |Section Name |HTML Tag   | Description    |
 |---|---|---|
 |*Body start*|`<section  class="govcy-container-fluid" id="bodyStartContainer"> </section>`|To be used to render the content before the `<header>` (i.e. cookie consent). Width must be fluid, same as the viewport.|
-|*Header*|`<header class="govcy-container-fluid" id="headerContainer"> </header>`|To be used as the page header (LINK). Width must be fluid, same as the viewport.|
-|*Before Main*|`<section class="govcy-container" id="beforeMainContainer"> </section>`|To be used to render the content before the `<main>` (i.e. back link (LINK)) . Must comply with the [max-width](#max-width) reference above and be placed in the center of the viewport. |
-|*Main*|`<main class="govcy-container" id="mainContainer"> </main>`|To be used to render the service content (i.e. question page (LINK)). Must comply with the [max-width](#max-width) reference above and be placed in the center of the viewport. This section can have one of the layouts described in the [layout section](../layout).|
-|*Footer*|`<footer class="govcy-container-fluid" id="footerContainer"> </footer>`|To be used as the page footer (LINK). Width must be fluid, same as the viewport|
+|*Header*|`<header class="govcy-container-fluid" id="headerContainer"> </header>`|To be used as the page [header](../../components/header). Width must be fluid, same as the viewport.|
+|*Before Main*|`<section class="govcy-container" id="beforeMainContainer"> </section>`|To be used to render the content before the `<main>` (i.e. [back link](../../components/back_link)) . Must comply with the [max-width](#max-width) reference above and be placed in the center of the viewport. |
+|*Main*|`<main class="govcy-container" id="mainContainer"> </main>`|To be used to render the service content (i.e. [question page](../../patterns/question_pages)). Must comply with the [max-width](#max-width) reference above and be placed in the center of the viewport. This section can have one of the layouts described in the [layout section](../layout).|
+|*Footer*|`<footer class="govcy-container-fluid" id="footerContainer"> </footer>`|To be used as the page [footer](../../components/footer). Width must be fluid, same as the viewport|
 |*Body end*|`<section  class="govcy-container-fluid" id="bodyEndContainer"> </section>`|To be used to render the content after the `<footer>` (i.e. cookie consent). Width must be fluid, same as the viewport.|
 
 {.govcy-table}

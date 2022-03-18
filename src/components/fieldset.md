@@ -62,7 +62,7 @@ Use the fieldset component when you need to show a relationship between multiple
 
 The first element inside a fieldset must be a `<legend>` which describes the group of inputs. This could be a question, such as ‘What is your current address?’ or a statement like ‘Personal details’.
 
-If you’re asking just one question(LINK) per page as recommended, you can set the contents of the `<legend>` as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.
+If you’re asking just [one question per page](../../patterns/question_pages/#start-by-asking-one-question-per-page) as recommended, you can set the contents of the `<legend>` as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.
 
 Read more about [how to set legends as headings](../../patterns/labels_and_legend_headings).
 

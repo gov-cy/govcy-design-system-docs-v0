@@ -12,10 +12,6 @@ Do not use error messages to tell a user that they are not eligible or do not ha
 
 Instead, take the user to a page that explains the problem (for example, telling them why they’re not eligible) and provides useful information about what to do next.
 
-There are separate patterns for:
-- problem with the service(LINK) pages
-- page not found(LINK) pages
-
 ## How it works
 
 Run the validations for each page/question after the users distinctly indicate that their inputs are ready to be submitted, for example when clicking the "continue" button. This gives the user the opportunity to review their answer, or get out of the input's focus and not get flooded with red error messages which can be overwhelming. 
@@ -96,5 +92,3 @@ Summarize all errors at the top of the page the user is on using an [error summa
     </div>
 </form>
 </div>
-
-Read more on content for error messages(LINK) and how to help the users correct the errors.

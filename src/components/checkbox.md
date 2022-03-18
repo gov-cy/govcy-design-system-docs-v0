@@ -72,7 +72,7 @@ Prefer not to pre-select checkbox options as this makes it more likely that user
 Group radios together in a `<fieldset>` with a `<legend>` that describes them, as shown in the examples on this page. This is usually a question, like ‘What is your nationality?’.
 
 ### Asking one question on the page
-If you are asking just one question per page(LINK) as recommended, you can set the contents of the `<legend>` as the page heading. 
+If you are asking just [one question per page](../../patterns/question_pages/#start-by-asking-one-question-per-page) as recommended, you can set the contents of the `<legend>` as the page heading. 
 
 Read more about why and [how to set legends as headings](../../patterns/labels_and_legend_headings).
 
@@ -123,7 +123,7 @@ Example of how checkbox component looks like when asking one question on the pag
 ```
 
 ### Asking more than one question on the page
-If you’re asking more than one question on the page, do not set the contents of the `<legend>` as the page heading. Read more about asking multiple questions on question pages(LINK).
+If you’re asking more than one question on the page, do not set the contents of the `<legend>` as the page heading. Read more about asking [multiple questions on question pages](../../patterns/question_pages/#asking-multiple-questions-on-a-page).
 Example of how checkbox component looks like when asking more than one question on the page:
 <div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
 <form action="" class="govcy-form" novalidate>

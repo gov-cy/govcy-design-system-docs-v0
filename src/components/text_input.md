@@ -35,11 +35,11 @@ Do not use the text input component if you need to let users enter longer answer
 **Important**: All text inputs must have visible labels; placeholder text is not an acceptable replacement for a label as it vanishes when users start typing.
 Labels should be aligned above the text input they refer to. They should be short, direct and written in sentence case. Do not use colons at the end of labels.
 
-If you are asking just one question per page(LINK) as recommended, you can set the contents of the `<label>` as the page heading. 
+If you are asking just [one question per page](../../patterns/question_pages/#start-by-asking-one-question-per-page) as recommended, you can set the contents of the `<label>` as the page heading. 
 
 Read more about why and [how to set legends as headings](../../patterns/labels_and_legend_headings).
 
-If you’re asking more than one question on the page, do not set the contents of the `<legent>` as the page heading. Read more about asking multiple questions on question pages(LINK).
+If you’re asking more than one question on the page, do not set the contents of the `<legent>` as the page heading. Read more about asking [multiple questions on question pages](../../patterns/question_pages/#asking-multiple-questions-on-a-page).
 
 Use [hint text](../../patterns/hint_text) for help that’s relevant to the majority of users, like how their information will be used, or where to find it.
 

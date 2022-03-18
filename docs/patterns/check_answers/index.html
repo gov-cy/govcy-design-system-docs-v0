@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="Design your services using GOV.CY styles, components and patterns.">
+        <meta property="og:title" content="Design System GOV.CY">
+        <meta property="og:url" content="https://gov-cy.github.io/govcy-design-system-docs/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://gov-cy.github.io/govcy-design-system-docs//img/icons-512.png">
+        <meta property="og:site_name" content="GOV.CY">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://gov-cy.github.io/govcy-design-system-docs/">
+        <meta property="twitter:title" content="Design System GOV.CY">
+        <meta property="twitter:description" content="Design your services using GOV.CY styles, components and patterns.">
+        <meta property="twitter:image" content="https://gov-cy.github.io/govcy-design-system-docs//img/icons-512.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/govcy-design-system-docs/manifest.json">
+        <meta name="theme-color" content="#31576F">
+        <link rel="icon" type="image/png" sizes="48x48" href="/govcy-design-system-docs/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/govcy-design-system-docs/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/govcy-design-system-docs/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/govcy-design-system-docs/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/govcy-design-system-docs/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/govcy-design-system-docs/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/govcy-design-system-docs/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/govcy-design-system-docs/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/govcy-design-system-docs/css/main.css" rel="stylesheet" >
+        <link href="/govcy-design-system-docs/css/docs.css" rel="stylesheet" >
+        <!--<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vs.min.css" integrity="sha512-54dqOdBwMzeeRRYZieLqjlGc/w9+AI3vLUdz9PW6QFVTfkL0e7CYLWXKQPV+HqZi5QIj8JKsbzIkeplWVhlY+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.5.0/prism-vsc-dark-plus.min.css" integrity="sha512-GU4Q2LAEtdpc8WmjcbSJGxM6c8D69ggI3mc5SRnfnxpg5AkYYA0BEVve0W9Oj2wZR0UItklQK2RBKLtDsQHNzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+        <title>Check answers - GOV.CY</title>
+        <meta name="description" content="Design your services using GOV.CY styles, components and patterns.">
+    </head>
+    <body>
+    <!--Header-->
+    <div class="govcy-container-fluid govcy-p-0 govcy-m-0 govcy-position-relative govcy-d-print-none">
+         <div class="govcy-container">
+             <div class="row">
+                 <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
+                      <a href="/govcy-design-system-docs/" class="govcy-logo"> <img></a>
+                     
+                     <input class="govcy-menu-btn govcy-d-none" type="checkbox" id="menu-btn">
+                     <label class="govcy-menu-icon govcy-d-md-none" for="menu-btn">Menu
+                         <span class="material-icons govcy-my-3">arrow_drop_down</span>
+                     </label>
+                     <span class="govcy-service-name">Design System </span>
+                     <ul class="govcy-menu govcy-bg-sub-menu govcy-bg-md-primary">
+                     
+                    <li>
+                            <a href="/govcy-design-system-docs/getting_started/" >
+                                Get Started
+                            </a>
+                            </li><li>
+                            <a href="/govcy-design-system-docs/styles/" >
+                                Styles
+                            </a>
+                            </li><li>
+                            <a href="/govcy-design-system-docs/components/" >
+                                Components
+                            </a>
+                            </li><li>
+                            <a href="/govcy-design-system-docs/patterns/"  class="active">
+                                Patterns
+                            </a>
+                            </li>
+                     </ul>
+                 </header>
+             </div>
+         </div>
+    </div>
+    <!--beforeMain-->
+    <section class="govcy-container govcy-my-2" id="beforeMainContainer">
+        <div class="row">
+            <div class="govcy-col-3 govcy-d-print-none">
+                <span id="autocomplete" class="govcy-w-50"></span>
+            </div>  
+            <div class="govcy-col-3 govcy-mt-2">
+        <span class="govcy-br-2 govcy-text-white govcy-br-danger govcy-rounded-1 govcy-bg-danger govcy-efs-small">&nbsp;DRAFT&nbsp;</span>
+        <span class="govcy-br-2 govcy-text-white govcy-br-info govcy-rounded-1 govcy-bg-info govcy-efs-small">&nbsp;Ver. 0.1.0&nbsp;</span>
+            </div>
+            
+        </div>
+    </section>
+    <!--Main-->
+    <main class="govcy-container govcy-my-2" id="mainContainer">
+        <div class="row">
+            <div class="govcy-col-9 govcy-order-last">
+                <h1>Check answers</h1>
+                
+                
+                    <aside class="toc-outter">
+                        <strong>On this page</strong>
+                        <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#when-to-use-this-pattern">When to use this pattern</a>
+            		</li>
+
+                    <li><a href="#make-the-page-easy-to-understand">Make the page easy to understand</a>
+            		</li>
+
+                    <li><a href="#let-users-go-back-and-change-their-answers">Let users go back and change their answers</a>
+            		</li>
+                </ol>
+            </nav>
+                    </aside>
+                
+                <p>Let users check their answers before submitting information to a service.</p>
+<p><em>Example Simple table</em></p>
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
+<table class="govcy-table govcy-table-responsive">
+<tbody>
+    <tr>
+        <th scope="row">Name</th>
+        <td>Jane Smith</td>
+        <td class="col-2 govcy-text-end">
+            <a href="">Change</a>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">Child's date of birth</th>
+        <td>5 Jan 2021</td>
+        <td class="col-2 govcy-text-end">
+            <a href="">Change</a>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">Address</th>
+        <td>Thornton</td>
+        <td class="col-2 govcy-text-end">
+            <a href="">Change</a>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">Social insurance number</th>
+        <td>7361063</td>
+        <td class="col-2 govcy-text-end">
+            <a href="">Change</a>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+<p><em>Sample HTML Code</em></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-table govcy-table-responsive<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Jane Smith<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-2 govcy-text-end<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Change<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Child's date of birth<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>5 Jan 2021<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-2 govcy-text-end<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Change<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Address<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>Thornton<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-2 govcy-text-end<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Change<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Social insurance number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>7361063<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-2 govcy-text-end<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Change<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span></code></pre>
+<p><em>Example detailed table</em></p>
+<div class="govcy-container govcy-p-4  govcy-br-1 govcy-br-standard govcy-mb-4">
+<table class="govcy-table govcy-table-responsive govcy-mb-4">
+<tbody>
+    <tr>
+        <th scope="row" class="col-3">Bank Details</th>
+        <td class="col-7">
+        <p>
+            <span class="govcy-fw-bold">Account Name</span>
+            <span class="govcy-d-block">Andreas Andreou</span>
+        </p>
+        <p>
+            <span class="govcy-fw-bold">Bank</span>
+            <span class="govcy-d-block">Bank of Cyprus</span>
+        </p>
+        <p>
+            <span class="govcy-fw-bold">International Bank Account Number (IBAN)</span>
+            <span class="govcy-d-block">CY**********************7654</span>
+        </p>
+        </td>
+        <td class="col-2 govcy-text-end">
+        <a href="">Change</a>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row" class="col-3">Personal Details</th>
+        <td class="col-7">
+        <p>
+            <span class="govcy-fw-bold">Email address</span>
+            <span class="govcy-d-block">nikanos@windowslive.com</span>
+        </p>
+        <p>
+            <span class="govcy-fw-bold">Mobile Number</span>
+            <span class="govcy-d-block">99412126</span>
+        </p>
+        </td>
+        <td class="col-2 govcy-text-end">
+        <a href="">Change</a>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row" class="col-3">Claim Children</th>
+        <td class="col-7">
+        George
+        </td>
+        <td class="col-2"></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<p><em>Sample HTML Code</em></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-table govcy-table-responsive govcy-mb-4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Bank Details<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-7<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-fw-bold<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Account Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-d-block<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Andreas Andreou<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-fw-bold<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Bank<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-d-block<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Bank of Cyprus<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-fw-bold<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>International Bank Account Number (IBAN)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-d-block<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>CY**********************7654<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-2 govcy-text-end<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Change<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Personal Details<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-7<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-fw-bold<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Email address<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-d-block<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>nikanos@windowslive.com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-fw-bold<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Mobile Number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-d-block<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>99412126<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-2 govcy-text-end<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Change<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Claim Children<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-7<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        George<br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="when-to-use-this-pattern" tabindex="-1">When to use this pattern <a class="anchor-link" href="#when-to-use-this-pattern"> </a></h2>
+<p>Show a single check answers page immediately before the confirmation screen for small to medium-sized transactions.</p>
+<p>When designing a very large transaction with multiple sections, it may help to include a check answers pages at the end of each section.</p>
+<p>This can be valuable for services where different users might be completing each section. You should test this approach with your users to find out if it’s helpful.</p>
+<h2 id="make-the-page-easy-to-understand" tabindex="-1">Make the page easy to understand <a class="anchor-link" href="#make-the-page-easy-to-understand"> </a></h2>
+<p>On your check answers page you should:</p>
+<ul>
+<li>make it clear there’s a task to perform on the page</li>
+<li>make it clear that the transaction will not be complete until a user confirms their information is correct</li>
+<li>break the content up into sections when you can</li>
+<li>only show sections that are relevant to users – for example, if they’ve said they’re from the Cyprus, do not show sections for questions they have not answered about locations outside of the Cyprus</li>
+<li>rephrase questions if you need to – for example, you do not need to label every individual line of an address, and you can rewrite long questions as shorter statements</li>
+<li>make sure the submit button clearly shows the action it performs – for example ‘Change your tax details’ or ‘Send your claim form’</li>
+</ul>
+<h2 id="let-users-go-back-and-change-their-answers" tabindex="-1">Let users go back and change their answers <a class="anchor-link" href="#let-users-go-back-and-change-their-answers"> </a></h2>
+<p>You should provide a ‘Change’ link next to each section on your check answers page so that users can add or change the information. ‘Change’ links contain hidden text to make them accessible to screen reader users. Update the hidden text to describe what each ‘change’ link is for.</p>
+<p>The answers pages should look the same way they did when the user last used them, with all their answers pre-populated.</p>
+<p>When they’ve finished, the ‘Continue’ button should return them to the check answers page. They should not need to go through the rest of the transaction again.</p>
+<p>If a user changes their response in a way that means you need to ask them more questions, do this before returning them to the check answers page.</p>
+
+            </div>
+    
+    <aside class="govcy-col-3 govcy-order-first">
+                <ul class="nav-side govcy-flex-column"><li>Ask users for</li><li><a href="/govcy-design-system-docs/patterns/email/" class="nav-link">Email</a></li><li><a href="/govcy-design-system-docs/patterns/names/" class="nav-link">Names</a></li><li><a href="/govcy-design-system-docs/patterns/telephone/" class="nav-link">Telephone</a></li><li>Help users</li><li><a href="/govcy-design-system-docs/patterns/check_answers/" class="nav-link active">Check answers</a></li><li><a href="/govcy-design-system-docs/patterns/hint_text/" class="nav-link">Hint Text</a></li><li>Pages</li><li><a href="/govcy-design-system-docs/patterns/question_pages/" class="nav-link">Question pages</a></li><li>How to</li><li><a href="/govcy-design-system-docs/patterns/labels_and_legend_headings/" class="nav-link">Labels and legends headings</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <!-- Footer -->
+    <div class="govcy-container-fluid govcy-br-top-8 govcy-br-top-primary govcy-p-3 govcy-bg-light govcy-d-print-none">
+            <div class="govcy-container">
+                <div class="row">   
+                    <footer class="govcy-footer">
+                        <span class="govcy-d-inline-block govcy-valign-top govcy-pb-2"><img alt="govcy-logo"></span>
+                                <ul class="govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium">
+                                <li><a href="#">Privacy statement</a></li>
+                                <li><a href="#">Cookie policy</a></li>
+                                <li><a href="#">Accessibility statement</a></li>
+                                <li class="govcy-d-block govcy-text-dark">© Republic of Cyprus, 2021</li>
+                            </ul>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
+        <script>
+            const { autocomplete } = window['@algolia/autocomplete-js'];
+        </script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+
+
+        <style>
+            :root {
+                    --aa-search-input-height: 44px;
+                    --aa-primary-color-rgb: 38, 38, 39;
+            }
+
+            .aa-Autocomplete { 
+                width: 100%;
+            }
+
+            .aa-Form, .aa-DetachedSearchButton{
+                border: 2px solid #272525;
+                outline: none;
+                border-radius: 0px;
+            }
+
+            .aa-Form:focus-within {
+                border: 2px solid #272525;
+                box-shadow: 0 0 0 4pt #ffdd00;
+                outline: medium none currentColor;
+                border-radius: 0px;
+            }
+
+            @media (min-width: 768px){
+                .aa-Autocomplete { 
+                    width: 100%;
+                }
+            }
+        </style>
+
+        <script>
+        autocomplete({
+        container: '#autocomplete',
+        placeholder: 'Search Design System',
+        getSources() {
+            return [
+            {
+                sourceId: 'links',
+                getItems({ query }) {
+                return [
+{ label: "Colours", url: '/govcy-design-system-docs/styles/colour/', keys: "" },{ label: "Page Templates", url: '/govcy-design-system-docs/styles/page_templates/', keys: "" },{ label: "Grid system", url: '/govcy-design-system-docs/styles/grid/', keys: "" },{ label: "Layout", url: '/govcy-design-system-docs/styles/layout/', keys: "" },{ label: "Typography", url: '/govcy-design-system-docs/styles/typography/', keys: "fonts text Paragraph Headings Unordered Ordered list Links" },{ label: "Back Link", url: '/govcy-design-system-docs/components/back_link/', keys: "" },{ label: "Button", url: '/govcy-design-system-docs/components/button/', keys: "" },{ label: "Checkbox", url: '/govcy-design-system-docs/components/checkbox/', keys: "" },{ label: "Date input", url: '/govcy-design-system-docs/components/date_input/', keys: "" },{ label: "Error Message", url: '/govcy-design-system-docs/components/error_message/', keys: "" },{ label: "Error Summary", url: '/govcy-design-system-docs/components/error_summary/', keys: "" },{ label: "Fieldset", url: '/govcy-design-system-docs/components/fieldset/', keys: "" },{ label: "File", url: '/govcy-design-system-docs/components/file/', keys: "" },{ label: "Footer", url: '/govcy-design-system-docs/components/footer/', keys: "" },{ label: "Header", url: '/govcy-design-system-docs/components/header/', keys: "" },{ label: "Radio", url: '/govcy-design-system-docs/components/radio/', keys: "" },{ label: "Table", url: '/govcy-design-system-docs/components/table/', keys: "" },{ label: "Text Input", url: '/govcy-design-system-docs/components/text_input/', keys: "" },{ label: "User’s name and sign out", url: '/govcy-design-system-docs/components/user_name_and_sign_out/', keys: "" },{ label: "Check answers", url: '/govcy-design-system-docs/patterns/check_answers/', keys: "" },{ label: "Email", url: '/govcy-design-system-docs/patterns/email/', keys: "" },{ label: "Hint Text", url: '/govcy-design-system-docs/patterns/hint_text/', keys: "" },{ label: "Labels and legends headings", url: '/govcy-design-system-docs/patterns/labels_and_legend_headings/', keys: "" },{ label: "Names", url: '/govcy-design-system-docs/patterns/names/', keys: "" },{ label: "Question pages", url: '/govcy-design-system-docs/patterns/question_pages/', keys: "" },{ label: "Telephone", url: '/govcy-design-system-docs/patterns/telephone/', keys: "" },{ label: "Design System", url: '/govcy-design-system-docs/', keys: "" },{ label: "Get Started", url: '/govcy-design-system-docs/getting_started/', keys: "" },{ label: "Styles", url: '/govcy-design-system-docs/styles/', keys: "" },{ label: "Components", url: '/govcy-design-system-docs/components/', keys: "" },{ label: "Patterns", url: '/govcy-design-system-docs/patterns/', keys: "" },
+                ].filter(({ label ,keys }) =>
+                    label.toLowerCase().includes(query.toLowerCase()) 
+                    || keys.toLowerCase().includes(query.toLowerCase())
+                );
+                },
+                getItemUrl({ item }) {
+                    return item.url;
+                },
+                 templates: {
+                    item({ item, createElement }) {
+                        return createElement('div', {
+                        dangerouslySetInnerHTML: {
+                            __html: `<div>
+                            <a
+                                href="${item.url}">
+                                ${item.label}
+                            <a/> 
+                            </div>`,
+                        },
+                        });
+                    },
+                    noResults() {
+                        return 'No results.';
+                    }
+                }
+                // ...
+            },
+            ];
+        }
+    });
+
+        </script>
+    </body>
+</html>

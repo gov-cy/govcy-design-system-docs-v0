@@ -11,8 +11,6 @@ Use the date input component when you’re asking users for a date they’ll alr
 ## When not to use this component
 Do not use the date input component if users are unlikely to know the exact date of the event you’re asking about.
 
-Read more about how to ask users for dates(LINK).
-
 ## How it works
 The date input component consists of 3 fields to let users enter a day, month and year.
 
