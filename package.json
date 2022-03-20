@@ -1,13 +1,13 @@
 {
-  "name": "govcy-design-system-docs",
-  "version": "0.0.1",
+  "name": "govcy-design-system-docs-v0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "author": "DMRID - DSF Team",
   "license": "MIT",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build-github-pages": "npx @11ty/eleventy --pathprefix=govcy-design-system-docs",
+    "build-github-pages": "npx @11ty/eleventy --pathprefix=govcy-design-system-docs-v0",
     "build": "npx @11ty/eleventy"
   },
   "keywords": [],
